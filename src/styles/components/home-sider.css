@@ -1,0 +1,55 @@
+.sider-slot {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+}
+
+@media (768px >= width) {
+  .sider-slot {
+    position: relative;
+  }
+}
+
+.sider-slot.hidden {
+  display: none;
+}
+
+/* 默认无动画，适用于 prefers-reduced-motion: reduce */
+.sider-slot.entering,
+.sider-slot.exiting {
+  animation: none;
+}
+
+/* 只在用户未设置 reduce-motion 时应用动画 */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes slide-in-from-right {
+    from {
+      opacity: 0;
+      transform: translateX(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-to-left {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-12px);
+    }
+  }
+
+  .sider-slot.entering {
+    animation: slide-in-from-right 0.2s ease-in-out;
+  }
+
+  .sider-slot.exiting {
+    animation: slide-out-to-left 0.2s ease-in-out;
+  }
+}

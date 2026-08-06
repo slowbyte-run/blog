@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+
+# lock files from other package managers
+bun.lock
+yarn.lock
+package-lock.json
+# logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build output
+dist/
+.astro/
+.cache/
+# environment variables
+.env
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# misc
+*.local
+.vercel
+.codex/
+test-results/

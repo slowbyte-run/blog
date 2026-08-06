@@ -1,0 +1,88 @@
+---
+import { HomeSiderType, HomeSiderSegmentType } from '@constants/enum';
+import { cn } from '@lib/utils';
+import { blogLayoutConfig } from '@/config/blogLayoutConfig';
+import {
+  getAllTags,
+  getCategoryList,
+  getCategoryNodeCount,
+  getPostCount,
+  getSortedPosts,
+} from '@lib/content';
+import { getPostSeriesViewModel } from '@lib/content/posts';
+import { routers } from '@constants/router';
+import HomeSiderPanel from './HomeSiderPanel';
+import type { BlogPost } from '@/types/blog';
+import type { MarkdownHeading } from '@/types/markdown';
+
+interface Props {
+  type?: HomeSiderType;
+  className?: string;
+  isDrawer?: boolean;
+  post?: BlogPost;
+  tocHeadings?: MarkdownHeading[];
+}
+
+const {
+  type = HomeSiderType.HOME,
+  className,
+  isDrawer = false,
+  post,
+  tocHeadings,
+} = Astro.props;
+const defaultSegmentType =
+  type === HomeSiderType.POST
+    ? HomeSiderSegmentType.DIRECTORY
+    : HomeSiderSegmentType.INFO;
+// FIXED: Avoid reusing the hydrated post sidebar across post-to-post client transitions.
+const transitionName =
+  !isDrawer && type !== HomeSiderType.POST ? 'page-home-sider' : undefined;
+
+const [postCount, { categories }, posts] = await Promise.all([
+  getPostCount(),
+  getCategoryList(),
+  getSortedPosts(),
+]);
+const tags = getAllTags(posts);
+const allTags = Object.entries(tags).map(([tag, count]) => ({ tag, count }));
+
+const homeInfo = {
+  avatar: blogLayoutConfig.avatar ?? '/img/avatar.webp',
+  name: blogLayoutConfig?.name,
+  description: blogLayoutConfig?.description,
+  postCount,
+  categoryCount: getCategoryNodeCount(categories),
+  tagCount: allTags.length,
+  routes: routers,
+  currentPath: Astro.url.pathname,
+};
+
+const postSeriesData =
+  post && type === HomeSiderType.POST
+    ? await getPostSeriesViewModel(post)
+    : null;
+const seriesPostItems = postSeriesData?.seriesPostItems ?? [];
+const prevPostItem = postSeriesData?.prevPostItem ?? null;
+const nextPostItem = postSeriesData?.nextPostItem ?? null;
+const currentPostSlug = postSeriesData?.currentPostSlug ?? undefined;
+---
+
+<div
+  class={cn(
+    'page-home-sider shadow-home-sider sticky top-0 self-start flex min-w-64 max-w-64 flex-col tablet:hidden overflow-hidden h-screen min-h-0 items-center px-2',
+    className,
+  )}
+  {...transitionName ? { 'transition:name': transitionName } : {}}>
+  <HomeSiderPanel
+    client:media="(min-width: 993px)"
+    type={type}
+    defaultSegmentType={defaultSegmentType}
+    homeInfo={homeInfo}
+    tocHeadings={tocHeadings}
+    tocNumbering={post?.data.tocNumbering ?? true}
+    seriesPostItems={seriesPostItems}
+    currentPostSlug={currentPostSlug}
+    prevPostItem={prevPostItem}
+    nextPostItem={nextPostItem}
+  />
+</div>

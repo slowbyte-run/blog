@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family:
+      'Space Grotesk',
+      'Inter',
+      'SF Pro Display',
+      system-ui,
+      -apple-system,
+      sans-serif;
+    background: radial-gradient(
+      circle at 12% 20%,
+      #eef2ff 0,
+      #f7f9ff 42%,
+      #fdfbf6 100%
+    );
+    color: #0f172a;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    touch-action: manipulation;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: #0f172a;
+    background:
+      repeating-linear-gradient(
+        90deg,
+        rgba(15, 23, 42, 0.02),
+        rgba(15, 23, 42, 0.02) 1px,
+        transparent 1px,
+        transparent 90px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(15, 23, 42, 0.02),
+        rgba(15, 23, 42, 0.02) 1px,
+        transparent 1px,
+        transparent 90px
+      );
+  }
+
+  a {
+    text-decoration-thickness: 0.12em;
+    text-underline-offset: 0.16em;
+  }
+
+  [data-theme='dark'] {
+    color-scheme: dark;
+    background: radial-gradient(
+      circle at 10% 20%,
+      #111827 0,
+      #0b1226 40%,
+      #060b17 90%
+    );
+    color: #e5e7eb;
+  }
+
+  [data-theme='dark'] body {
+    color: #e5e7eb;
+    background:
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 90px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 90px
+      );
+  }
+}

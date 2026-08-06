@@ -1,0 +1,31 @@
+---
+import CategoryCards from '@/components/post/CategoryCards.astro';
+import HomeSider from '@components/layout/HomeSider.astro';
+import PostList from '@components/post/PostList.astro';
+import Cover from '@components/ui/cover/Cover.astro';
+import TwoColumnLayout from '@components/layout/TwoColumnLayout.astro';
+import LayoutFooter from '@components/layout/LayoutFooter';
+import { CONTENT_PADDING } from '@constants/layout';
+import { Routes } from '@constants/router';
+import { blogSeoConfig } from '@/config/blogLayoutConfig';
+import Layout from '@layouts/Layout.astro';
+import { buildHomePageData, getSortedPosts } from '@lib/content';
+import { getLayoutFooterData } from '@lib/layout/footer-data';
+
+const [allPosts, layoutFooterData] = await Promise.all([getSortedPosts(), getLayoutFooterData()]);
+const { posts, page } = buildHomePageData(allPosts);
+---
+
+<Layout title={blogSeoConfig.title}>
+  <TwoColumnLayout>
+    <Cover slot="cover" />
+    <HomeSider slot="sider" />
+    <LayoutFooter slot="footer" {...layoutFooterData} />
+    <div
+      class={`bg-gradient-start shadow-box tablet:shadow-none flex flex-col gap-4 overflow-hidden  ${CONTENT_PADDING.standard}`}
+    >
+      <PostList posts={posts} page={page} showPaginator={true} baseUrl={Routes.Posts} isHomePage={true} />
+      <CategoryCards />
+    </div>
+  </TwoColumnLayout>
+</Layout>

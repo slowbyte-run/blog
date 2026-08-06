@@ -1,0 +1,23 @@
+---
+import CategoryList from '@components/category/CategoryList.astro';
+import HomeSider from '@components/layout/HomeSider.astro';
+import Cover from '@components/ui/cover/Cover.astro';
+import TwoColumnLayout from '@components/layout/TwoColumnLayout.astro';
+import LayoutFooter from '@components/layout/LayoutFooter';
+import { blogLayoutConfig } from '@/config/blogLayoutConfig';
+import Layout from '@layouts/Layout.astro';
+import { getCategoryLinks, getCategoryList } from '@lib/content';
+import { getLayoutFooterData } from '@lib/layout/footer-data';
+
+const [{ categories, countMap }, layoutFooterData] = await Promise.all([getCategoryList(), getLayoutFooterData()]);
+const links = getCategoryLinks(categories, '');
+---
+
+<Layout title={`全部分类 | ${blogLayoutConfig.title}`}>
+  <TwoColumnLayout>
+    <Cover slot="cover" title="全部分类" />
+    <HomeSider slot="sider" />
+    <LayoutFooter slot="footer" {...layoutFooterData} />
+    <CategoryList categories={categories} countMap={countMap} totalCount={links.length ?? 0} />
+  </TwoColumnLayout>
+</Layout>

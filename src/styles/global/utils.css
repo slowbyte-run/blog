@@ -1,0 +1,78 @@
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-center-x {
+    @apply flex flex-row items-center justify-center;
+  }
+  .flex-center-y {
+    @apply flex flex-col items-center justify-center;
+  }
+  .shadow-home-sider {
+    box-shadow: var(--box-bg-shadow) 50px -10px 30px -50px;
+  }
+  .shadow-card {
+    box-shadow: var(--box-bg-shadow) 0px 5px 15px;
+  }
+  .shadow-card-darker {
+    box-shadow: 0 0 2rem var(--box-bg-shadow);
+  }
+  .shadow-box {
+    box-shadow: var(--box-bg-shadow) 0px 50px 50px -50px;
+    @apply md:shadow-none;
+  }
+  .shadow-text {
+    text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+  }
+  .dashed-border {
+    border-bottom: 0.0625rem dashed hsl(var(--grey-4));
+    @apply hover:border-blue group-hover:border-blue group-hover:text-blue;
+  }
+  .clip-path-none {
+    clip-path: none;
+  }
+  .clip-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+  }
+  .scroll-gutter-stable {
+    scrollbar-gutter: stable;
+  }
+}
+
+@layer components {
+  #site-header .site-header-bg {
+    opacity: 0;
+    filter: blur(6px);
+    transition:
+      opacity 0.8s ease,
+      filter 0.8s ease;
+    will-change: opacity, filter;
+    @apply bg-gradient-header;
+  }
+  #site-header.with-background .site-header-bg {
+    opacity: 1;
+    filter: blur(0);
+  }
+  #site-header.with-background {
+    @apply border-border text-foreground border-b;
+  }
+  #site-header.with-background button,
+  #site-header.with-background a {
+    text-shadow: none;
+  }
+  #site-header.with-background button::after,
+  #site-header.with-background a::after {
+    transition-duration: 400ms;
+    @apply bg-foreground;
+  }
+
+  @supports (padding: max(0px)) {
+    #site-header {
+      transition:
+        border-color 0.6s ease-in-out,
+        color 0.6s ease-in-out;
+      padding-top: calc(env(safe-area-inset-top) + 0.5rem);
+    }
+  }
+}

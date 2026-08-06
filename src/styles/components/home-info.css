@@ -1,0 +1,46 @@
+.collapse-content {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.collapse-content > div {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.collapse-content.collapse-hidden {
+  grid-template-rows: 0fr;
+}
+
+/* 只在用户未设置 reduce-motion 时应用动画 */
+@media (prefers-reduced-motion: no-preference) {
+  .collapse-content {
+    transition: grid-template-rows 0.3s ease;
+  }
+}
+
+.social-link {
+  color: var(--link-color);
+}
+
+.social-icon {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.social-link span {
+  background-color: var(--link-color);
+}
+
+.social-link:hover {
+  color: hsl(var(--background));
+}
+
+/* 暗色模式下的特殊处理 */
+.dark .social-link[data-platform='github'] {
+  color: hsl(var(--foreground));
+}

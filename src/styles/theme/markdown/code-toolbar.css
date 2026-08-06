@@ -1,0 +1,101 @@
+/* 代码块工具栏（通过 JS 动态添加） */
+.code-block-toolbar {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+
+  background: hsl(var(--muted) / 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem 0.75rem 0 0;
+
+  border: 1px solid hsl(var(--border));
+  border-bottom: none;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Mac 窗口圆点 */
+.code-block-dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.code-block-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.code-block-dot.red {
+  background: #ff5f56;
+}
+
+.code-block-dot.yellow {
+  background: #ffbd2e;
+}
+
+.code-block-dot.green {
+  background: #27c93f;
+}
+
+/* 语言标签 */
+.code-block-language {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: hsl(var(--muted-foreground));
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 0.25rem;
+}
+
+/* 按钮组 */
+.code-block-actions {
+  display: flex;
+  align-items: center;
+}
+
+.code-block-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.code-block-button:hover {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.code-block-button:active {
+  transform: scale(0.95);
+}
+
+/* 复制成功状态 */
+.code-block-button.copied {
+  color: hsl(var(--primary));
+}
+
+.code-block-button.copied svg {
+  stroke: hsl(142.1 76.2% 36.3%); /* green-600 */
+}
+
+/* 如果第一个子节点就是标题 */
+.custom-content:first-child > :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 1rem;
+}

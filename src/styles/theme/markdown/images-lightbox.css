@@ -1,0 +1,126 @@
+.markdown-image-lightbox-close:hover {
+  background: hsl(var(--background) / 0.4);
+}
+
+.markdown-image-lightbox-close:active {
+  transform: scale(0.95);
+}
+
+/* 图片容器 */
+.markdown-image-lightbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 1rem;
+  /* 禁止浏览器默认触摸行为，让我们自己处理手势 */
+  touch-action: none;
+  /* 禁止选中图片 */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Lightbox 图片 */
+.markdown-image-lightbox-img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+
+  /* 加载前隐藏，防止显示上一张图片 */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+  /* 默认缩放光标 */
+  cursor: zoom-in;
+
+  /* 允许 transform 动画 */
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.markdown-image-lightbox-img.loaded {
+  opacity: 1;
+}
+
+/* 缩放提示 */
+.markdown-image-lightbox::after {
+  content: '双击放大 · 滚轮/双指缩放';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: hsl(0 0% 0% / 0.5);
+  color: hsl(0 0% 100% / 0.7);
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* 触屏设备显示不同提示 */
+@media (pointer: coarse) {
+  .markdown-image-lightbox::after {
+    content: '双击放大 · 双指缩放';
+  }
+}
+
+.markdown-image-lightbox.active::after {
+  opacity: 1;
+  animation: fade-out-hint 3s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fade-out-hint {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Lightbox 打开时禁止背景滚动 */
+body.lightbox-open {
+  overflow: hidden;
+}
+
+/* 图片加载失败状态 - 隐藏损坏图片 */
+.prose .markdown-image.error {
+  display: none;
+}
+
+/* 图片加载失败占位符 */
+.prose .markdown-image-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 200px;
+  padding: 2rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* 错误图标 */
+.prose .markdown-image-error-icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23888' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  opacity: 0.5;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/* 错误文字 */
+.prose .markdown-image-error-text {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}

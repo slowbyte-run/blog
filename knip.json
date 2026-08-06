@@ -1,0 +1,10 @@
+{
+  "entry": [
+    "astro.config.mjs",
+    "src/pages/**/*.{astro,js,jsx,ts,tsx,md,mdx}",
+    "src/content/config.{js,ts}"
+  ],
+  "project": ["tsconfig.json"],
+  "ignore": [".astro/**", "dist/**", "node_modules/**", "source/**"],
+  "plugins": ["astro"]
+}

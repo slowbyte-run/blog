@@ -1,0 +1,25 @@
+---
+import HomeSider from './HomeSider.astro';
+import MobileDrawerPanel from './MobileDrawerPanel';
+import { HomeSiderType } from '@constants/enum';
+import type { BlogPost } from '@/types/blog';
+import type { MarkdownHeading } from '@/types/markdown';
+
+interface Props {
+  type?: HomeSiderType;
+  post?: BlogPost;
+  tocHeadings?: MarkdownHeading[];
+}
+
+const { type = HomeSiderType.HOME, post, tocHeadings } = Astro.props;
+---
+
+<MobileDrawerPanel client:media="(max-width: 992px)">
+  <HomeSider
+    className="tablet:flex mt-4 hidden w-full min-w-full p-0"
+    isDrawer
+    type={type}
+    post={post}
+    tocHeadings={tocHeadings}
+  />
+</MobileDrawerPanel>

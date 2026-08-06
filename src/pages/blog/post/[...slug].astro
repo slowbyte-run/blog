@@ -1,0 +1,112 @@
+---
+import CustomContent from '@components/common/CustomContent.astro';
+import GiscusComments from '@components/common/GiscusComments';
+import HomeSider from '@components/layout/HomeSider.astro';
+import TwoColumnLayout from '@components/layout/TwoColumnLayout.astro';
+import LayoutFooter from '@components/layout/LayoutFooter';
+import { SummaryPanel } from '@components/post/SummaryPanel';
+import Cover from '@components/ui/cover/Cover.astro';
+import { HomeSiderType } from '@constants/enum';
+import { CONTENT_PADDING } from '@constants/layout';
+import { Routes } from '@constants/router';
+import { blogLayoutConfig } from '@/config/blogLayoutConfig';
+import Layout from '@layouts/Layout.astro';
+import {
+  getCategoryArr,
+  getPostCategoryBreadcrumbs,
+  getPostDescription,
+  getPostIndex,
+  getPostIndexMap,
+  getPostKeywords,
+  getPostSummaryData,
+  getSortedPosts,
+} from '@lib/content';
+import { getLayoutFooterData } from '@lib/layout/footer-data';
+import { parseDate } from '@lib/datetime';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const [postCollections, postIndexMap] = await Promise.all([getSortedPosts(), getPostIndexMap()]);
+
+  return postCollections.map((post) => {
+    const postIndex = getPostIndex(post, postIndexMap);
+    const slug = postIndex ? String(postIndex) : post.data?.link ?? post.id;
+    return {
+      params: { slug },
+      props: { post },
+    };
+  });
+}
+const { post } = Astro.props;
+const [{ Content, headings }, layoutFooterData] = await Promise.all([render(post), getLayoutFooterData(post)]);
+const { title, categories = [], date } = post?.data ?? {};
+// 使用统一的工具函数获取文章描述
+const finalDescription = getPostDescription(post);
+const keywords = getPostKeywords(post);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: finalDescription,
+  keywords,
+  author: {
+    '@type': 'Person',
+    name: blogLayoutConfig.author ?? blogLayoutConfig.name,
+    url: Astro.site,
+  },
+  datePublished: parseDate(date, 'YYYY-MM-DD'),
+};
+
+const categoryArr = getCategoryArr(categories);
+const categoryStr = categoryArr?.length ? ` | ${categoryArr.join(' / ')}` : '';
+const breadcrumbCategories = getPostCategoryBreadcrumbs(post);
+const summaryData = getPostSummaryData(post);
+---
+
+<Layout
+  title={`${post.data.title}${categoryStr} | ${blogLayoutConfig.title}`}
+  description={finalDescription}
+  siderType={HomeSiderType.POST}
+  post={post}
+  tocHeadings={headings}
+>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <TwoColumnLayout>
+    <Cover slot="cover" data={post} />
+    <HomeSider slot="sider" type={HomeSiderType.POST} post={post} tocHeadings={headings} />
+    <LayoutFooter slot="footer" {...layoutFooterData} />
+    <div class={`shadow-box bg-gradient-start flex flex-col gap-2 ${CONTENT_PADDING.standard}`}>
+      <!-- Breadcrumb Navigation -->
+      <nav class="text-muted-foreground flex items-center gap-2 text-sm">
+        <div class="flex items-center gap-1">
+          <!-- Home Icon and Link -->
+          <i class="fa-solid fa-house-chimney text-sm" aria-hidden="true"></i>
+          <a href={Routes.Home} aria-label="返回首页">
+            <span class="hover:text-blue transition-colors duration-300">首页</span>
+          </a>
+        </div>
+        <!-- Category Breadcrumbs -->
+        {
+          breadcrumbCategories.map((category, index) => (
+            <>
+              <i class="fa-solid fa-angle-right text-muted-foreground/60 text-sm" aria-hidden="true"></i>
+              <a
+                href={category.link}
+                class={`hover:text-blue transition-colors duration-300 ${index === breadcrumbCategories.length - 1 ? 'text-primary bg-primary/10 hover:text-primary hover:bg-primary/20 rounded-full px-2.5 py-1' : ''}`}
+                aria-label={`前往${category.name}分类`}
+              >
+                {category.name}
+              </a>
+            </>
+          ))
+        }
+      </nav>
+      {summaryData.text && <SummaryPanel client:visible summary={summaryData.text} source={summaryData.source} className="mt-2" />}
+      <article class="prose md:prose-sm dark:prose-invert">
+        <CustomContent Content={Content} />
+      </article>
+      <GiscusComments client:visible />
+    </div>
+  </TwoColumnLayout>
+</Layout>

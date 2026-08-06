@@ -1,0 +1,53 @@
+---
+import "../styles/global.css";
+import {baseLayoutConfig} from "@config/indexConfig.ts";
+
+interface Props {
+  title?: string;
+  description?: string;
+  fullScreen?: boolean;
+}
+
+const {
+  title = baseLayoutConfig.title,
+  description = baseLayoutConfig.description,
+  fullScreen = false,
+} = Astro.props;
+
+const bodyClass = `bg-slate-50 text-slate-900 antialiased transition-colors duration-150 dark:bg-slate-950 dark:text-slate-50${
+  fullScreen ? ' overflow-hidden' : ''
+}`;
+const mainClass = fullScreen
+  ? 'flex h-screen w-screen flex-col overflow-hidden p-0'
+  : 'mx-auto flex min-h-screen max-w-5xl flex-col gap-12 px-6 py-10 lg:px-10 lg:py-16';
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <script is:inline>
+      // iOS Safari pinch-zoom guard (viewport meta alone is not always respected)
+      (() => {
+        const blockGesture = (event) => event.preventDefault();
+        document.addEventListener('gesturestart', blockGesture, { passive: false });
+        document.addEventListener('gesturechange', blockGesture, { passive: false });
+        document.addEventListener('gestureend', blockGesture, { passive: false });
+      })();
+    </script>
+  </head>
+  <body class={bodyClass}>
+    <main class={mainClass}>
+      <slot />
+    </main>
+  </body>
+</html>

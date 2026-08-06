@@ -1,0 +1,57 @@
+---
+import HomeSider from '@components/layout/HomeSider.astro';
+import Cover from '@components/ui/cover/Cover.astro';
+import TwoColumnLayout from '@components/layout/TwoColumnLayout.astro';
+import LayoutFooter from '@components/layout/LayoutFooter';
+import { CONTENT_PADDING } from '@constants/layout';
+import { Routes } from '@constants/router';
+import { blogLayoutConfig } from '@/config/blogLayoutConfig';
+import Layout from '@layouts/Layout.astro';
+import { getSortedPosts, getSortedTagsWithCount, toTagParam } from '@lib/content';
+import { getLayoutFooterData } from '@lib/layout/footer-data';
+
+const TAG_COLORS = [
+  'from-blue-400/10 to-indigo-300/10 hover:from-blue-400/80 hover:to-indigo-300/80 text-blue-400/70 hover:text-blue-50',
+  'from-pink-300/10 to-rose-200/10 hover:from-pink-300/80 hover:to-rose-200/80 text-pink-400/70 hover:text-pink-50',
+  'from-violet-400/10 to-purple-300/10 hover:from-violet-400/80 hover:to-purple-300/80 text-violet-400/70 hover:text-violet-50',
+  'from-sky-400/10 to-blue-300/10 hover:from-sky-400/80 hover:to-blue-300/80 text-sky-400/70 hover:text-sky-50',
+];
+
+const [posts, layoutFooterData] = await Promise.all([getSortedPosts(), getLayoutFooterData()]);
+const sortedTags = getSortedTagsWithCount(posts);
+---
+
+<Layout title={`标签 | ${blogLayoutConfig.title}`} description="所有文章标签">
+  <TwoColumnLayout>
+    <Cover slot="cover" title="全部标签" />
+    <HomeSider slot="sider" />
+    <LayoutFooter slot="footer" {...layoutFooterData} />
+    <div class={`shadow-box bg-gradient-start mx-0 flex w-full flex-col ${CONTENT_PADDING.normal}`}>
+      <h2 class="shoka-decoration-circle group relative h-19 px-6 py-5 text-2xl/9 font-bold md:text-xl/9">
+        <a href={Routes.Home} class="dashed-border text-muted-foreground group-hover:border-blue group-hover:text-blue border-b">
+          首页
+        </a>
+        <span class="text-muted-foreground text-lg md:text-base"> / </span>
+        共 {sortedTags.length} 个标签
+      </h2>
+      <div class="flex flex-wrap gap-3 px-4 md:px-0">
+        {
+          sortedTags.map(({ name, count }, index) => (
+            <div class="group relative">
+              {/* 防止闪烁 */}
+              <a
+                href={`${Routes.Tags}/${toTagParam(name)}`}
+                class={`group relative flex items-center rounded-lg bg-gradient-to-r px-3 py-1.5 text-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:shadow-lg ${
+                  TAG_COLORS[index % TAG_COLORS.length]
+                }`}
+              >
+                <span class="font-medium">{name}</span>
+                <span class="ml-1.5 truncate rounded-full bg-white/10 px-1.5 text-xs">{count}</span>
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </TwoColumnLayout>
+</Layout>

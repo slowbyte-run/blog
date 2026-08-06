@@ -1,0 +1,119 @@
+---
+import { Button } from '@components/ui/button';
+import {
+  buildCategoryPath,
+  getCategoryList,
+  getPostHref,
+  getPostIndexMap,
+  getPostsByCategoryPath,
+  type Category,
+} from '@lib/content';
+import { cn } from '@lib/utils';
+import { getLqipStyle } from '@lib/lqip';
+import { getBackgroundImages } from '@lib/backgrounds';
+import type { CollectionEntry } from 'astro:content';
+import FlippedCard from './FlippedCard.astro';
+
+interface CategoryWithPosts {
+  image: string;
+  posts: CollectionEntry<'blog'>[];
+  category: Category;
+}
+
+const [{ categories }, backgroundImages, postIndexMap] = await Promise.all([
+  getCategoryList(),
+  getBackgroundImages(),
+  getPostIndexMap(),
+]);
+const pickRandomBackground = () =>
+  backgroundImages.length
+    ? backgroundImages[Math.floor(Math.random() * backgroundImages.length)]
+    : '/img/site_header_1920.webp';
+
+const categoryPosts: CategoryWithPosts[] = await Promise.all(
+  categories.map(async (category) => {
+    const posts = await getPostsByCategoryPath(category.path);
+    return {
+      image: pickRandomBackground(),
+      category,
+      posts,
+    };
+  }),
+);
+---
+
+<div class="grid w-full grid-cols-2 gap-8 gap-y-4 md:grid-cols-1">
+  {
+    categoryPosts.map((category) => {
+      const categoryInfo = category?.category;
+      const categoryLink = buildCategoryPath(categoryInfo.path);
+      const childrenLen = categoryInfo?.children?.length ?? 0;
+      const posts = category?.posts?.slice(0, 6 - (childrenLen ?? 0));
+      return (
+        <FlippedCard>
+          <div slot="front" class="flex-center relative h-full rounded-md px-2 py-4">
+            <img
+              style={getLqipStyle(category.image)}
+              src={category.image}
+              alt={categoryInfo?.name}
+              loading="lazy"
+              decoding="async"
+              class="absolute inset-0 -z-10 h-full w-full rounded-md object-cover"
+            />
+            <div class="bg-shoka-card-mask absolute inset-0 -z-10 h-full w-full rounded-md opacity-25" />
+            <h2 class="text-2xl text-white">{categoryInfo?.name}</h2>
+          </div>
+          <div slot="back" class="bg-card relative h-full flex-col rounded-md px-6 pt-16 pb-4">
+            <div
+              class={cn(
+                'from-gradient-shoka-button-start to-gradient-shoka-button-end absolute top-4 -left-4 grid h-8 max-w-[calc(100%+2rem)] place-items-center rounded-r-md bg-gradient-to-l px-4',
+                "after:absolute after:top-full after:-left-4 after:h-0 after:w-0 after:border-t-0 after:border-r-16 after:border-b-16 after:border-l-16 after:border-transparent after:content-['']",
+                'after:border-r-gradient-shoka-button-end',
+              )}
+            >
+              <a class="hover:animate-shake block text-base text-white" href={categoryLink}>
+                {categoryInfo?.name}
+              </a>
+            </div>
+            <div class="grid max-h-24 grid-cols-2 gap-x-5 gap-y-3 overflow-auto">
+              {categoryInfo?.children?.length
+                ? categoryInfo.children.map((child) => (
+                  <a
+                    href={buildCategoryPath(child.path)}
+                    class="text-primary hover:text-blue truncate text-left transition-colors duration-300"
+                  >
+                    {child.name}
+                  </a>
+                ))
+                : null}
+              {posts.map((post) => (
+                <a
+                  href={getPostHref(post, postIndexMap)}
+                  class="text-primary hover:text-blue truncate text-left transition-colors duration-300"
+                >
+                  {post.data.title}
+                </a>
+              ))}
+            </div>
+            <p class="text-muted-foreground absolute bottom-4 left-6 flex items-center text-sm">
+              <Fragment>
+                <i class="fa-regular fa-file-lines mr-0.5 text-sm" aria-hidden="true"></i>
+                {categoryInfo?.children?.length ? `${categoryInfo.children.length} 个子分类，` : ''}
+                {category.posts?.length} 篇文章
+              </Fragment>
+            </p>
+            <a href={categoryLink} aria-label="more info" class="absolute right-0 bottom-0">
+              <Button
+                className={cn(
+                  'bg-gradient-shoka-button rounded-2xl rounded-se-none rounded-es-none transition-all hover:translate-x-1 hover:translate-y-1 hover:scale-105 md:h-7 md:px-2 md:py-1 md:text-xs',
+                )}
+              >
+                more...
+              </Button>
+            </a>
+          </div>
+        </FlippedCard>
+      );
+    })
+  }
+</div>

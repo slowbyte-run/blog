@@ -1,0 +1,7 @@
+echo "Running pre-commit checks..."
+pnpm check &&
+  pnpm run typecheck &&
+  pnpm run lint &&
+  pnpm run format:check &&
+  pnpm test &&
+  pnpm run test:e2e

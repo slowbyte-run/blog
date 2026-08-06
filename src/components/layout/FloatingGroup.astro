@@ -1,0 +1,36 @@
+---
+import FloatingGroupClient from './FloatingGroup';
+---
+
+<FloatingGroupClient client:idle />
+
+<style is:global>
+  #floating-nav {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #nav-content {
+    transform-origin: bottom;
+    transition: all 0.15s ease-in-out;
+  }
+
+  #floating-nav[data-expanded='false'] #nav-content {
+    transform: translateY(150%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #floating-nav[data-expanded='true'] #nav-content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  #floating-nav button {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  #floating-nav button:hover {
+    opacity: 1;
+  }
+</style>
