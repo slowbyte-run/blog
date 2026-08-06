@@ -30,8 +30,7 @@ type SocialConfig = {
   github?: SocialPlatform;
   x?: SocialPlatform;
   email?: SocialPlatform;
-  telegram?: SocialPlatform;
-  bilibili?: SocialPlatform;
+  cnblogs?: SocialPlatform;
 };
 
 export const blogLayoutConfig: BlogLayoutConfig = {
@@ -40,7 +39,7 @@ export const blogLayoutConfig: BlogLayoutConfig = {
   subtitle: 'slow byte, steady build',
   name: 'slowbyte',
   description: 'Code · Learn · Grow 🔄',
-  avatar: '/img/Camera_XHS_17721581668191040g00831aac0imtn20g5oe96bg418vjsfgi9o0_edit_2666894832384741.jpg',
+  avatar: '/img/avatar.png',
   showLogo: true,
   author: 'slowbyte',
   site: 'https://blog.novaspace.me/',
@@ -64,7 +63,7 @@ export const blogSocialConfig: SocialConfig = {
   },
   x: {
     url: 'https://x.com/slowbyte9124',
-    label: 'X (推特)',
+    label: 'X (Twitter)',
     iconText: 'X',
     iconClass: 'fa-brands fa-x-twitter',
     color: '#4b9ae4',
@@ -76,19 +75,12 @@ export const blogSocialConfig: SocialConfig = {
     iconClass: 'fa-regular fa-envelope',
     color: '#55acd5',
   },
-  telegram: {
-    url: '#',
-    label: 'Telegram',
-    iconText: 'TG',
-    iconClass: 'fa-brands fa-telegram',
-    color: '#229ed9',
-  },
-  bilibili: {
-    url: '#',
-    label: '哔哩哔哩',
-    iconText: 'B',
-    iconClass: 'fa-brands fa-bilibili',
-    color: '#00a1d6',
+  cnblogs: {
+    url: 'https://www.cnblogs.com/slowbyte',
+    label: '博客园',
+    iconText: 'CBG',
+    iconClass: 'fa-solid fa-blog',
+    color: '#2f8b62',
   },
 };
 

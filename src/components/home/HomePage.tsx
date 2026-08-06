@@ -13,22 +13,6 @@ interface SocialButton {
 function getSocialButtons(links: typeof homePageLinks): SocialButton[] {
   return [
     {
-      href: links.bilibiliUrl,
-      gradient: 'from-[#00a1d6] to-[#0086b3]',
-      shadow: 'shadow-[0_4px_10px_rgba(0,161,214,0.35)]',
-      icon: 'fa-brands fa-bilibili',
-      label: '哔哩哔哩',
-      external: true,
-    },
-    {
-      href: links.telegramUrl,
-      gradient: 'from-[#229ed9] to-[#1b84b4]',
-      shadow: 'shadow-[0_4px_10px_rgba(34,158,217,0.35)]',
-      icon: 'fa-brands fa-telegram',
-      label: 'Telegram',
-      external: true,
-    },
-    {
       href: links.xUrl,
       gradient: 'from-[#111111] to-[#2a2a2a]',
       shadow: 'shadow-[0_4px_10px_rgba(17,17,17,0.3)]',
@@ -42,6 +26,14 @@ function getSocialButtons(links: typeof homePageLinks): SocialButton[] {
       shadow: 'shadow-[0_4px_10px_rgba(36,41,46,0.3)]',
       icon: 'fa-brands fa-github',
       label: 'GitHub',
+      external: true,
+    },
+    {
+      href: links.cnblogsUrl,
+      gradient: 'from-[#2f8b62] to-[#256b4a]',
+      shadow: 'shadow-[0_4px_10px_rgba(47,139,98,0.35)]',
+      icon: 'fa-solid fa-blog',
+      label: '博客园',
       external: true,
     },
     {

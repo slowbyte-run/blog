@@ -1,4 +1,4 @@
-import logoSrc from 'src/assets/logo.webp?url';
+import logoSrc from 'src/assets/logo.png?url';
 import { MobilePostHeader } from '@components/layout/MobilePostHeader';
 import { MAX_WIDTH } from '@constants/layout';
 import { Routes } from '@constants/router';

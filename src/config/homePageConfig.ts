@@ -2,17 +2,16 @@
 export const homePageProfile = {
   name: 'slowbyte',
   tagline: '“slow byte, steady build”',
-  avatarUrl: '/img/Camera_XHS_17721581668191040g00831aac0imtn20g5oe96bg418vjsfgi9o0_edit_2666894832384741.jpg',
+  avatarUrl: '/img/avatar.png',
   avatarAlt: 'slowbyteAvatar',
   backgroundUrl: '/img/site_header_1920.webp',
   footerText: '© slowbyte - 2026',
 };
 
 export const homePageLinks = {
-  xUrl: '#',
+  xUrl: 'https://x.com/slowbyte9124',
   githubUrl: 'https://github.com/slowbyte-run',
-  telegramUrl: '#',
-  bilibiliUrl: '#',
+  cnblogsUrl: 'https://www.cnblogs.com/slowbyte',
 };
 
 export async function getHomePageProfile() {

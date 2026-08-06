@@ -9,30 +9,6 @@ export interface FriendLink {
 
 export const friendsData: FriendLink[] = [
   {
-    site: 'CloudWings的小窝',
-    url: 'https://cloudwings.xyz/',
-    owner: 'CloudWings',
-    desc: '正在搭建的个人网站 :)',
-    image: 'https://example.com/avatar.jpg',
-    color: '#ffc0cb',
-  },
-  {
-    site: '云灿の随笔小站',
-    url: 'https://blog.yuncan.xyz/',
-    owner: '云灿',
-    desc: '浮云一别后，流水十年间',
-    image: 'https://yuncan.xyz/images/icon/favicon.ico',
-    color: '#c2fff3',
-  },
-  {
-    site: "matto's blog",
-    url: 'https://www.matto.top/',
-    owner: 'matto',
-    desc: '天天摸鱼身体棒',
-    image: 'https://s3.bmp.ovh/imgs/2022/05/04/dcbc99998523dd33.png',
-    color: '#12e2e8',
-  },
-  {
     site: '柚子网站',
     url: 'https://www.hxyouzi.com/blog/',
     owner: '柚子',
@@ -145,24 +121,17 @@ export const friendsData: FriendLink[] = [
     image: 'https://avatars.githubusercontent.com/u/84063341?v=4',
     color: '#1c8adb',
   },
-  {
-    site: 'MicroWorld',
-    url: 'https://www.hayrsiane.com/',
-    owner: 'Hayrsiane',
-    desc: '在互联网一隅，分享技术、生活、思考以及偶尔发癫～',
-    image: 'https://cdn.picui.cn/vip/2026/01/04/695a1e9196d1a.png',
-  },
 ];
 
 export const friendsIntro = {
   title: '小伙伴们',
-  subtitle: '改了一下,有时间顺序从新到旧排列～',
+  subtitle: '收录我的一众小伙伴',
   applyTitle: '欢迎加友链',
   applyDesc: '在本页留言,格式如下',
   exampleYaml: `- site: slowbyteのblog # 站点名称
-  url: https://novaspace.me/ # 站点网址
+  url: https://blog.novaspace.me/ # 站点网址
   owner: slowbyte # 昵称
   desc: slow byte, steady build # 站点简介
-  image: https://novaspace.me/img/avatar.jpg
+  image: https://blog.novaspace.me/img/avatar.png
   color: "#ffc0cb" # 图标色`,
 };
