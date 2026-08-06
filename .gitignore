@@ -36,3 +36,5 @@ dist/
 .vercel
 .codex/
 test-results/
+
+gen-favicons.mjs
