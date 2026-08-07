@@ -8,11 +8,11 @@
     "summary": "用栈实现只含加减乘除的中缀表达式求值（转后缀 + 求值）。"
   },
   "cnblogs-19136430": {
-    "title": "解决scoop安装的anaconda无法在商店版powershell使用的问题",
+    "title": "Scoop 装的 Anaconda 无法在商店版 PowerShell 打开？",
     "summary": "解决通过 Scoop 安装的 Anaconda 无法在 Microsoft Store 版 PowerShell 中激活 conda 的问题。"
   },
   "cnblogs-18874306": {
-    "title": "解决git将本地与远程仓库连接发生的冲突",
+    "title": "git 重建后连不上远程仓库？冲突这样解决",
     "summary": "解决重建本地仓库后重新连接远程仓库时的冲突。"
   },
   "cnblogs-18768639": {
@@ -28,7 +28,7 @@
     "summary": "矩阵连乘最优计算顺序的动态规划解法（C++）。"
   },
   "cnblogs-19020181": {
-    "title": "电脑使用ssh连接termux",
+    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
     "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
   },
   "cnblogs-18773647": {
@@ -44,11 +44,11 @@
     "summary": "归并排序与快速排序的实现与要点对比。"
   },
   "cnblogs-19211892": {
-    "title": "如何用live盘对archlinux在无法在原系统使用timeshift的情况下进行回退",
+    "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
     "summary": "Arch 系统无法进入时，用 live 盘配合 btrfs 快照在无法使用 timeshift 的情况下回退系统的步骤。"
   },
   "cnblogs-18870773": {
-    "title": "如何将使用Qt Creator制作的项目打包成可执行文件？",
+    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
     "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
   },
   "cnblogs-18897189": {
@@ -60,43 +60,39 @@
     "summary": "分治算法思想，结合 NOIP 幂次方例题与实现。"
   },
   "cnblogs-18924113": {
-    "title": "使用git将远程仓库提交完全覆盖/不覆盖本地",
+    "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
     "summary": "两种 git 场景的处理：远程仓库完全覆盖本地、以及拉取远程但保留本地改动。"
   },
   "cnblogs-18934841": {
     "title": "位运算相关宏定义",
     "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
   },
-  "cnblogs-18905490": {
-    "title": "windows下git的安装以及配置",
-    "summary": "Windows 下安装并配置 Git 的分步说明（含截图）。"
-  },
   "cnblogs-18878863": {
-    "title": "git提交说明的规范性",
+    "title": "让你的 Git 提交信息更专业：Conventional Commits",
     "summary": "Conventional Commits 提交规范：type 类型、作用域与提交示例。"
   },
   "cnblogs-18967266": {
-    "title": "git回退操作",
+    "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
     "summary": "git 回退操作的常见场景与命令整理。"
   },
   "cnblogs-18927584": {
-    "title": "gh相关命令使用指南",
+    "title": "GitHub CLI 实战指南：从安装到常用命令",
     "summary": "GitHub CLI（gh）的安装配置与常用命令使用指南。"
   },
   "curl相关使用": {
-    "title": "curl——实用的网络传输工具",
+    "title": "curl 实战速查：下载、请求与调试一把梭",
     "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
   },
   "arch-swap-hibernate": {
-    "title": "Arch Linux 配置 Swap 分区并启用休眠",
+    "title": "Arch 休眠总失败？Swap 分区配置一次到位",
     "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
   },
   "cnblogs-18874518": {
-    "title": "archlinux如何安装及配置从浏览器获取的软件包",
+    "title": "Arch 装不了官网软件包？两种方法轻松搞定",
     "summary": "在 Arch 上安装 JetBrains 等从官网下载的预编译软件包的两种方法。"
   },
   "cnblogs-18967362": {
-    "title": "Linux中常用的查找文件和文件夹的方法",
+    "title": "Linux 找文件从入门到精通",
     "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
   },
   "cnblogs-18924572": {
@@ -104,11 +100,11 @@
     "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
   },
   "cnblogs-18959607": {
-    "title": "Github内嵌子仓库",
+    "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
     "summary": "对比 Git Submodule 与 Subtree 两种在仓库内嵌子仓库的方案与用法。"
   },
   "git worktree教程": {
-    "title": "Git Worktree 教程",
+    "title": "Git Worktree：一台电脑同时开多条工作线",
     "summary": "Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发"
   },
   "cnblogs-18790660": {
