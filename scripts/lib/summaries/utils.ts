@@ -73,7 +73,9 @@ export function isCacheValid(cache: SummariesCache, model: string): boolean {
 }
 
 export async function getPlainText(markdown: string): Promise<string> {
-  const result = await remark().use(strip).process(markdown);
+  // Drop fenced code blocks entirely so the LLM summarizes prose, not code.
+  const withoutCode = markdown.replace(/```[\s\S]*?```/g, ' ');
+  const result = await remark().use(strip).process(withoutCode);
   return String(result)
     .replace(/^import\s+.*$/gm, '')
     .replace(/^export\s+.*$/gm, '')

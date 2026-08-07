@@ -10,6 +10,8 @@ import svgr from 'vite-plugin-svgr';
 import { rm } from 'node:fs/promises';
 import { blogLayoutConfig } from './src/config/blogLayoutConfig.js';
 import { defaultContentConfig } from './src/constants/content-config.js';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import { remarkLinkEmbed } from './src/lib/markdown/remark-link-embed.js';
 import { rehypeImagePlaceholder } from './src/lib/markdown/rehype-image-placeholder.js';
 
@@ -35,6 +37,7 @@ export default defineConfig({
   markdown: {
     gfm: true,
     remarkPlugins: [
+      remarkMath,
       [
         remarkLinkEmbed,
         {
@@ -54,6 +57,7 @@ export default defineConfig({
           },
         },
       ],
+      rehypeKatex,
       rehypeImagePlaceholder,
     ],
     syntaxHighlight: {

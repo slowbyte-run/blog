@@ -40,6 +40,8 @@ export function getPostHref(
   post: BlogPost,
   indexMap?: Map<string, number>,
 ): string {
+  if (post.data?.link) return `${Routes.Post}/${post.data.link}`;
+
   if (indexMap) {
     const index = getPostIndex(post, indexMap);
     if (index) return `${Routes.Post}/${index}`;

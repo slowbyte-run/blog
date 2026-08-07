@@ -30,7 +30,7 @@ export async function getStaticPaths() {
 
   return postCollections.map((post) => {
     const postIndex = getPostIndex(post, postIndexMap);
-    const slug = postIndex ? String(postIndex) : post.data?.link ?? post.id;
+    const slug = post.data?.link ?? (postIndex ? String(postIndex) : post.id);
     return {
       params: { slug },
       props: { post },
