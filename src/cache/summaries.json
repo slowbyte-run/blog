@@ -83,6 +83,10 @@
     "title": "gh相关命令使用指南",
     "summary": "GitHub CLI（gh）的安装配置与常用命令使用指南。"
   },
+  "curl相关使用": {
+    "title": "curl——实用的网络传输工具",
+    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
+  },
   "arch-swap-hibernate": {
     "title": "Arch Linux 配置 Swap 分区并启用休眠",
     "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"

@@ -205,14 +205,14 @@
       "similarity": 0.341
     },
     {
+      "slug": "curl相关使用",
+      "title": "curl——实用的网络传输工具",
+      "similarity": 0.325
+    },
+    {
       "slug": "cnblogs-18874306",
       "title": "解决git将本地与远程仓库连接发生的冲突",
       "similarity": 0.319
-    },
-    {
-      "slug": "cnblogs-18905490",
-      "title": "windows下git的安装以及配置",
-      "similarity": 0.315
     }
   ],
   "cnblogs-18773647": [
@@ -566,6 +566,33 @@
       "similarity": 0.449
     }
   ],
+  "curl相关使用": [
+    {
+      "slug": "cnblogs-18927584",
+      "title": "gh相关命令使用指南",
+      "similarity": 0.396
+    },
+    {
+      "slug": "cnblogs-18967362",
+      "title": "Linux中常用的查找文件和文件夹的方法",
+      "similarity": 0.343
+    },
+    {
+      "slug": "cnblogs-19020181",
+      "title": "电脑使用ssh连接termux",
+      "similarity": 0.325
+    },
+    {
+      "slug": "cnblogs-18790711",
+      "title": "C++字符串分割方法",
+      "similarity": 0.323
+    },
+    {
+      "slug": "cnblogs-18905490",
+      "title": "windows下git的安装以及配置",
+      "similarity": 0.296
+    }
+  ],
   "arch-swap-hibernate": [
     {
       "slug": "cnblogs-19211892",
@@ -642,9 +669,9 @@
       "similarity": 0.383
     },
     {
-      "slug": "cnblogs-18924162",
-      "title": "算法竞赛中的Lowbit",
-      "similarity": 0.341
+      "slug": "curl相关使用",
+      "title": "curl——实用的网络传输工具",
+      "similarity": 0.343
     }
   ],
   "cnblogs-18924572": [
