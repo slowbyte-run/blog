@@ -8,9 +8,10 @@ import TwoColumnLayout from '@components/layout/TwoColumnLayout.astro';
 import LayoutFooter from '@components/layout/LayoutFooter';
 import { CONTENT_PADDING } from '@constants/layout';
 import Layout from '@layouts/Layout.astro';
+import { blogLayoutConfig } from '@/config/blogLayoutConfig';
 import { getLayoutFooterData } from '@lib/layout/footer-data';
 
-const title = '友情链接 | snowの博客';
+const title = `友情链接 | ${blogLayoutConfig.title}`;
 const description = '我的小伙伴们,欢迎加友链~';
 
 const layoutFooterData = await getLayoutFooterData();
