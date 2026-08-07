@@ -1,1 +1,6 @@
-{}
+{
+  "arch配置swap分区并做休眠设置": {
+    "title": "Arch Linux 配置 Swap 分区并启用休眠",
+    "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
+  }
+}

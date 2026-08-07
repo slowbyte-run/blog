@@ -4,6 +4,11 @@
       "slug": "分布式锁",
       "title": "分布式锁",
       "similarity": 0.46
+    },
+    {
+      "slug": "arch配置swap分区并做休眠设置",
+      "title": "Arch Linux 配置 Swap 分区并启用休眠",
+      "similarity": 0.158
     }
   ],
   "分布式锁": [
@@ -11,6 +16,23 @@
       "slug": "限流与高级特性",
       "title": "Redisson 限流与高级特性",
       "similarity": 0.46
+    },
+    {
+      "slug": "arch配置swap分区并做休眠设置",
+      "title": "Arch Linux 配置 Swap 分区并启用休眠",
+      "similarity": 0.34
+    }
+  ],
+  "arch配置swap分区并做休眠设置": [
+    {
+      "slug": "分布式锁",
+      "title": "分布式锁",
+      "similarity": 0.34
+    },
+    {
+      "slug": "限流与高级特性",
+      "title": "Redisson 限流与高级特性",
+      "similarity": 0.158
     }
   ]
 }
