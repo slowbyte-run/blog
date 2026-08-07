@@ -44,7 +44,7 @@ export const blogLayoutConfig: BlogLayoutConfig = {
   author: 'slowbyte',
   site: 'https://blog.novaspace.me/',
   startYear: 2026,
-  keywords: ['slowbyte', 'acmer', 'archlinux', 'backend', 'blog'],
+  keywords: ['slowbyte', 'archlinux', 'backend', 'ai-agent', 'blog'],
   banner: {
     src: '/img/site_header_1920.webp',
     srcset: '/img/site_header_800.webp 800w,/img/site_header_1920.webp 1200w',

@@ -24,6 +24,7 @@ import { Routes } from '@constants/router';
 import LoadingIndicator from 'astro-loading-indicator/component';
 import { Tooltips } from 'astro-tooltips';
 import { ClientRouter } from 'astro:transitions';
+import RandomBackgrounds from '@components/common/RandomBackgrounds.astro';
 
 import '@styles/index.css';
 
@@ -87,6 +88,7 @@ const isPostPage = Astro.url.pathname.startsWith(`${Routes.Post}/`);
     <ClientRouter />
     <LoadingIndicator color="#e9536a" />
     <Tooltips />
+    <RandomBackgrounds />
     <!-- metadata -->
     <meta name="description" content={description} />
     <meta name="author" content={blogLayoutConfig.author} />

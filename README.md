@@ -1,87 +1,81 @@
-# snow-koharu
+# slowbyteのblog
 
-“snow” 风格的 Astro 博客主题。
+个人博客，基于 [astro-snow](https://github.com/XueHua-s/astro-snow) 主题搭建（Astro 5 + React 19 + TypeScript 的 SSG），ACG / 粉蓝配色。
 
-没什么太大的含义, snow就是我的称呼。我的博客主题代码自然是我的名字，也没什么问题吧？
+- 站点：https://blog.novaspace.me/
+- 源码仓库：`slowbyte-run/blog`
+- 部署仓库：`slowbyte-run/slowbyte-run.github.io`
 
-灵感没有，直接照搬，做了一些优化。
-[astro-koharu](https://github.com/cosZone/astro-koharu)
+## ✨ 功能特性
 
-## 功能优化
+- **提交即部署**：push 到 `main` 自动构建并发布到 GitHub Pages
+- **随机背景图**：`source/img/backgrounds/` 下的 webp 图片作为横幅 / 文章封面，构建时随机分配，页面每次加载还会再次随机换图
+- **AI 摘要**：构建时自动生成文章摘要（OpenAI 兼容协议，默认 DeepSeek）
+- **语义推荐**：本地 transformers.js 计算文章相似度，无需 API key
+- **无后端搜索**：基于 Pagefind 的全站搜索，仅构建时生成索引
+- **Markdown 增强**：GFM、代码高亮、自动目录、Mermaid 图表、LQIP 渐变占位
+- 优雅的深色 / 浅色主题切换、阅读进度、多分类 / 多标签、归档、友链、Giscus 评论
 
-在基于 [astro-koharu](https://github.com/cosZone/astro-koharu) 的基础做了以下修整。
-
-删除了一些可能大多数人都不太想要的一些功能, 和增加 / 更改了一些东西
-
-- 增加了引导页
-- 增加了github-action构建配置自动部署GitHubPage, AI摘要Action配置.
-- 提取了一些配置到 src/config 中，方便快速修改站点。
-- 增加了 @ 路径修饰符。
-- 删除RSS-XML抓取生成页功能
-- 删除了大多数人用不到的 Mermaid 优化脚本
-- 移除了svg图标使用 @fortawesome/fontawesome-fre 字体图标库
-- 删除了周刊功能
-- 调整了部分项目架构布局。ai摘要数据位置从 src/assets/summaries.json 改为 src/cache/summaries.json
-- 增加了随机背景图生成方法, `srouce/img/backgrounds` 放置二次元图床(仅支持webp格式)
-- 调整md文章为自动生成，根据文章的 `date` 字段排序生成目标文章html页路径。如`https://host/post/number`
-- 移除了二级分类 & 精选分类
-- 精选分类位置 更换为生成。修改为构建时根据`source/posts/**.md`的 `categories` 字段进行分类
-- 优化部分代码, 拆分为ReactHook, 使用react-use简化监听操作。
-- 评论插件更换为github 应用, giscus. 使用更加简单。
-- 一些比较重逻辑的astro组件删除，重写为react组件。
-- 尽量保持 astro 提供layout. 和内容生成.
-- 优化了header的背景动画
-
-## 风格描述
-
-- 基于 **Astro**，静态输出，加载轻快
-- 萌系 / 二次元 / 粉蓝配色，适合 ACG、前端、手账向个人站
-- 支持多分类、多标签，但不会强迫你用复杂信息架构
-- 尽可能的减少首屏JS性能开销
-- 使用 pagefind 实现无后端的全站搜索
-- LQIP（低质量图片占位符），图片加载前显示渐变色占位
-
-### 本地开发
-
-1. 克隆项目到本地
+## 🚀 本地开发
 
 ```bash
-git clone https://github.com/XueHua-s/astro-snow
+pnpm install
+pnpm dev       # http://localhost:4321
 ```
 
-2. 进入项目目录并安装依赖
+构建与校验（代码变更后至少执行）：
 
 ```bash
-pnpm i
+pnpm build:ci          # 生产构建
+pnpm check             # Astro 类型检查
+pnpm run lint
+pnpm run typecheck
+pnpm test
+pnpm run test:e2e      # 需先 pnpm exec playwright install
+pnpm run format:check
 ```
 
-3. 启动项目
+## ✍️ 写文章
+
+1. 在 `source/posts/` 新建 `.md` 文件。frontmatter 必填 `title`、`date`，可选 `description / cover / tags / categories / subtitle / catalog / tocNumbering / sticky / draft`。
+2. 图片放在 `source/img/`（如 `source/img/posts/`），markdown 里用 `/img/...` 或相对路径引用。
+3. 提交并推送，自动部署：
 
 ```bash
-pnpm dev
+git pull --rebase        # 拉取上次 CI 生成的缓存提交
+git add .
+git commit -m "feat: 新增 xxx 文章"
+git push
 ```
 
-## 功能特性
+> 注意：提交信息不要带 `[skip ci]`，否则不会触发部署；本地 pre-commit 会跑校验套件（check + typecheck + lint + format:check + test）。
 
-- 提交自动部署GithubPage
-- 构建时自动ai摘要
-- 基于 Astro 5.x，静态站点生成，性能优异
-- 优雅的深色/浅色主题切换
-- 基于 Pagefind 的无后端全站搜索
-- 完整的 Markdown 增强功能（GFM、代码高亮、自动目录、Mermaid 图表）
-- 灵活的多级分类与标签系统
-- 响应式设计
-- 阅读进度条与阅读时间估算
-- 智能目录导航，支持 CSS 计数器自动编号（可按文章关闭）
-- 移动端文章阅读头部（显示当前章节标题、圆形阅读进度、可展开目录）
-- 友链系统与归档页面
-- [可开关] 基于语义相似度的智能文章推荐系统，使用 [transformers.js](https://huggingface.co/docs/transformers.js) 在本地生成文章嵌入向量，计算文章间的语义相似度
+## ⚙️ 站点配置
+
+站点信息分散在多个配置文件，改标题 / 简介需要同步：
+
+- `src/config/blogLayoutConfig.ts`：全局站点信息 + 头部社交栏（`blogSocialConfig`）
+- `src/config/indexConfig.ts`：引导页 baseLayout
+- `src/config/homePageConfig.ts`：引导页头像 / 标语 / 社交按钮（`homePageLinks`）
+- `src/components/home/HomePage.tsx`：`getSocialButtons`（与 `homePageLinks` 同步）
+- `source/img/avatar.png` 与 `homePageConfig.avatarUrl`：头像
+- `source/CNAME`：自定义域名（`blog.novaspace.me`）
+
+> 社交链接存在两处（头部 `blogSocialConfig` 与引导页 `homePageLinks`），增删平台需同步修改 `SocialConfig` 类型、两处配置及 `getSocialButtons`。
+
+## 🚢 部署
+
+GitHub Actions（`.github/workflows/deploy.yml`）在 push 或手动触发时自动执行：
+
+1. 安装依赖
+2. 生成构建缓存（LQIP / AI 摘要 / 语义相似度）
+3. 构建静态站点
+4. 通过 `peaceiris/actions-gh-pages` 推送到 `slowbyte-run/slowbyte-run.github.io`
+
+仓库 Secrets 需配置：`DEPLOY_TOKEN`、`OPENAI_API_BASE_URL`、`OPENAI_API_KEY`、`OPENAI_MODEL`。
 
 ## 🙏 鸣谢
 
-使用字体[寒蝉全圆体](https://chinese-font.netlify.app/zh-cn/fonts/hcqyt/ChillRoundFRegular)
-
-感谢cosine姐的开源
-[astro-koharu](https://github.com/cosZone/astro-koharu)
-[cosine](https://github.com/yusixian)
-...
+- [astro-snow](https://github.com/XueHua-s/astro-snow) —— 本博客使用的主题
+- [astro-koharu](https://github.com/cosZone/astro-koharu) —— 主题灵感来源
+- 字体：[寒蝉全圆体](https://chinese-font.netlify.app/zh-cn/fonts/hcqyt/ChillRoundFRegular)

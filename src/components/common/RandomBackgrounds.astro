@@ -1,0 +1,26 @@
+---
+// FIXED: 客户端随机封面。SSG 构建期随机无法满足"每次刷新换图"，
+// 这里将背景图列表注入页面，在每次页面加载(astro:page-load)时重新洗牌
+// 并替换所有带 data-random-cover 标记的 img src，同页内尽量不重复。
+import { getBackgroundImages } from '@lib/backgrounds';
+
+const backgroundImages = await getBackgroundImages();
+---
+
+<script define:vars={{ backgroundImages }}>
+  document.addEventListener('astro:page-load', () => {
+    const pool = Array.isArray(backgroundImages) ? backgroundImages.slice() : [];
+    if (pool.length === 0) return;
+
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+
+    let cursor = 0;
+    document.querySelectorAll('img[data-random-cover]').forEach((img) => {
+      img.setAttribute('src', pool[cursor % pool.length]);
+      cursor++;
+    });
+  });
+</script>
