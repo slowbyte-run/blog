@@ -28,9 +28,8 @@ export const friendsData: FriendLink[] = [
     site: 'SheepChef Blog',
     url: 'https://shef.cc/',
     owner: 'SheepChef',
-    desc: '曾经有人说我是“向往天空的人”，喜欢蓝天的最大理由，无非是因为蓝天很“蓝”。从小到大，我对蓝天的形容词变换了无数个，一开始当然是最简单的“blue”，然后到“azure”和“cyan”，现在我更喜欢将其形容为“cyanotype”，蓝色的写真。',
-    image:
-      'https://shef.cc/wp-content/uploads/cropped-cropped-QQ-Logo-512x512.jpg',
+    desc: '蒼穹を越えて',
+    image: 'https://shef.cc/logo.png',
     color: '#5c67e6',
   },
   {
@@ -129,9 +128,9 @@ export const friendsIntro = {
   applyTitle: '欢迎加友链',
   applyDesc: '在本页留言,格式如下',
   exampleYaml: `- site: slowbyteのblog # 站点名称
-  url: https://blog.novaspace.me/ # 站点网址
-  owner: slowbyte # 昵称
-  desc: slow byte, steady build # 站点简介
+  url: https://blog.novaspace.me/
+  owner: slowbyte
+  desc: slow byte, steady build
   image: https://blog.novaspace.me/img/avatar.webp
   color: "#ffc0cb" # 图标色`,
 };
