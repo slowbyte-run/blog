@@ -2,7 +2,7 @@
 export const homePageProfile = {
   name: 'slowbyte',
   tagline: '“slow byte, steady build”',
-  avatarUrl: '/img/avatar.png',
+  avatarUrl: '/img/avatar.webp',
   avatarAlt: 'slowbyteAvatar',
   backgroundUrl: '/img/site_header_1920.webp',
   footerText: '© slowbyte - 2026',

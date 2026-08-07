@@ -39,7 +39,7 @@ export const blogLayoutConfig: BlogLayoutConfig = {
   subtitle: 'slow byte, steady build',
   name: 'slowbyte',
   description: 'Code · Learn · Grow 🔄',
-  avatar: '/img/avatar.png',
+  avatar: '/img/avatar.webp',
   showLogo: true,
   author: 'slowbyte',
   site: 'https://blog.novaspace.me/',

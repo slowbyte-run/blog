@@ -132,6 +132,6 @@ export const friendsIntro = {
   url: https://blog.novaspace.me/ # 站点网址
   owner: slowbyte # 昵称
   desc: slow byte, steady build # 站点简介
-  image: https://blog.novaspace.me/img/avatar.png
+  image: https://blog.novaspace.me/img/avatar.webp
   color: "#ffc0cb" # 图标色`,
 };

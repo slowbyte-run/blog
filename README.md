@@ -58,7 +58,7 @@ git push
 - `src/config/indexConfig.ts`：引导页 baseLayout
 - `src/config/homePageConfig.ts`：引导页头像 / 标语 / 社交按钮（`homePageLinks`）
 - `src/components/home/HomePage.tsx`：`getSocialButtons`（与 `homePageLinks` 同步）
-- `source/img/avatar.png` 与 `homePageConfig.avatarUrl`：头像
+- `source/img/avatar.webp` 与 `homePageConfig.avatarUrl`：头像
 - `source/CNAME`：自定义域名（`blog.novaspace.me`）
 
 > 社交链接存在两处（头部 `blogSocialConfig` 与引导页 `homePageLinks`），增删平台需同步修改 `SocialConfig` 类型、两处配置及 `getSocialButtons`。
