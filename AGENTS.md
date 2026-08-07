@@ -151,6 +151,6 @@ pnpm run generate:summaries      # AI 摘要（需 OPENAI_API_KEY）
 
 - 基础分支：`main`；remote 为 `slowbyte-run/blog`
 - 提交规范：Conventional Commits（commitlint 强制，type 枚举：feat/fix/docs/style/refactor/perf/test/build/ci/chore/revert）
-- **预提交 `.husky/pre-commit` 会跑完整套件**（check + typecheck + lint + format:check + test + test:e2e），提交较慢；lint-staged 仅配置于依赖，未启用
+- **预提交 `.husky/pre-commit` 会跑校验套件**（check + typecheck + lint + format:check + test），不含 e2e；e2e 需手动 `pnpm run test:e2e`。lint-staged 仅配置于依赖，未启用
 - 部署：GitHub Actions（`.github/workflows/deploy.yml`）构建后推送到 `slowbyte-run/slowbyte-run.github.io`，依赖仓库 secrets：`DEPLOY_TOKEN`、`OPENAI_API_BASE_URL`、`OPENAI_API_KEY`、`OPENAI_MODEL`
 - 自定义域名由 `source/CNAME`（`blog.novaspace.me`）声明，会随构建复制到 dist
