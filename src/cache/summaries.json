@@ -1,6 +1,158 @@
 {
-  "arch配置swap分区并做休眠设置": {
+  "cnblogs-18934890": {
+    "title": "随机数mt19937",
+    "summary": "C++ 中 mt19937 随机数生成器的原理与使用详解。"
+  },
+  "cnblogs-18791092": {
+    "title": "计算只含加减乘除的中缀表达式",
+    "summary": "用栈实现只含加减乘除的中缀表达式求值（转后缀 + 求值）。"
+  },
+  "cnblogs-19136430": {
+    "title": "解决scoop安装的anaconda无法在商店版powershell使用的问题",
+    "summary": "解决通过 Scoop 安装的 Anaconda 无法在 Microsoft Store 版 PowerShell 中激活 conda 的问题。"
+  },
+  "cnblogs-18874306": {
+    "title": "解决git将本地与远程仓库连接发生的冲突",
+    "summary": "解决重建本地仓库后重新连接远程仓库时的冲突。"
+  },
+  "cnblogs-18768639": {
+    "title": "裴蜀定理与扩展欧几里得算法",
+    "summary": "裴蜀定理与扩展欧几里得算法的原理与应用。"
+  },
+  "cnblogs-18924162": {
+    "title": "算法竞赛中的Lowbit",
+    "summary": "Lowbit 位运算的原理、计算方法与常见应用。"
+  },
+  "cnblogs-18803922": {
+    "title": "矩阵连乘问题",
+    "summary": "矩阵连乘最优计算顺序的动态规划解法（C++）。"
+  },
+  "cnblogs-19020181": {
+    "title": "电脑使用ssh连接termux",
+    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
+  },
+  "cnblogs-18773647": {
+    "title": "欧拉线性筛",
+    "summary": "欧拉线性筛求素数的算法模板。"
+  },
+  "cnblogs-18804703": {
+    "title": "整数划分问题",
+    "summary": "整数划分（Partition）的定义、递归实现与扩展。"
+  },
+  "cnblogs-18799609": {
+    "title": "归并排序与快速排序",
+    "summary": "归并排序与快速排序的实现与要点对比。"
+  },
+  "cnblogs-19211892": {
+    "title": "如何用live盘对archlinux在无法在原系统使用timeshift的情况下进行回退",
+    "summary": "Arch 系统无法进入时，用 live 盘配合 btrfs 快照在无法使用 timeshift 的情况下回退系统的步骤。"
+  },
+  "cnblogs-18870773": {
+    "title": "如何将使用Qt Creator制作的项目打包成可执行文件？",
+    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
+  },
+  "cnblogs-18897189": {
+    "title": "前缀数组和后缀数组",
+    "summary": "前缀数组与后缀数组的原理、实现及例题讲解。"
+  },
+  "cnblogs-18800457": {
+    "title": "分治算法",
+    "summary": "分治算法思想，结合 NOIP 幂次方例题与实现。"
+  },
+  "cnblogs-18924113": {
+    "title": "使用git将远程仓库提交完全覆盖/不覆盖本地",
+    "summary": "两种 git 场景的处理：远程仓库完全覆盖本地、以及拉取远程但保留本地改动。"
+  },
+  "cnblogs-18934841": {
+    "title": "位运算相关宏定义",
+    "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
+  },
+  "cnblogs-18905490": {
+    "title": "windows下git的安装以及配置",
+    "summary": "Windows 下安装并配置 Git 的分步说明（含截图）。"
+  },
+  "cnblogs-18878863": {
+    "title": "git提交说明的规范性",
+    "summary": "Conventional Commits 提交规范：type 类型、作用域与提交示例。"
+  },
+  "cnblogs-18967266": {
+    "title": "git回退操作",
+    "summary": "git 回退操作的常见场景与命令整理。"
+  },
+  "cnblogs-18927584": {
+    "title": "gh相关命令使用指南",
+    "summary": "GitHub CLI（gh）的安装配置与常用命令使用指南。"
+  },
+  "arch-swap-hibernate": {
     "title": "Arch Linux 配置 Swap 分区并启用休眠",
     "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
+  },
+  "cnblogs-18874518": {
+    "title": "archlinux如何安装及配置从浏览器获取的软件包",
+    "summary": "在 Arch 上安装 JetBrains 等从官网下载的预编译软件包的两种方法。"
+  },
+  "cnblogs-18967362": {
+    "title": "Linux中常用的查找文件和文件夹的方法",
+    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
+  },
+  "cnblogs-18924572": {
+    "title": "LCA（最近公共祖先问）算法",
+    "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
+  },
+  "cnblogs-18959607": {
+    "title": "Github内嵌子仓库",
+    "summary": "对比 Git Submodule 与 Subtree 两种在仓库内嵌子仓库的方案与用法。"
+  },
+  "git worktree教程": {
+    "title": "Git Worktree 教程",
+    "summary": "Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发"
+  },
+  "cnblogs-18790660": {
+    "title": "Contest3924 - 计科23级算法设计与分析平时作业-03",
+    "summary": "计科算法作业：Knight Moves 等 BFS 最短路径模板题。"
+  },
+  "cnblogs-18786572": {
+    "title": "Contest3923 - 计科23级算法设计与分析上机作业-03",
+    "summary": "计科算法作业：线性欧拉筛等模板题。"
+  },
+  "cnblogs-18773733": {
+    "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
+    "summary": "计科算法作业：质因数分解模板题。"
+  },
+  "cnblogs-18762208": {
+    "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
+    "summary": "计科算法作业：DNA Sorting 等模拟题。"
+  },
+  "cnblogs-18762083": {
+    "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
+    "summary": "计科算法作业：整除判断等模拟题。"
+  },
+  "cnblogs-18922296": {
+    "title": "Codeforces Round 1029 (Div. 3)",
+    "summary": "Codeforces Round 1029 (Div.3) 的 A-G 题解，覆盖贪心、构造、并查集与 LCA，含 C++ 实现。"
+  },
+  "cnblogs-18910584": {
+    "title": "Codeforces Round 1028 (Div. 2)",
+    "summary": "Codeforces Round 1028 (Div.2) 的题解与思路。"
+  },
+  "cnblogs-18798045": {
+    "title": "Codeforces Round 1013 (Div. 3)",
+    "summary": "Codeforces Round 1013 (Div.3) 的题解与思路。"
+  },
+  "cnblogs-18790711": {
+    "title": "C++字符串分割方法",
+    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
+  },
+  "cnblogs-18756619": {
+    "title": "8159: GCD等于XOR（GCD XOR）",
+    "summary": "数论：gcd(a,b)=a⊕b 的性质推导与求解。"
+  },
+  "cnblogs-18758374": {
+    "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
+    "summary": "数论：求一组和为 n 且 LCM 最小的数的题解。"
+  },
+  "cnblogs-18679016": {
+    "title": "8008: 纸牌游戏（ \"Accordian\" Patience）",
+    "summary": "用栈数组模拟纸牌游戏（Accordian Patience）的题解。"
   }
 }
