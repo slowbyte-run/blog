@@ -16,7 +16,7 @@ export const SOURCE_CONFIG: Record<
     icon: <MingcuteAiFillSvg className="text-primary size-4" />,
   },
   auto: {
-    label: '摘要',
+    label: 'AI摘要',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
