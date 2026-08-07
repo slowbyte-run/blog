@@ -1,5 +1,5 @@
 ---
-title: '如何将使用Qt Creator制作的项目打包成可执行文件？'
+title: 'Qt 项目打包成可执行文件：音乐播放器实战'
 date: '2025-05-11 14:30'
 link: 'cnblogs-18870773'
 description: '以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。'

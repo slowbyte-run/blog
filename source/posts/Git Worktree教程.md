@@ -16,7 +16,7 @@
 # tocNumbering   : 目录标题自动编号，默认 true
 # sticky         : 置顶（当前版本列表尚未生效）
 # draft          : true 时仅本地可见，不会发布
-title: Git Worktree 教程
+title: 'Git Worktree：一台电脑同时开多条工作线'
 date: 2026-05-05
 description: Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发
 # link: my-post-id

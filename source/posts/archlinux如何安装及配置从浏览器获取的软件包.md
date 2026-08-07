@@ -1,5 +1,5 @@
 ---
-title: 'archlinux如何安装及配置从浏览器获取的软件包'
+title: 'Arch 装不了官网软件包？两种方法轻松搞定'
 date: '2025-05-13 16:55'
 link: 'cnblogs-18874518'
 description: '在 Arch 上安装 JetBrains 等从官网下载的预编译软件包的两种方法。'

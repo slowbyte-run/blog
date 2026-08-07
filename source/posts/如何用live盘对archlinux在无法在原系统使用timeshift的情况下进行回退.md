@@ -1,5 +1,5 @@
 ---
-title: '如何用live盘对archlinux在无法在原系统使用timeshift的情况下进行回退'
+title: 'Arch 系统救急：live 盘 + btrfs 快照无痛回退'
 date: '2025-11-11 23:19'
 link: 'cnblogs-19211892'
 description: 'Arch 系统无法进入时，用 live 盘配合 btrfs 快照在无法使用 timeshift 的情况下回退系统的步骤。'

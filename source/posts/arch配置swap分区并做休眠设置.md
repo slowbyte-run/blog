@@ -1,5 +1,5 @@
 ---
-title: Arch Linux 配置 Swap 分区并启用休眠
+title: 'Arch 休眠总失败？Swap 分区配置一次到位'
 date: 2025-11-15 16:01
 description: 双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。
 link: arch-swap-hibernate

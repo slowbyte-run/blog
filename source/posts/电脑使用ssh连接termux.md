@@ -1,5 +1,5 @@
 ---
-title: '电脑使用ssh连接termux'
+title: '把手机当服务器：电脑 SSH 连接 Termux 实战'
 date: '2025-08-03 16:11'
 link: 'cnblogs-19020181'
 description: '在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。'

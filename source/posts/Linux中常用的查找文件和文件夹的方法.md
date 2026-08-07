@@ -1,5 +1,5 @@
 ---
-title: 'Linux中常用的查找文件和文件夹的方法'
+title: 'Linux 找文件从入门到精通'
 date: '2025-07-05 15:59'
 link: 'cnblogs-18967362'
 description: '整理 Linux 下 find 等常用查找文件与目录的命令及用法。'

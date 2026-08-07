@@ -1,5 +1,5 @@
 ---
-title: 'gh相关命令使用指南'
+title: 'GitHub CLI 实战指南：从安装到常用命令'
 date: '2025-06-13 19:46'
 link: 'cnblogs-18927584'
 description: 'GitHub CLI（gh）的安装配置与常用命令使用指南。'

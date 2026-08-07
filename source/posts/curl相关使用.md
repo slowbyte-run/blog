@@ -1,5 +1,5 @@
 ---
-title: curl——实用的网络传输工具
+title: 'curl 实战速查：下载、请求与调试一把梭'
 date: 2026-08-07 20:47
 description: curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议
 tags:

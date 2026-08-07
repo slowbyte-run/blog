@@ -1,5 +1,5 @@
 ---
-title: 'git回退操作'
+title: 'Git 回退全场景速查：工作区、暂存区、本地、远程'
 date: '2025-07-05 15:59'
 link: 'cnblogs-18967266'
 description: 'git 回退操作的常见场景与命令整理。'

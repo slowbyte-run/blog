@@ -1,5 +1,5 @@
 ---
-title: 'git提交说明的规范性'
+title: '让你的 Git 提交信息更专业：Conventional Commits'
 date: '2025-05-15 18:24'
 link: 'cnblogs-18878863'
 description: 'Conventional Commits 提交规范：type 类型、作用域与提交示例。'

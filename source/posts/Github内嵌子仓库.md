@@ -1,5 +1,5 @@
 ---
-title: 'Github内嵌子仓库'
+title: '子仓库怎么塞进父仓库：Submodule 与 Subtree 对比'
 date: '2025-07-01 14:32'
 link: 'cnblogs-18959607'
 description: '对比 Git Submodule 与 Subtree 两种在仓库内嵌子仓库的方案与用法。'
