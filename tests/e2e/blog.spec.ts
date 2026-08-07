@@ -80,10 +80,7 @@ test.describe('Blog e2e regression suite', () => {
   }) => {
     const runtime = setupRuntimeErrorCollector(page);
 
-    for (const path of [
-      '/blog/categories',
-      '/blog/categories/学习笔记',
-    ]) {
+    for (const path of ['/blog/categories', '/blog/categories/学习笔记']) {
       const response = await page.goto(path, {
         waitUntil: 'domcontentloaded',
         timeout: 30000,

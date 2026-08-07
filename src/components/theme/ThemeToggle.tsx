@@ -64,8 +64,7 @@ export default function ThemeToggle() {
     }
 
     let transition:
-      | { ready: Promise<void>; finished: Promise<void> }
-      | undefined;
+      { ready: Promise<void>; finished: Promise<void> } | undefined;
     try {
       transition = startViewTransition.call(document, () => {
         applyTheme(willBeDark);

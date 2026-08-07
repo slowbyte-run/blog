@@ -21,11 +21,7 @@ export type ButtonVariant =
   | 'link'
   | 'gradient-shoka';
 export type BadgeVariant =
-  | 'default'
-  | 'secondary'
-  | 'destructive'
-  | 'outline'
-  | 'shoka-tag';
+  'default' | 'secondary' | 'destructive' | 'outline' | 'shoka-tag';
 
 /**
  * Open/close state for interactive components
