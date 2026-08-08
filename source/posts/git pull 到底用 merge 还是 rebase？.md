@@ -1,6 +1,6 @@
 ---
 title: 'git pull 到底用 merge 还是 rebase？'
-date: '2026-08-08'
+date: '2026-08-08 20:00'
 description: 'git pull 默认走 merge，但 --rebase 能让历史更干净。两种方式什么时候用、冲突怎么处理，一篇讲清。'
 link: 'git-pull-merge-rebase'
 tags:

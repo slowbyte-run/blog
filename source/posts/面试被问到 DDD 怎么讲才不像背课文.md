@@ -1,6 +1,6 @@
 ---
 title: '面试被问到 DDD，怎么讲才不像背课文？'
-date: '2026-08-08'
+date: '2026-08-08 21:30'
 description: '用一条因果链讲清 DDD：为什么需要它、限界上下文、聚合、战术组件，附钱包转账完整用例与面试速查清单。'
 link: 'ddd-interview-guide'
 tags:

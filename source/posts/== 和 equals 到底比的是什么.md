@@ -1,6 +1,6 @@
 ---
 title: '== 和 equals 到底比的是什么？'
-date: '2026-08-08'
+date: '2026-08-08 22:00'
 description: '== 比引用、equals 比内容：String 常量池、Integer 缓存池、BigDecimal、hashCode 配套、null 安全，附决策树与面试速查清单。'
 link: 'java-equals-vs-double-equals'
 tags:
