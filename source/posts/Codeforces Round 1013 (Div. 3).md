@@ -245,7 +245,7 @@ signed main() {
 
 ### 思路
 
-要使得\(p = lcm(a, b) / gcd(a, b)\)，也就是\(p = a \* b / gcd^2(a, b)\)，可以枚举\(gcd\)，然后枚举\(p\)，满足\(p \* gcd(a, b) <= n\)时答案加一。
+要使得\(p = lcm(a, b) / gcd(a, b)\)，也就是\(p = a \times b / gcd^2(a, b)\)，可以枚举\(gcd\)，然后枚举\(p\)，满足\(p \times gcd(a, b) <= n\)时答案加一。
 
 ### 示例代码
 

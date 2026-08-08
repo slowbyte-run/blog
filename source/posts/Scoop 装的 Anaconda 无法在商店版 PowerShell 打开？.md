@@ -10,6 +10,8 @@ categories:
   - 'Tools'
 ---
 
+商店版 PowerShell 里敲 `conda` 一直提示找不到命令，当时我还以为是 Scoop 装岔了，重装了好几遍都不行，后来才明白是启动时压根没加载 conda 的 hook。折腾的过程按步骤记下来，从临时启用到最后固化进 profile。
+
 ## 1) 不依赖 profile，先在当前会话“临时启用” conda
 
 ```powershell

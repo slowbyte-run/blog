@@ -9,6 +9,8 @@ categories:
   - 'ArchLinux'
 ---
 
+当时我系统更新完直接进不去桌面，timeshift 又因为在原系统里根本没法启动而用不上，整个人是懵的。好在平时留了 btrfs 快照，我又有个 live 盘，折腾一圈把系统捞了回来。过程记录一下，给同样遇险的人参考。
+
 ## 制作 arch live 盘
 
 工具： ventoy等制作启动盘的工具，archlinux的iso文件，usb等移动硬盘

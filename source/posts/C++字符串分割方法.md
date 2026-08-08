@@ -10,7 +10,7 @@ categories:
   - 'Algorithm'
 ---
 
-本文只讲解使用`getline`与`stringstream`对字符串进行分割，其他方法请参考其他博客
+当时写题碰到要按分隔符拆字符串，我习惯用 `getline` 配 `stringstream` 这套，顺手记一下用法。其他分割方法（比如用 `find` 手动切）我就不写了，网上资料一大堆。
 
 ## getline与stringsteam结合
 
