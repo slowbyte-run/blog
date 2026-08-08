@@ -1,4 +1,8 @@
 {
+  "ddd-interview-guide": {
+    "title": "面试被问到 DDD，怎么讲才不像背课文？",
+    "summary": "用一条因果链讲清 DDD：为什么需要它、限界上下文、聚合、战术组件，附钱包转账完整用例与面试速查清单。"
+  },
   "cnblogs-18934890": {
     "title": "随机数mt19937",
     "summary": "C++ 中 mt19937 随机数生成器的原理与使用详解。"
@@ -62,6 +66,10 @@
   "cnblogs-18924113": {
     "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
     "summary": "两种 git 场景的处理：远程仓库完全覆盖本地、以及拉取远程但保留本地改动。"
+  },
+  "git-pull-merge-rebase": {
+    "title": "git pull 到底用 merge 还是 rebase？",
+    "summary": "git pull 默认走 merge，但 --rebase 能让历史更干净。两种方式什么时候用、冲突怎么处理，一篇讲清。"
   },
   "curl 实战速查：下载、请求与调试一把梭": {
     "title": "curl 实战速查：下载、请求与调试一把梭",
@@ -146,6 +154,10 @@
   "arch-swap-hibernate": {
     "title": "Arch 休眠总失败？Swap 分区配置一次到位",
     "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
+  },
+  "java-equals-vs-double-equals": {
+    "title": "== 和 equals 到底比的是什么？",
+    "summary": "== 比引用、equals 比内容：String 常量池、Integer 缓存池、BigDecimal、hashCode 配套、null 安全，附决策树与面试速查清单。"
   },
   "cnblogs-18756619": {
     "title": "8159: GCD等于XOR（GCD XOR）",
