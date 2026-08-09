@@ -126,7 +126,15 @@ export const friendsData: FriendLink[] = [
     owner: '张洪Heo',
     desc: '分享设计与科技生活',
     image: 'https://img.zhheo.com/i/67d8fa75943e4.webp',
-    color: '#f8ffc2',
+    color: '#838cdd',
+  },
+  {
+    site: 'Serendipity的博客',
+    url: 'https://blog.liuhangyv.top/',
+    owner: 'Serendipity',
+    desc: 'AI技术分享 × 行业动态 × 创新实践',
+    image: 'https://blog.liuhangyv.top/upload/head-1785924834877.png',
+    color: '#5084d9',
   },
 ];
 
