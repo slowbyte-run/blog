@@ -120,6 +120,14 @@ export const friendsData: FriendLink[] = [
     image: 'https://avatars.githubusercontent.com/u/84063341?v=4',
     color: '#1c8adb',
   },
+  {
+    site: '张洪Heo的博客',
+    url: 'https://blog.zhheo.com/',
+    owner: '张洪Heo',
+    desc: '分享设计与科技生活',
+    image: 'https://img.zhheo.com/i/67d8fa75943e4.webp',
+    color: '#f8ffc2',
+  },
 ];
 
 export const friendsIntro = {
