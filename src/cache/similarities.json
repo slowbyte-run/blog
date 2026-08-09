@@ -6,6 +6,11 @@
       "similarity": 0.561
     },
     {
+      "slug": "spring-circular-dependency",
+      "title": "Spring 循环依赖怎么解决？",
+      "similarity": 0.494
+    },
+    {
       "slug": "cnblogs-18762208",
       "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
       "similarity": 0.448
@@ -19,11 +24,6 @@
       "slug": "cnblogs-18934841",
       "title": "位运算相关宏定义",
       "similarity": 0.429
-    },
-    {
-      "slug": "cnblogs-18762083",
-      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
-      "similarity": 0.426
     }
   ],
   "cnblogs-18934890": [
@@ -566,6 +566,33 @@
       "similarity": 0.492
     }
   ],
+  "spring-circular-dependency": [
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.494
+    },
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.431
+    },
+    {
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.401
+    },
+    {
+      "slug": "cnblogs-18874306",
+      "title": "git 重建后连不上远程仓库？冲突这样解决",
+      "similarity": 0.401
+    },
+    {
+      "slug": "java-equals-vs-double-equals",
+      "title": "== 和 equals 到底比的是什么？",
+      "similarity": 0.398
+    }
+  ],
   "cnblogs-19136430": [
     {
       "slug": "cnblogs-18874518",
@@ -1081,6 +1108,11 @@
   ],
   "java-equals-vs-double-equals": [
     {
+      "slug": "spring-circular-dependency",
+      "title": "Spring 循环依赖怎么解决？",
+      "similarity": 0.398
+    },
+    {
       "slug": "java-interface-vs-abstract-class",
       "title": "接口和抽象类到底怎么选？",
       "similarity": 0.397
@@ -1099,11 +1131,6 @@
       "slug": "cnblogs-18762208",
       "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
       "similarity": 0.381
-    },
-    {
-      "slug": "cnblogs-18799609",
-      "title": "归并排序与快速排序",
-      "similarity": 0.372
     }
   ],
   "cnblogs-18756619": [
