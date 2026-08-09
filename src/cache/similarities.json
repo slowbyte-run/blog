@@ -1,6 +1,11 @@
 {
   "ddd-interview-guide": [
     {
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.561
+    },
+    {
       "slug": "cnblogs-18762208",
       "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
       "similarity": 0.448
@@ -19,11 +24,6 @@
       "slug": "cnblogs-18762083",
       "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
       "similarity": 0.426
-    },
-    {
-      "slug": "cnblogs-18967362",
-      "title": "Linux 找文件从入门到精通",
-      "similarity": 0.425
     }
   ],
   "cnblogs-18934890": [
@@ -240,6 +240,33 @@
       "slug": "cnblogs-18799609",
       "title": "归并排序与快速排序",
       "similarity": 0.45
+    }
+  ],
+  "java-interface-vs-abstract-class": [
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.561
+    },
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.436
+    },
+    {
+      "slug": "cnblogs-18799609",
+      "title": "归并排序与快速排序",
+      "similarity": 0.429
+    },
+    {
+      "slug": "cnblogs-18762083",
+      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
+      "similarity": 0.419
+    },
+    {
+      "slug": "cnblogs-18804703",
+      "title": "整数划分问题",
+      "similarity": 0.418
     }
   ],
   "cnblogs-19020181": [
@@ -507,9 +534,9 @@
       "similarity": 0.363
     },
     {
-      "slug": "git-pull-merge-rebase",
-      "title": "git pull 到底用 merge 还是 rebase？",
-      "similarity": 0.314
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.333
     }
   ],
   "cnblogs-18905490": [
@@ -1054,6 +1081,11 @@
   ],
   "java-equals-vs-double-equals": [
     {
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.397
+    },
+    {
       "slug": "ddd-interview-guide",
       "title": "面试被问到 DDD，怎么讲才不像背课文？",
       "similarity": 0.385
@@ -1072,11 +1104,6 @@
       "slug": "cnblogs-18799609",
       "title": "归并排序与快速排序",
       "similarity": 0.372
-    },
-    {
-      "slug": "cnblogs-18804703",
-      "title": "整数划分问题",
-      "similarity": 0.362
     }
   ],
   "cnblogs-18756619": [

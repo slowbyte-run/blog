@@ -35,6 +35,10 @@
     "title": "整数划分问题",
     "summary": "整数划分（Partition）的定义、递归实现与扩展。"
   },
+  "java-interface-vs-abstract-class": {
+    "title": "接口和抽象类到底怎么选？",
+    "summary": "及格回答 vs 高分回答：is-a 与 can-do、单继承限制、模板方法与能力组合、default 方法菱形冲突，附三个连环追问与速查表。"
+  },
   "cnblogs-19020181": {
     "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
     "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
