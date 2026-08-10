@@ -1,6 +1,6 @@
 ---
 title: 'Spring 循环依赖怎么解决？'
-date: '2026-08-09'
+date: '2026-08-09 17:32'
 description: '三级缓存是怎么流转的、为什么是三级不是两级、构造器注入为何无解、Boot 2.6 为何默认禁止，附 getSingleton 伪代码与面试速查表。'
 link: 'spring-circular-dependency'
 tags:
@@ -8,7 +8,7 @@ tags:
   - '循环依赖'
   - '三级缓存'
 categories:
-  - '后端'
+  - 'Backend'
 draft: false
 ---
 

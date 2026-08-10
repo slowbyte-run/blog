@@ -136,6 +136,14 @@ export const friendsData: FriendLink[] = [
     image: 'https://blog.liuhangyv.top/upload/head-1785924834877.png',
     color: '#5084d9',
   },
+  {
+    site: 'Hexvork的博客',
+    url: 'https://www.hexvork.com',
+    owner: 'Hexvork',
+    desc: '分享网络优化、开发实战和工具评测，用人话讲技术。',
+    image: 'https://webp.hexvork.com/0/favicon.webp',
+    color: '#f5a623',
+  },
 ];
 
 export const friendsIntro = {
