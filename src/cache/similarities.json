@@ -55,11 +55,6 @@
   ],
   "cnblogs-18878863": [
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.496
-    },
-    {
       "slug": "cnblogs-18967266",
       "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
       "similarity": 0.465
@@ -78,6 +73,11 @@
       "slug": "git-pull-merge-rebase",
       "title": "git pull 到底用 merge 还是 rebase？",
       "similarity": 0.385
+    },
+    {
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.381
     }
   ],
   "cnblogs-18791092": [
@@ -330,11 +330,6 @@
       "similarity": 0.528
     },
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.503
-    },
-    {
       "slug": "cnblogs-18924113",
       "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
       "similarity": 0.473
@@ -348,6 +343,11 @@
       "slug": "cnblogs-18799609",
       "title": "归并排序与快速排序",
       "similarity": 0.448
+    },
+    {
+      "slug": "git-pull-merge-rebase",
+      "title": "git pull 到底用 merge 还是 rebase？",
+      "similarity": 0.441
     }
   ],
   "cnblogs-18897189": [
@@ -470,11 +470,6 @@
       "similarity": 0.578
     },
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.491
-    },
-    {
       "slug": "cnblogs-18959607",
       "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
       "similarity": 0.473
@@ -483,6 +478,11 @@
       "slug": "git-pull-merge-rebase",
       "title": "git pull 到底用 merge 还是 rebase？",
       "similarity": 0.44
+    },
+    {
+      "slug": "git worktree：一台电脑同时开多条工作线",
+      "title": "Git Worktree：一台电脑同时开多条工作线",
+      "similarity": 0.433
     }
   ],
   "git-pull-merge-rebase": [
@@ -539,33 +539,6 @@
       "similarity": 0.333
     }
   ],
-  "cnblogs-18905490": [
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.624
-    },
-    {
-      "slug": "cnblogs-18874518",
-      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-      "similarity": 0.541
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.503
-    },
-    {
-      "slug": "cnblogs-18878863",
-      "title": "让你的 Git 提交信息更专业：Conventional Commits",
-      "similarity": 0.496
-    },
-    {
-      "slug": "cnblogs-18967266",
-      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
-      "similarity": 0.492
-    }
-  ],
   "spring-circular-dependency": [
     {
       "slug": "ddd-interview-guide",
@@ -600,11 +573,6 @@
       "similarity": 0.382
     },
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.358
-    },
-    {
       "slug": "cnblogs-18874306",
       "title": "git 重建后连不上远程仓库？冲突这样解决",
       "similarity": 0.32
@@ -618,6 +586,11 @@
       "slug": "cnblogs-19020181",
       "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
       "similarity": 0.302
+    },
+    {
+      "slug": "cnblogs-19211892",
+      "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
+      "similarity": 0.296
     }
   ],
   "cnblogs-18870773": [
@@ -625,11 +598,6 @@
       "slug": "cnblogs-18874518",
       "title": "Arch 装不了官网软件包？两种方法轻松搞定",
       "similarity": 0.465
-    },
-    {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.385
     },
     {
       "slug": "cnblogs-18927584",
@@ -645,6 +613,11 @@
       "slug": "ddd-interview-guide",
       "title": "面试被问到 DDD，怎么讲才不像背课文？",
       "similarity": 0.323
+    },
+    {
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.317
     }
   ],
   "cnblogs-18967362": [
@@ -703,11 +676,6 @@
   ],
   "cnblogs-18927584": [
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.624
-    },
-    {
       "slug": "cnblogs-18967266",
       "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
       "similarity": 0.484
@@ -726,6 +694,11 @@
       "slug": "cnblogs-18924113",
       "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
       "similarity": 0.421
+    },
+    {
+      "slug": "curl 实战速查：下载、请求与调试一把梭",
+      "title": "curl 实战速查：下载、请求与调试一把梭",
+      "similarity": 0.418
     }
   ],
   "cnblogs-18967266": [
@@ -733,11 +706,6 @@
       "slug": "cnblogs-18924113",
       "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
       "similarity": 0.644
-    },
-    {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.492
     },
     {
       "slug": "cnblogs-18874306",
@@ -753,6 +721,11 @@
       "slug": "cnblogs-19211892",
       "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
       "similarity": 0.474
+    },
+    {
+      "slug": "cnblogs-18878863",
+      "title": "让你的 Git 提交信息更专业：Conventional Commits",
+      "similarity": 0.465
     }
   ],
   "git worktree：一台电脑同时开多条工作线": [
@@ -760,11 +733,6 @@
       "slug": "cnblogs-18959607",
       "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
       "similarity": 0.528
-    },
-    {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.443
     },
     {
       "slug": "cnblogs-18967266",
@@ -780,6 +748,11 @@
       "slug": "cnblogs-18874306",
       "title": "git 重建后连不上远程仓库？冲突这样解决",
       "similarity": 0.426
+    },
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.388
     }
   ],
   "cnblogs-18790660": [
@@ -1027,11 +1000,6 @@
   ],
   "cnblogs-18874518": [
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.541
-    },
-    {
       "slug": "cnblogs-18870773",
       "title": "Qt 项目打包成可执行文件：音乐播放器实战",
       "similarity": 0.465
@@ -1050,6 +1018,11 @@
       "slug": "cnblogs-19211892",
       "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
       "similarity": 0.409
+    },
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.405
     }
   ],
   "cnblogs-19211892": [
@@ -1074,9 +1047,9 @@
       "similarity": 0.383
     },
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.364
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.357
     }
   ],
   "arch-swap-hibernate": [
@@ -1091,11 +1064,6 @@
       "similarity": 0.447
     },
     {
-      "slug": "cnblogs-18905490",
-      "title": "Windows 安装与配置 Git：新手友好图文教程",
-      "similarity": 0.431
-    },
-    {
       "slug": "cnblogs-18799609",
       "title": "归并排序与快速排序",
       "similarity": 0.384
@@ -1104,6 +1072,11 @@
       "slug": "cnblogs-18959607",
       "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
       "similarity": 0.378
+    },
+    {
+      "slug": "cnblogs-19020181",
+      "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
+      "similarity": 0.364
     }
   ],
   "java-equals-vs-double-equals": [

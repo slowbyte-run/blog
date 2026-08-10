@@ -79,10 +79,6 @@
     "title": "curl 实战速查：下载、请求与调试一把梭",
     "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
   },
-  "cnblogs-18905490": {
-    "title": "Windows 安装与配置 Git：新手友好图文教程",
-    "summary": "Windows 下安装并配置 Git 的分步说明（含截图）。"
-  },
   "spring-circular-dependency": {
     "title": "Spring 循环依赖怎么解决？",
     "summary": "三级缓存是怎么流转的、为什么是三级不是两级、构造器注入为何无解、Boot 2.6 为何默认禁止，附 getSingleton 伪代码与面试速查表。"
