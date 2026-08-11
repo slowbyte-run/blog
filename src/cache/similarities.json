@@ -431,6 +431,114 @@
       "similarity": 0.455
     }
   ],
+  "user-00-模块总览与架构": [
+    {
+      "slug": "content-00-模块总览与架构",
+      "title": "知识分享社区 content 模块总览与架构",
+      "similarity": 0.906
+    },
+    {
+      "slug": "social-00-模块总览与架构",
+      "title": "知识分享社区 social 模块总览与架构",
+      "similarity": 0.904
+    },
+    {
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.895
+    },
+    {
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.883
+    },
+    {
+      "slug": "ai-00-模块总览与架构",
+      "title": "知识分享社区 ai 模块总览与架构",
+      "similarity": 0.872
+    }
+  ],
+  "social-00-模块总览与架构": [
+    {
+      "slug": "content-00-模块总览与架构",
+      "title": "知识分享社区 content 模块总览与架构",
+      "similarity": 0.945
+    },
+    {
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.933
+    },
+    {
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.914
+    },
+    {
+      "slug": "ai-00-模块总览与架构",
+      "title": "知识分享社区 ai 模块总览与架构",
+      "similarity": 0.905
+    },
+    {
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.904
+    }
+  ],
+  "share-00-模块总览与架构": [
+    {
+      "slug": "social-00-模块总览与架构",
+      "title": "知识分享社区 social 模块总览与架构",
+      "similarity": 0.933
+    },
+    {
+      "slug": "content-00-模块总览与架构",
+      "title": "知识分享社区 content 模块总览与架构",
+      "similarity": 0.926
+    },
+    {
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.899
+    },
+    {
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.895
+    },
+    {
+      "slug": "ai-00-模块总览与架构",
+      "title": "知识分享社区 ai 模块总览与架构",
+      "similarity": 0.884
+    }
+  ],
+  "search-00-模块总览与架构": [
+    {
+      "slug": "content-00-模块总览与架构",
+      "title": "知识分享社区 content 模块总览与架构",
+      "similarity": 0.919
+    },
+    {
+      "slug": "social-00-模块总览与架构",
+      "title": "知识分享社区 social 模块总览与架构",
+      "similarity": 0.914
+    },
+    {
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.899
+    },
+    {
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.883
+    },
+    {
+      "slug": "ai-00-模块总览与架构",
+      "title": "知识分享社区 ai 模块总览与架构",
+      "similarity": 0.882
+    }
+  ],
   "cnblogs-18874306": [
     {
       "slug": "cnblogs-18924113",
@@ -534,9 +642,63 @@
       "similarity": 0.363
     },
     {
-      "slug": "java-interface-vs-abstract-class",
-      "title": "接口和抽象类到底怎么选？",
-      "similarity": 0.333
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.359
+    }
+  ],
+  "content-00-模块总览与架构": [
+    {
+      "slug": "social-00-模块总览与架构",
+      "title": "知识分享社区 social 模块总览与架构",
+      "similarity": 0.945
+    },
+    {
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.926
+    },
+    {
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.919
+    },
+    {
+      "slug": "ai-00-模块总览与架构",
+      "title": "知识分享社区 ai 模块总览与架构",
+      "similarity": 0.914
+    },
+    {
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.906
+    }
+  ],
+  "ai-00-模块总览与架构": [
+    {
+      "slug": "content-00-模块总览与架构",
+      "title": "知识分享社区 content 模块总览与架构",
+      "similarity": 0.914
+    },
+    {
+      "slug": "social-00-模块总览与架构",
+      "title": "知识分享社区 social 模块总览与架构",
+      "similarity": 0.905
+    },
+    {
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.884
+    },
+    {
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.882
+    },
+    {
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.872
     }
   ],
   "spring-circular-dependency": [
@@ -600,27 +762,32 @@
       "similarity": 0.465
     },
     {
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.344
+    },
+    {
       "slug": "cnblogs-18927584",
       "title": "GitHub CLI 实战指南：从安装到常用命令",
       "similarity": 0.337
     },
     {
+      "slug": "content-00-模块总览与架构",
+      "title": "知识分享社区 content 模块总览与架构",
+      "similarity": 0.333
+    },
+    {
       "slug": "cnblogs-18878863",
       "title": "让你的 Git 提交信息更专业：Conventional Commits",
       "similarity": 0.324
-    },
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.323
-    },
-    {
-      "slug": "cnblogs-18924113",
-      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
-      "similarity": 0.317
     }
   ],
   "cnblogs-18967362": [
+    {
+      "slug": "search-00-模块总览与架构",
+      "title": "知识分享社区 search 模块总览与架构",
+      "similarity": 0.475
+    },
     {
       "slug": "cnblogs-18799609",
       "title": "归并排序与快速排序",
@@ -640,11 +807,6 @@
       "slug": "cnblogs-18927584",
       "title": "GitHub CLI 实战指南：从安装到常用命令",
       "similarity": 0.416
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.39
     }
   ],
   "cnblogs-18924572": [
@@ -978,24 +1140,24 @@
       "similarity": 0.39
     },
     {
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.378
+    },
+    {
       "slug": "cnblogs-18934890",
       "title": "随机数mt19937",
       "similarity": 0.375
     },
     {
-      "slug": "cnblogs-18791092",
-      "title": "计算只含加减乘除的中缀表达式",
-      "similarity": 0.352
+      "slug": "social-00-模块总览与架构",
+      "title": "知识分享社区 social 模块总览与架构",
+      "similarity": 0.365
     },
     {
-      "slug": "cnblogs-18924162",
-      "title": "算法竞赛中的Lowbit",
-      "similarity": 0.352
-    },
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.34
+      "slug": "user-00-模块总览与架构",
+      "title": "知识分享社区 user 模块总览与架构",
+      "similarity": 0.362
     }
   ],
   "cnblogs-18874518": [
@@ -1074,9 +1236,9 @@
       "similarity": 0.378
     },
     {
-      "slug": "cnblogs-19020181",
-      "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
-      "similarity": 0.364
+      "slug": "share-00-模块总览与架构",
+      "title": "知识分享社区 share 模块总览与架构",
+      "similarity": 0.369
     }
   ],
   "java-equals-vs-double-equals": [

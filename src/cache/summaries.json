@@ -63,6 +63,22 @@
     "title": "位运算相关宏定义",
     "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
   },
+  "user-00-模块总览与架构": {
+    "title": "知识分享社区 user 模块总览与架构",
+    "summary": "知识分享社区项目的 user 模块总览与架构"
+  },
+  "social-00-模块总览与架构": {
+    "title": "知识分享社区 social 模块总览与架构",
+    "summary": "知识分享社区项目的 social 模块总览与架构"
+  },
+  "share-00-模块总览与架构": {
+    "title": "知识分享社区 share 模块总览与架构",
+    "summary": "知识分享社区项目的 share 模块总览与架构"
+  },
+  "search-00-模块总览与架构": {
+    "title": "知识分享社区 search 模块总览与架构",
+    "summary": "知识分享社区项目的 search 模块总览与架构"
+  },
   "cnblogs-18874306": {
     "title": "git 重建后连不上远程仓库？冲突这样解决",
     "summary": "解决重建本地仓库后重新连接远程仓库时的冲突。"
@@ -78,6 +94,14 @@
   "curl 实战速查：下载、请求与调试一把梭": {
     "title": "curl 实战速查：下载、请求与调试一把梭",
     "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
+  },
+  "content-00-模块总览与架构": {
+    "title": "知识分享社区 content 模块总览与架构",
+    "summary": "知识分享社区项目的 content 模块总览与架构"
+  },
+  "ai-00-模块总览与架构": {
+    "title": "知识分享社区 ai 模块总览与架构",
+    "summary": "知识分享社区项目的 ai 模块总览与架构"
   },
   "spring-circular-dependency": {
     "title": "Spring 循环依赖怎么解决？",
