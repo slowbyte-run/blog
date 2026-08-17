@@ -165,15 +165,15 @@ graph TD
 
 ```mermaid
 flowchart LR
-    A[POST /drafts] --> B[雪花 ID 生成]
-    B --> C[INSERT 草稿 (DRAFT)]
-    C --> D[POST /storage/presign]
+    A["POST /drafts"] --> B[雪花 ID 生成]
+    B --> C["INSERT 草稿 (DRAFT)"]
+    C --> D["POST /storage/presign"]
     D --> E[客户端直传 OSS]
-    E --> F[POST content/confirm]
+    E --> F["POST content/confirm"]
     F --> G[UPDATE content 元数据]
     G --> H[RAG ensureIndexed 预索引]
-    H --> I[POST /{id} PATCH 元数据]
-    I --> J[POST /{id}/publish]
+    H --> I["POST /{id} PATCH 元数据"]
+    I --> J["POST /{id}/publish"]
     J --> K[status=PUBLISHED + publish_time]
     K --> L[incrementPosts 计数 + Outbox KnowPostPublished]
     L --> M[search 模块消费建索引]
