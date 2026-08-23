@@ -2,6 +2,7 @@
 title: '知识分享社区 share 模块总览与架构'
 date: 2026-08-11 22:03
 description: 知识分享社区项目的 share 模块总览与架构
+link: 'ksh-share'
 tags:
   - knowledge-share-hub
 categories:

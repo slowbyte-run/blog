@@ -16,21 +16,21 @@ categories:
 
 ## **For Arch Linux**
 
-1.  创建打包目录，存放你的项目的**release**版本  
+1.  创建打包目录，存放你的项目的 **release** 版本  
     `mkdir -p ~/packing/musicplayer && cd ~packing/musicplayer`
-2.  在打包目录下创建并填写`PKGBUILD`文件  
+2.  在打包目录下创建并填写 `PKGBUILD` 文件  
     `vim PKGBUILD`  
     将下面内容复制到该文件中
 
 ```
-# Maintainer: Thin_time <thintime123@gmail>
+# Maintainer: slowbyte <slowbyte.run@gmail>
 
 pkgname=musicplayer
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="A Qt6-based music player with lyrics and disc rotation animation"
 arch=('x86_64')
-url="https://github.com/Thintime123/MusicPlayer"
+url="https://github.com/slowbyte-run/MusicPlayer"
 license=('GPL')
 depends=('qt6-base' 'qt6-multimedia')
 makedepends=('qt6-tools')
@@ -86,7 +86,7 @@ EOF
 
 ```
 # 切换到项目目录
-cd /home/xxx/Projects
+cd ~/Projects
 
 # 创建打包用的临时目录
 mkdir -p ~/packaging/musicplayer/src
@@ -102,7 +102,7 @@ tar -czf ../musicplayer-1.0.0.tar.gz musicplayer-1.0.0
 ```
 
 4.  创建图标和桌面文件  
-    将应用图标`AppIcon.png`放到`res/Icon`目录下
+    将应用图标 `AppIcon.png` 放到 `res/Icon` 目录下
 5.  构建包
 
 ```

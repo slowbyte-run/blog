@@ -2,6 +2,7 @@
 title: '知识分享社区 search 模块总览与架构'
 date: 2026-08-11 22:09
 description: 知识分享社区项目的 search 模块总览与架构
+link: 'ksh-search'
 tags:
   - knowledge-share-hub
 categories:

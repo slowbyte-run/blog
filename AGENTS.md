@@ -13,7 +13,8 @@ astro-snow 是一个基于 Astro 5 + React 19 + TypeScript 的个人博客（SSG
 ## 关键架构事实（不看代码猜不到的）
 
 - **`publicDir` 是 `source/` 而非 `public/`**（`astro.config.mjs:29`）。所有静态资源放 `source/` 下，URL 以 `/` 开头：`source/img/x.webp` → `/img/x.webp`。`public/` 目录是未使用的遗留（`public/js/GridArrayBg.min.js` 无引用），不要往里面放东西。
-- **博客文章是 `source/posts/**/*.md`**（`src/content/config.ts` 的 glob loader），frontmatter 支持 `title/date/description/cover/tags/categories/subtitle/catalog/tocNumbering/sticky/draft`。
+- **博客文章是 `source/posts/**/*.md`**（`src/content/config.ts` 的 glob loader，`**` 会递归匹配子目录），frontmatter 支持 `title/date/description/cover/tags/categories/subtitle/catalog/tocNumbering/sticky/draft`。文章已按主题归入子目录（`Algorithm/{contests,problems,techniques}`、`Backend`、`Git`、`ArchLinux`、`Tools`、`knowledge-share-hub`），`文章模板.md` 留根目录。
+- **子目录帖必须设 `link`**：运行时 `getPostStableKey = link ?? id`，子目录帖的 `id` 带相对路径，无 `link` 时 AI 摘要键会与脚本 `extractSlug`（只取文件名）对不上；`link` 也决定稳定 URL。
 - **`source/posts` 会被从构建产物中删除**（`astro.config.mjs` 的 `sourcePublicDir` hook）——文章是内容集合，不是静态文件。
 - **图片放 `source/img/`**（建议按用途建子目录），markdown 里用 `/img/...` 或相对路径 `../img/...` 引用。
 - **`source/img/backgrounds/` 只读 `.webp`**（`src/lib/backgrounds.ts` 硬过滤），作为文章卡片/横幅随机图池；无随机图时兜底 `source/img/cover/1-13.webp`（`defaultCoverList`）。

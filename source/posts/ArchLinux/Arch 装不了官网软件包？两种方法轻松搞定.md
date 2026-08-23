@@ -51,7 +51,7 @@ sudo gtk-update-icon-cache -qtf /usr/share/icons/hicolor
 
 ---
 
-## **方法 2：通过 AUR 安装（自动更新）**
+## **方法 2：通过 AUR 安装**
 
 如果你想用 `pacman` 管理 PyCharm（方便后续更新），可以通过 **AUR** 安装：
 

@@ -1,5 +1,5 @@
 ---
-title: 'Scoop 装的 Anaconda 无法在商店版 PowerShell 打开？'
+title: 'Scoop 装的 Anaconda 无法在商店版 PowerShell 使用？'
 date: '2025-10-12 11:36'
 link: 'cnblogs-19136430'
 description: '解决通过 Scoop 安装的 Anaconda 无法在 Microsoft Store 版 PowerShell 中激活 conda 的问题。'
@@ -8,6 +8,7 @@ tags:
   - 'windows'
 categories:
   - 'Tools'
+draft: true
 ---
 
 商店版 PowerShell 里敲 `conda` 一直提示找不到命令，当时我还以为是 Scoop 装岔了，重装了好几遍都不行，后来才明白是启动时压根没加载 conda 的 hook。折腾的过程按步骤记下来，从临时启用到最后固化进 profile。

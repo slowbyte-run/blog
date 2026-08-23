@@ -1,34 +1,12 @@
 ---
-# ===== 文章模板（draft: true，不会发布）=====
-# 复制本文件为 source/posts/你的文章.md，删掉 frontmatter 里的注释和
-# 用不到的字段，把 draft 改为 false（或删除该行）即可发布。
-# 必填：title / date。其余可选，详见字段说明。
-#
-# title          : 文章标题（必填）
-# date           : 发布日期（必填，支持 2026-08-07 或 2026-08-07 12:00:00）
-# description    : 摘要，缺省时用 AI 摘要或正文截取
-# link           : 文章稳定标识（用于相似推荐/系列列表），一般不用填
-# cover          : 封面图路径（/img/posts/xxx.webp），缺省用随机背景图
-# tags           : 标签，可单个字符串或数组
-# categories     : 分类，单个字符串 = 单级；字符串数组 = 一条多级路径
-# subtitle       : 副标题
-# catalog        : false 时不归入分类/不显示分类链接
-# tocNumbering   : 目录标题自动编号，默认 true
-# sticky         : 置顶（当前版本列表尚未生效）
-# draft          : true 时仅本地可见，不会发布
 title: 'Git Worktree：一台电脑同时开多条工作线'
 date: 2026-05-05
-description: Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发
-# link: my-post-id
-# cover: /img/posts/example.webp
+description: 'Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发'
+link: 'git-worktree'
 tags:
   - git
 categories:
   - Git
-# subtitle: '副标题'
-# catalog: true
-# tocNumbering: true
-# sticky: false
 ---
 
 我之前切分支全靠 stash：改一半、存起来、切走、再切回来 pop，结果十次有八次 pop 出一地冲突，改的东西还得手动合并。后来知道有 worktree 这玩意儿——同一个仓库同时开好几个工作目录、各干各的分支互不干扰，才觉得自己以前是真傻。这篇就把它的基本用法和我的工作流记下来。

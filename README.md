@@ -37,9 +37,10 @@ pnpm run format:check
 
 ## ✍️ 写文章
 
-1. 在 `source/posts/` 新建 `.md` 文件。frontmatter 必填 `title`、`date`，可选 `description / cover / tags / categories / subtitle / catalog / tocNumbering / sticky / draft`。
+1. 在 `source/posts/` 下（可按主题放进子目录，如 `Algorithm/`、`Backend/`、`Git/`、`Tools/`）新建 `.md` 文件。frontmatter 必填 `title`、`date`，可选 `description / link / cover / tags / categories / subtitle / catalog / tocNumbering / sticky / draft`。
 2. 图片放在 `source/img/`（如 `source/img/posts/`），markdown 里用 `/img/...` 或相对路径引用。
-3. 提交并推送，自动部署：
+3. 建议给每篇设 `link`（稳定 URL）；放在子目录的帖子务必设置 `link`。
+4. 提交并推送，自动部署：
 
 ```bash
 git pull --rebase        # 拉取上次 CI 生成的缓存提交
