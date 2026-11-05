@@ -6,7 +6,8 @@ description: '用栈数组模拟纸牌游戏（Accordian Patience）的题解。
 tags:
   - 'algorithm'
 categories:
-  - 'Algorithm'
+  - 'XCPC'
+  - 'Problems'
 ---
 
 ## [8008: 纸牌游戏（ "Accordian" Patience）](https://buctcoder.com/problem.php?id=8008)

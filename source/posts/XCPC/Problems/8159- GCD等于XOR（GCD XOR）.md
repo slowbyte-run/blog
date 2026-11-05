@@ -6,7 +6,8 @@ description: '数论：gcd(a,b)=a⊕b 的性质推导与求解。'
 tags:
   - 'algorithm'
 categories:
-  - 'Algorithm'
+  - 'XCPC'
+  - 'Problems'
 ---
 
 ## [题目链接](https://buctoj.com/problem.php?id=8159)

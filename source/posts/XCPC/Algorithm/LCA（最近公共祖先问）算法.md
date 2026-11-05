@@ -6,6 +6,7 @@ description: 'LCA 最近公共祖先的倍增（二分提升）实现流程与 C
 tags:
   - 'algorithm'
 categories:
+  - 'XCPC'
   - 'Algorithm'
 ---
 

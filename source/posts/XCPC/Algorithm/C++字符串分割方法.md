@@ -7,6 +7,7 @@ tags:
   - 'algorithm'
   - 'cpp'
 categories:
+  - 'XCPC'
   - 'Algorithm'
 ---
 

@@ -6,7 +6,8 @@ description: '数论：求一组和为 n 且 LCM 最小的数的题解。'
 tags:
   - 'algorithm'
 categories:
-  - 'Algorithm'
+  - 'XCPC'
+  - 'Problems'
 ---
 
 ## [题目链接](https://buctoj.com/problem.php?id=8158)

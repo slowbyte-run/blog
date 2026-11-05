@@ -7,7 +7,9 @@ tags:
   - 'algorithm'
   - 'codeforces'
 categories:
-  - 'Algorithm'
+  - 'XCPC'
+  - 'Contest'
+  - 'Codeforces'
 ---
 
 ## [题目链接](https://codeforces.com/contest/2091)

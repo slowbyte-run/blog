@@ -6,6 +6,7 @@ description: 'Lowbit 位运算的原理、计算方法与常见应用。'
 tags:
   - 'algorithm'
 categories:
+  - 'XCPC'
   - 'Algorithm'
 ---
 
