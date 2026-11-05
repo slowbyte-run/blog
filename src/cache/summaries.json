@@ -1,4 +1,24 @@
 {
+  "cnblogs-19020181": {
+    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
+    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
+  },
+  "wget-curl-aria2c": {
+    "title": "wget、curl、aria2c：下载工具怎么选",
+    "summary": "三个命令行下载工具的分工、常用参数和踩坑点，附可直接复制的示例。"
+  },
+  "curl-guide": {
+    "title": "curl 实战速查：下载、请求与调试一把梭",
+    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
+  },
+  "cnblogs-18870773": {
+    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
+    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
+  },
+  "cnblogs-18967362": {
+    "title": "Linux 找文件从入门到精通",
+    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
+  },
   "ddd-interview-guide": {
     "title": "面试被问到 DDD，怎么讲才不像背课文？",
     "summary": "用一条因果链讲清 DDD：为什么需要它、限界上下文、聚合、战术组件，附钱包转账完整用例与面试速查清单。"
@@ -30,26 +50,6 @@
   "arch-swap-hibernate": {
     "title": "Arch 休眠总失败？Swap 分区配置一次到位",
     "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
-  },
-  "cnblogs-19020181": {
-    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
-    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
-  },
-  "wget-curl-aria2c": {
-    "title": "wget、curl、aria2c：下载工具怎么选",
-    "summary": "三个命令行下载工具的分工、常用参数和踩坑点，附可直接复制的示例。"
-  },
-  "curl-guide": {
-    "title": "curl 实战速查：下载、请求与调试一把梭",
-    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
-  },
-  "cnblogs-18870773": {
-    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
-    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
-  },
-  "cnblogs-18967362": {
-    "title": "Linux 找文件从入门到精通",
-    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
   },
   "cnblogs-18756619": {
     "title": "8159: GCD等于XOR（GCD XOR）",
@@ -94,6 +94,10 @@
   "git-worktree": {
     "title": "Git Worktree：一台电脑同时开多条工作线",
     "summary": "Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发"
+  },
+  "cook-rag": {
+    "title": "从结构化 Chunking 到 GraphRAG 的食谱知识检索系统设计",
+    "summary": "以 Cook-RAG 项目为例，讲清楚食谱数据要怎么分块：结构感知的三级 Chunking、Metadata 设计，以及升级到 GraphRAG 后 Chunk 与知识图谱的分工，最后用 Agentic RAG 按问题动态选择检索策略。"
   },
   "nowcoder-monthly-117": {
     "title": "牛客月赛 117",

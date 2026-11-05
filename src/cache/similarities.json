@@ -647,6 +647,33 @@
       "similarity": 0.428
     }
   ],
+  "cook-rag": [
+    {
+      "slug": "algo-graph-hld-template",
+      "title": "树链剖分模板",
+      "similarity": 0.436
+    },
+    {
+      "slug": "algo-dp-group-knapsack-at-most",
+      "title": "分组背包变式：每组最多选 $d_i$ 件",
+      "similarity": 0.428
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.412
+    },
+    {
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.411
+    },
+    {
+      "slug": "algo-dp-group-knapsack-exactly",
+      "title": "分组背包变式：每组恰好选 $d_i$ 件",
+      "similarity": 0.408
+    }
+  ],
   "nowcoder-monthly-117": [
     {
       "slug": "algo-graph-dsu-nowcoder",
