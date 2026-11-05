@@ -26,5 +26,6 @@ description: '关于我？'
 ## 📫 联系我
 
 - GitHub: [https://github.com/slowbyte-run](https://github.com/slowbyte-run)
+- Email: [slowbyte.run@gmail.com](mailto:slowbyte.run@gmail.com)
 
 > 本站使用 [astro-snow](https://github.com/XueHua-s/astro-snow) 主题搭建。

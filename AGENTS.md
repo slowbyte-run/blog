@@ -3,8 +3,8 @@
 ## First Read
 
 - `CLAUDE.md` 是 Claude 的入口文件。
-- `.claude/skills.md`（Claude Code）和 `.agents/skills.md`（Codex CLI）提供技能路由。
-- 默认入口技能：`skills/doccopilot-project-standards/SKILL.md`。
+- 技能实际位于 `.agents/skills/*/SKILL.md`；`.claude/skills.md`（Claude Code）和 `.agents/skills.md`（Codex CLI）只是路由表，其中写的 `skills/*` 是旧路径，不要按它找文件。
+- 默认入口技能：`.agents/skills/doccopilot-project-standards/SKILL.md`。
 
 ## Project Overview
 
@@ -12,59 +12,44 @@ astro-snow 是一个基于 Astro 5 + React 19 + TypeScript 的个人博客（SSG
 
 ## 关键架构事实（不看代码猜不到的）
 
-- **`publicDir` 是 `source/` 而非 `public/`**（`astro.config.mjs:29`）。所有静态资源放 `source/` 下，URL 以 `/` 开头：`source/img/x.webp` → `/img/x.webp`。`public/` 目录是未使用的遗留（`public/js/GridArrayBg.min.js` 无引用），不要往里面放东西。
+- **`publicDir` 是 `source/` 而非 `public/`**（`astro.config.mjs` 的 `publicDir: 'source'`）。所有静态资源放 `source/` 下，URL 以 `/` 开头：`source/img/x.webp` → `/img/x.webp`。`public/` 目录是未使用的遗留（`public/js/GridArrayBg.min.js` 无引用），不要往里面放东西。
 - **博客文章是 `source/posts/**/*.md`**（`src/content/config.ts` 的 glob loader，`**` 会递归匹配子目录），frontmatter 支持 `title/date/description/cover/tags/categories/subtitle/catalog/tocNumbering/sticky/draft`。文章已按主题归入子目录（`Algorithm/{contests,problems,techniques}`、`Backend`、`Git`、`ArchLinux`、`Tools`、`knowledge-share-hub`），`文章模板.md` 留根目录。
 - **子目录帖必须设 `link`**：运行时 `getPostStableKey = link ?? id`，子目录帖的 `id` 带相对路径，无 `link` 时 AI 摘要键会与脚本 `extractSlug`（只取文件名）对不上；`link` 也决定稳定 URL。
 - **`source/posts` 会被从构建产物中删除**（`astro.config.mjs` 的 `sourcePublicDir` hook）——文章是内容集合，不是静态文件。
 - **图片放 `source/img/`**（建议按用途建子目录），markdown 里用 `/img/...` 或相对路径 `../img/...` 引用。
-- **`source/img/backgrounds/` 只读 `.webp`**（`src/lib/backgrounds.ts` 硬过滤），作为文章卡片/横幅随机图池；无随机图时兜底 `source/img/cover/1-13.webp`（`defaultCoverList`）。
+- **`source/img/backgrounds/` 只读 `.webp`**（`src/lib/backgrounds.ts` 硬过滤，目录里另有约 20 个 `.jpg` 会被静默忽略，不要以为放了图就生效）。随机图池为空时兜底 `defaultCoverList`（`src/config/blogLayoutConfig.ts`，即 `/img/cover/1-13.webp`）。
 - **`src/cache/*.json`（lqips/similarities/summaries）是构建期缓存**，由 `scripts/` 脚本生成；内容为空 `{}` 是合法的。
-- **AI 摘要走 OpenAI 兼容协议**：默认 DeepSeek 端点（`https://api.deepseek.com/v1/`）、模型 `deepseek-v4-flash`，可用环境变量 `OPENAI_API_BASE_URL` / `OPENAI_API_KEY` / `OPENAI_MODEL` 覆盖（`scripts/lib/summaries/config.ts`）。
+- **AI 摘要走 OpenAI 兼容协议**：默认 DeepSeek 端点（`https://api.deepseek.com/v1/`）、模型 `deepseek-v4-flash`，可用环境变量 `OPENAI_API_BASE_URL` / `OPENAI_API_KEY` / `OPENAI_MODEL` 覆盖（`scripts/lib/summaries/config.ts`）。`generate:summaries` 在无 key / API 不通时只告警并跳过生成，不会让构建失败。
 - **语义推荐不需要 API key**：本地 transformers.js 模型 `Snowflake/snowflake-arctic-embed-m-v2.0`（`scripts/lib/similarities/config.ts`）。
-- **全站搜索用 pagefind，索引只在构建时生成**。开发模式下 `/pagefind/` 从 `dist/` 提供——若从未 build，搜索输入框可能不渲染。此行为是已知噪音，e2e 的 `runtime-errors.ts` 已过滤。
+- **全站搜索用 pagefind，索引只在构建时生成**（`astro-pagefind` 集成）。从未 build 时开发模式搜索不可用、搜索框可能不渲染；e2e 的 `runtime-errors.ts` 已把这部分报错列入噪音过滤。
 - **站点信息分散在 3 个配置文件**，改标题/简介需同步：`src/config/blogLayoutConfig.ts`（全局+社交栏）、`src/config/indexConfig.ts`（引导页 baseLayout）、`src/config/homePageConfig.ts`（引导页头像/标语/社交按钮）。
 - **社交链接存在两处，必须保持同步**：`blogSocialConfig`（`blogLayoutConfig.ts`，头部 `Social.tsx`）和 `homePageLinks`（`homePageConfig.ts`，引导页按钮）。删除/新增平台要同时改 `SocialConfig` 类型、两处配置、以及 `HomePage.tsx` 的 `getSocialButtons`。
 - 头像 `avatar`（`blogLayoutConfig.avatar`）与引导页 `avatarUrl`（`homePageConfig.ts`）都要改。
 - 头部 Logo 是 `src/assets/logo.png`（`Header.tsx` 用 `?url` 导入），与 favicon 不同，不放 `source/`。
 - `_config.yml`（shoka 旧分类映射）可选；不存在时用 `src/constants/category.ts` 的 `fallbackCategoryMap`。
+- **站点根 `/` 是引导页，博客在 `/blog`**（`src/pages/blog/`）。`src/pages/blog/about.md` 是页面 Markdown，不属于 `source/posts` 内容集合。
+- **文章 URL = `link ?? 序号 ?? id`**（`src/pages/blog/post/[...slug].astro`），所以新增文章都写 `link`，否则 URL 会随排序变化。
 
 ## Project Structure
 
 ```
 src/
-├── components/        # React & Astro 组件
-│   ├── category/      # 分类组件
-│   ├── comment/       # 评论系统（Giscus）
-│   ├── common/        # 通用组件
-│   ├── control/       # 控制组件
-│   ├── embed/         # 嵌入处理（tweet、link）
-│   ├── friends/       # 友链组件
-│   ├── home/          # 首页（引导页）组件
-│   ├── layout/        # 布局组件（Header、Social、搜索等）
-│   ├── markdown/      # Markdown 增强
-│   ├── post/          # 文章展示组件
-│   ├── svg/           # SVG 组件
-│   ├── theme/         # 主题切换
-│   └── ui/            # UI 基础组件
-├── assets/            # 源码资源（logo.png 等，经 Vite 打包）
-├── cache/             # 构建缓存（lqips、similarities、summaries）
-├── config/            # 站点配置（blogLayoutConfig、homePageConfig、friends-config 等）
-├── constants/         # 常量与设计令牌（router、category、design-tokens）
-├── content/           # 内容集合 schema
-├── hooks/             # React 自定义 hooks
-├── layouts/           # Astro 布局（BaseLayout、Layout、AboutLayout）
-├── lib/               # 工具库（content、markdown、lqip、backgrounds、utils 等）
-├── pages/             # 页面路由（引导页 index.astro + blog/）
-├── store/             # 状态管理（nanostores）
-├── styles/            # 全局 CSS 与主题样式（含 pagefind.css 搜索 UI 定制）
-├── types/             # TypeScript 类型
-└── scripts/           # 辅助脚本（transformShokaConfig 等）
+├── components/   # React & Astro 组件，按领域分目录（home/layout/post/markdown/comment...）
+├── config/       # 站点配置（blogLayoutConfig、homePageConfig、indexConfig、friends-config）
+├── constants/    # router、category、design-tokens
+├── content/      # 内容集合 schema
+├── lib/          # content、markdown、lqip、backgrounds、utils
+├── pages/        # index.astro 引导页 + blog/ 博客路由
+├── assets/       # 源码资源（logo.png 等，经 Vite 打包）
+├── cache/        # 构建缓存（lqips、similarities、summaries）
+├── layouts/      # Astro 布局（BaseLayout、Layout、AboutLayout）
+└── hooks/ store/ styles/ types/ scripts/
 ```
 
 其他关键目录：
 
 ```
-skills/                # Claude Code / Codex 技能
+.agents/skills/        # 技能正文（OpenCode/Codex）；根目录 skills/ 已迁走
 tests/                 # 单元测试（Vitest）
 tests/e2e/             # E2E 测试（Playwright，跑在 astro dev:4330）
 scripts/               # 内容生成脚本（LQIP、相似度、摘要）
@@ -73,14 +58,15 @@ source/                # publicDir：静态资源 + posts 内容集合 + CNAME
 
 ## Skill Routing
 
-| 技能                           | 适用场景                                                         |
-| ------------------------------ | ---------------------------------------------------------------- |
-| `doccopilot-project-standards` | 默认入口：功能开发、依赖复用、cn 工具、健壮性规范、校验命令      |
-| `software-design-philosophy`   | 模块设计、复杂度分析、接口收敛、深浅模块判断                     |
-| `code-review-expert`           | 审查 diff、Bug 排查、安全风险、测试缺口                          |
-| `frontend-design`              | 页面与组件设计、交互体验、视觉品质                               |
-| `vercel-react-best-practices`  | 性能优化、Bundle 体积、瀑布流、重渲染、数据获取                  |
-| `astro`                        | Astro 组件/页面、SSG、Islands、Content Collections、适配器、部署 |
+| 技能                           | 适用场景                                                              |
+| ------------------------------ | --------------------------------------------------------------------- |
+| `doccopilot-project-standards` | 默认入口：功能开发、依赖复用、cn 工具、健壮性规范、校验命令           |
+| `software-design-philosophy`   | 模块设计、复杂度分析、接口收敛、深浅模块判断                          |
+| `code-review-expert`           | 审查 diff、Bug 排查、安全风险、测试缺口                               |
+| `frontend-design`              | 页面与组件设计、交互体验、视觉品质                                    |
+| `vercel-react-best-practices`  | 性能优化、Bundle 体积、瀑布流、重渲染、数据获取                       |
+| `astro`                        | Astro 组件/页面、SSG、Islands、Content Collections、适配器、部署      |
+| `tech-blog-editor`             | 中文技术文章润色/审校/从笔记成文（`.agents/skills/tech-blog-editor`） |
 
 ## Working Rules
 
@@ -103,6 +89,7 @@ source/                # publicDir：静态资源 + posts 内容集合 + CNAME
 - 日期：`dayjs`；浮层：`@floating-ui/react`；UI 原语：`@radix-ui/react-*`
 - 工具函数：`es-toolkit`
 - 标记关键代码：添加 `FIXED:` 注释
+- 路径别名在 `tsconfig.json`（`@/*`、`@lib/*`、`@components/*`、`@constants/*` 等），Astro 直接可用；但 `vitest.config.ts` 只映射了 `@` 和 `@constants`，单元测试里用其他别名会解析失败
 
 ### Astro / React Boundaries
 
@@ -112,10 +99,16 @@ source/                # publicDir：静态资源 + posts 内容集合 + CNAME
 
 ### Testing
 
-- 单元测试放在 `tests/`（Vitest）
+- 单元测试放在 `tests/`（Vitest，只匹配 `tests/**/*.spec.ts`，排除 e2e）
 - E2E 测试放在 `tests/e2e/`（Playwright，webServer 起 `astro dev` 于 4330）
 - 改动至少覆盖主路径 + 1 个失败路径
 - E2E 首次运行需 `pnpm exec playwright install` 下载浏览器
+- 只跑单个用例：
+  ```bash
+  pnpm test tests/utils.spec.ts                  # 单文件（Vitest）
+  pnpm exec vitest run -t '部分测试名'            # 按名称过滤
+  pnpm exec playwright test tests/e2e/blog.spec.ts -g 'route'
+  ```
 
 ## Build And Verification
 
@@ -126,7 +119,7 @@ pnpm install
 # 开发
 pnpm dev
 
-# 构建
+# 构建（脚本名就是 build:ci，没有 pnpm build）
 pnpm build:ci
 
 # 校验（代码变更后至少执行以下命令）
@@ -153,5 +146,7 @@ pnpm run generate:summaries      # AI 摘要（需 OPENAI_API_KEY）
 - 基础分支：`main`；remote 为 `slowbyte-run/blog`
 - 提交规范：Conventional Commits（commitlint 强制，type 枚举：feat/fix/docs/style/refactor/perf/test/build/ci/chore/revert）
 - **预提交 `.husky/pre-commit` 会跑校验套件**（check + typecheck + lint + format:check + test），不含 e2e；e2e 需手动 `pnpm run test:e2e`。lint-staged 仅配置于依赖，未启用
+- **CI 会回写缓存**：部署流程先生成 LQIP/摘要/相似度，再把 `src/cache/` 以 `chore: update cache files [skip ci]` 提交回 `main`。因此推送前先 `git pull --rebase`；文章提交不要带 `[skip ci]`，否则不会触发部署
+- 部署只在 `deploy.yml` 的 paths 命中时触发（`src/**`、`source/**`、`scripts/**`、`package.json` 等）；只改 `tests/`、`README.md` 不会发布
 - 部署：GitHub Actions（`.github/workflows/deploy.yml`）构建后推送到 `slowbyte-run/slowbyte-run.github.io`，依赖仓库 secrets：`DEPLOY_TOKEN`、`OPENAI_API_BASE_URL`、`OPENAI_API_KEY`、`OPENAI_MODEL`
 - 自定义域名由 `source/CNAME`（`blog.novaspace.me`）声明，会随构建复制到 dist
