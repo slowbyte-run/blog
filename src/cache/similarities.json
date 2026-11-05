@@ -1,4 +1,139 @@
 {
+  "cnblogs-19020181": [
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.402
+    },
+    {
+      "slug": "niri-screenshare",
+      "title": "如何在 niri 下进行屏幕共享",
+      "similarity": 0.396
+    },
+    {
+      "slug": "git-worktree",
+      "title": "Git Worktree：一台电脑同时开多条工作线",
+      "similarity": 0.367
+    },
+    {
+      "slug": "cnblogs-18874518",
+      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
+      "similarity": 0.364
+    },
+    {
+      "slug": "arch-swap-hibernate",
+      "title": "Arch 休眠总失败？Swap 分区配置一次到位",
+      "similarity": 0.364
+    }
+  ],
+  "wget-curl-aria2c": [
+    {
+      "slug": "curl-guide",
+      "title": "curl 实战速查：下载、请求与调试一把梭",
+      "similarity": 0.588
+    },
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.476
+    },
+    {
+      "slug": "cnblogs-18874518",
+      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
+      "similarity": 0.461
+    },
+    {
+      "slug": "cnblogs-18967362",
+      "title": "Linux 找文件从入门到精通",
+      "similarity": 0.445
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.438
+    }
+  ],
+  "curl-guide": [
+    {
+      "slug": "wget-curl-aria2c",
+      "title": "wget、curl、aria2c：下载工具怎么选",
+      "similarity": 0.588
+    },
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.418
+    },
+    {
+      "slug": "cnblogs-18967362",
+      "title": "Linux 找文件从入门到精通",
+      "similarity": 0.383
+    },
+    {
+      "slug": "cnblogs-19020181",
+      "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
+      "similarity": 0.363
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.363
+    }
+  ],
+  "cnblogs-18870773": [
+    {
+      "slug": "cnblogs-18874518",
+      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
+      "similarity": 0.465
+    },
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.337
+    },
+    {
+      "slug": "cnblogs-18878863",
+      "title": "让你的 Git 提交信息更专业：Conventional Commits",
+      "similarity": 0.324
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.323
+    },
+    {
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.317
+    }
+  ],
+  "cnblogs-18967362": [
+    {
+      "slug": "wget-curl-aria2c",
+      "title": "wget、curl、aria2c：下载工具怎么选",
+      "similarity": 0.445
+    },
+    {
+      "slug": "cnblogs-18799609",
+      "title": "归并排序与快速排序",
+      "similarity": 0.431
+    },
+    {
+      "slug": "cnblogs-18967266",
+      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
+      "similarity": 0.431
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.425
+    },
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.416
+    }
+  ],
   "ddd-interview-guide": [
     {
       "slug": "java-interface-vs-abstract-class",
@@ -16,14 +151,284 @@
       "similarity": 0.448
     },
     {
-      "slug": "cnblogs-18773733",
-      "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
+      "slug": "wget-curl-aria2c",
+      "title": "wget、curl、aria2c：下载工具怎么选",
+      "similarity": 0.438
+    },
+    {
+      "slug": "niri-screenshare",
+      "title": "如何在 niri 下进行屏幕共享",
+      "similarity": 0.435
+    }
+  ],
+  "java-interface-vs-abstract-class": [
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.561
+    },
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.436
+    },
+    {
+      "slug": "cnblogs-18799609",
+      "title": "归并排序与快速排序",
+      "similarity": 0.429
+    },
+    {
+      "slug": "cnblogs-18762083",
+      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
+      "similarity": 0.419
+    },
+    {
+      "slug": "cnblogs-18804703",
+      "title": "整数划分问题",
+      "similarity": 0.418
+    }
+  ],
+  "spring-circular-dependency": [
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.494
+    },
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
       "similarity": 0.431
     },
     {
-      "slug": "cnblogs-18934841",
-      "title": "位运算相关宏定义",
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.401
+    },
+    {
+      "slug": "cnblogs-18874306",
+      "title": "git 重建后连不上远程仓库？冲突这样解决",
+      "similarity": 0.401
+    },
+    {
+      "slug": "wget-curl-aria2c",
+      "title": "wget、curl、aria2c：下载工具怎么选",
+      "similarity": 0.398
+    }
+  ],
+  "java-equals-vs-double-equals": [
+    {
+      "slug": "spring-circular-dependency",
+      "title": "Spring 循环依赖怎么解决？",
+      "similarity": 0.398
+    },
+    {
+      "slug": "java-interface-vs-abstract-class",
+      "title": "接口和抽象类到底怎么选？",
+      "similarity": 0.397
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.385
+    },
+    {
+      "slug": "cnblogs-18897189",
+      "title": "前缀数组和后缀数组",
+      "similarity": 0.385
+    },
+    {
+      "slug": "cnblogs-18762208",
+      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
+      "similarity": 0.381
+    }
+  ],
+  "niri-screenshare": [
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.472
+    },
+    {
+      "slug": "ddd-interview-guide",
+      "title": "面试被问到 DDD，怎么讲才不像背课文？",
+      "similarity": 0.435
+    },
+    {
+      "slug": "cnblogs-18874306",
+      "title": "git 重建后连不上远程仓库？冲突这样解决",
       "similarity": 0.429
+    },
+    {
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.408
+    },
+    {
+      "slug": "cnblogs-18924162",
+      "title": "算法竞赛中的Lowbit",
+      "similarity": 0.398
+    }
+  ],
+  "cnblogs-18874518": [
+    {
+      "slug": "cnblogs-18870773",
+      "title": "Qt 项目打包成可执行文件：音乐播放器实战",
+      "similarity": 0.465
+    },
+    {
+      "slug": "wget-curl-aria2c",
+      "title": "wget、curl、aria2c：下载工具怎么选",
+      "similarity": 0.461
+    },
+    {
+      "slug": "arch-swap-hibernate",
+      "title": "Arch 休眠总失败？Swap 分区配置一次到位",
+      "similarity": 0.447
+    },
+    {
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.435
+    },
+    {
+      "slug": "cnblogs-19211892",
+      "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
+      "similarity": 0.409
+    }
+  ],
+  "cnblogs-19211892": [
+    {
+      "slug": "arch-swap-hibernate",
+      "title": "Arch 休眠总失败？Swap 分区配置一次到位",
+      "similarity": 0.519
+    },
+    {
+      "slug": "cnblogs-18967266",
+      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
+      "similarity": 0.474
+    },
+    {
+      "slug": "cnblogs-18874518",
+      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
+      "similarity": 0.409
+    },
+    {
+      "slug": "cnblogs-18799609",
+      "title": "归并排序与快速排序",
+      "similarity": 0.383
+    },
+    {
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.357
+    }
+  ],
+  "arch-swap-hibernate": [
+    {
+      "slug": "cnblogs-19211892",
+      "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
+      "similarity": 0.519
+    },
+    {
+      "slug": "cnblogs-18874518",
+      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
+      "similarity": 0.447
+    },
+    {
+      "slug": "cnblogs-18799609",
+      "title": "归并排序与快速排序",
+      "similarity": 0.384
+    },
+    {
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.378
+    },
+    {
+      "slug": "cnblogs-19020181",
+      "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
+      "similarity": 0.364
+    }
+  ],
+  "cnblogs-18756619": [
+    {
+      "slug": "cnblogs-18758374",
+      "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
+      "similarity": 0.5
+    },
+    {
+      "slug": "cnblogs-18800457",
+      "title": "分治算法",
+      "similarity": 0.43
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.395
+    },
+    {
+      "slug": "cnblogs-18791092",
+      "title": "计算只含加减乘除的中缀表达式",
+      "similarity": 0.376
+    },
+    {
+      "slug": "cnblogs-18768639",
+      "title": "裴蜀定理与扩展欧几里得算法",
+      "similarity": 0.368
+    }
+  ],
+  "cnblogs-18758374": [
+    {
+      "slug": "cnblogs-18756619",
+      "title": "8159: GCD等于XOR（GCD XOR）",
+      "similarity": 0.5
+    },
+    {
+      "slug": "cnblogs-18762083",
+      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
+      "similarity": 0.486
+    },
+    {
+      "slug": "cnblogs-18762208",
+      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
+      "similarity": 0.482
+    },
+    {
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.48
+    },
+    {
+      "slug": "cnblogs-18773733",
+      "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
+      "similarity": 0.471
+    }
+  ],
+  "cnblogs-18679016": [
+    {
+      "slug": "cnblogs-18758374",
+      "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
+      "similarity": 0.438
+    },
+    {
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.42
+    },
+    {
+      "slug": "caip-2024-provincial",
+      "title": "CAIP 2024 省赛（本科组）",
+      "similarity": 0.42
+    },
+    {
+      "slug": "cnblogs-18762208",
+      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
+      "similarity": 0.417
+    },
+    {
+      "slug": "cnblogs-18762083",
+      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
+      "similarity": 0.415
     }
   ],
   "cnblogs-18934890": [
@@ -51,33 +456,6 @@
       "slug": "cnblogs-18790711",
       "title": "C++字符串分割方法",
       "similarity": 0.375
-    }
-  ],
-  "cnblogs-18878863": [
-    {
-      "slug": "cnblogs-18967266",
-      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
-      "similarity": 0.465
-    },
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.463
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.413
-    },
-    {
-      "slug": "git-pull-merge-rebase",
-      "title": "git pull 到底用 merge 还是 rebase？",
-      "similarity": 0.385
-    },
-    {
-      "slug": "cnblogs-18924113",
-      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
-      "similarity": 0.381
     }
   ],
   "cnblogs-18791092": [
@@ -129,9 +507,9 @@
       "similarity": 0.435
     },
     {
-      "slug": "cnblogs-18924162",
-      "title": "算法竞赛中的Lowbit",
-      "similarity": 0.427
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.428
     }
   ],
   "cnblogs-18924162": [
@@ -242,60 +620,6 @@
       "similarity": 0.45
     }
   ],
-  "java-interface-vs-abstract-class": [
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.561
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.436
-    },
-    {
-      "slug": "cnblogs-18799609",
-      "title": "归并排序与快速排序",
-      "similarity": 0.429
-    },
-    {
-      "slug": "cnblogs-18762083",
-      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
-      "similarity": 0.419
-    },
-    {
-      "slug": "cnblogs-18804703",
-      "title": "整数划分问题",
-      "similarity": 0.418
-    }
-  ],
-  "cnblogs-19020181": [
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.402
-    },
-    {
-      "slug": "git worktree：一台电脑同时开多条工作线",
-      "title": "Git Worktree：一台电脑同时开多条工作线",
-      "similarity": 0.367
-    },
-    {
-      "slug": "cnblogs-18874518",
-      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-      "similarity": 0.364
-    },
-    {
-      "slug": "arch-swap-hibernate",
-      "title": "Arch 休眠总失败？Swap 分区配置一次到位",
-      "similarity": 0.364
-    },
-    {
-      "slug": "curl 实战速查：下载、请求与调试一把梭",
-      "title": "curl 实战速查：下载、请求与调试一把梭",
-      "similarity": 0.363
-    }
-  ],
   "cnblogs-18799609": [
     {
       "slug": "cnblogs-18897189",
@@ -321,33 +645,6 @@
       "slug": "cnblogs-18967362",
       "title": "Linux 找文件从入门到精通",
       "similarity": 0.431
-    }
-  ],
-  "cnblogs-18959607": [
-    {
-      "slug": "git worktree：一台电脑同时开多条工作线",
-      "title": "Git Worktree：一台电脑同时开多条工作线",
-      "similarity": 0.528
-    },
-    {
-      "slug": "cnblogs-18924113",
-      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
-      "similarity": 0.473
-    },
-    {
-      "slug": "cnblogs-18874306",
-      "title": "git 重建后连不上远程仓库？冲突这样解决",
-      "similarity": 0.468
-    },
-    {
-      "slug": "cnblogs-18799609",
-      "title": "归并排序与快速排序",
-      "similarity": 0.448
-    },
-    {
-      "slug": "git-pull-merge-rebase",
-      "title": "git pull 到底用 merge 还是 rebase？",
-      "similarity": 0.441
     }
   ],
   "cnblogs-18897189": [
@@ -431,112 +728,112 @@
       "similarity": 0.455
     }
   ],
-  "user-00-模块总览与架构": [
+  "cnblogs-18924572": [
     {
-      "slug": "content-00-模块总览与架构",
-      "title": "知识分享社区 content 模块总览与架构",
-      "similarity": 0.906
+      "slug": "cnblogs-18800457",
+      "title": "分治算法",
+      "similarity": 0.49
     },
     {
-      "slug": "social-00-模块总览与架构",
-      "title": "知识分享社区 social 模块总览与架构",
-      "similarity": 0.904
+      "slug": "cnblogs-18791092",
+      "title": "计算只含加减乘除的中缀表达式",
+      "similarity": 0.458
     },
     {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.895
+      "slug": "cnblogs-18803922",
+      "title": "矩阵连乘问题",
+      "similarity": 0.435
     },
     {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.883
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.42
     },
     {
-      "slug": "ai-00-模块总览与架构",
-      "title": "知识分享社区 ai 模块总览与架构",
-      "similarity": 0.872
+      "slug": "cnblogs-18924162",
+      "title": "算法竞赛中的Lowbit",
+      "similarity": 0.417
     }
   ],
-  "social-00-模块总览与架构": [
+  "cnblogs-18790711": [
     {
-      "slug": "content-00-模块总览与架构",
-      "title": "知识分享社区 content 模块总览与架构",
-      "similarity": 0.945
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.39
     },
     {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.933
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.379
     },
     {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.914
+      "slug": "cnblogs-18934890",
+      "title": "随机数mt19937",
+      "similarity": 0.375
     },
     {
-      "slug": "ai-00-模块总览与架构",
-      "title": "知识分享社区 ai 模块总览与架构",
-      "similarity": 0.905
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.353
     },
     {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.904
+      "slug": "cnblogs-18791092",
+      "title": "计算只含加减乘除的中缀表达式",
+      "similarity": 0.352
     }
   ],
-  "share-00-模块总览与架构": [
+  "cnblogs-18878863": [
     {
-      "slug": "social-00-模块总览与架构",
-      "title": "知识分享社区 social 模块总览与架构",
-      "similarity": 0.933
+      "slug": "cnblogs-18967266",
+      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
+      "similarity": 0.465
     },
     {
-      "slug": "content-00-模块总览与架构",
-      "title": "知识分享社区 content 模块总览与架构",
-      "similarity": 0.926
+      "slug": "cnblogs-18927584",
+      "title": "GitHub CLI 实战指南：从安装到常用命令",
+      "similarity": 0.463
     },
     {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.899
+      "slug": "cnblogs-18959607",
+      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+      "similarity": 0.413
     },
     {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.895
+      "slug": "git-pull-merge-rebase",
+      "title": "git pull 到底用 merge 还是 rebase？",
+      "similarity": 0.385
     },
     {
-      "slug": "ai-00-模块总览与架构",
-      "title": "知识分享社区 ai 模块总览与架构",
-      "similarity": 0.884
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.381
     }
   ],
-  "search-00-模块总览与架构": [
+  "cnblogs-18959607": [
     {
-      "slug": "content-00-模块总览与架构",
-      "title": "知识分享社区 content 模块总览与架构",
-      "similarity": 0.919
+      "slug": "git-worktree",
+      "title": "Git Worktree：一台电脑同时开多条工作线",
+      "similarity": 0.528
     },
     {
-      "slug": "social-00-模块总览与架构",
-      "title": "知识分享社区 social 模块总览与架构",
-      "similarity": 0.914
+      "slug": "cnblogs-18924113",
+      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
+      "similarity": 0.473
     },
     {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.899
+      "slug": "niri-screenshare",
+      "title": "如何在 niri 下进行屏幕共享",
+      "similarity": 0.472
     },
     {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.883
+      "slug": "cnblogs-18874306",
+      "title": "git 重建后连不上远程仓库？冲突这样解决",
+      "similarity": 0.468
     },
     {
-      "slug": "ai-00-模块总览与架构",
-      "title": "知识分享社区 ai 模块总览与架构",
-      "similarity": 0.882
+      "slug": "cnblogs-18799609",
+      "title": "归并排序与快速排序",
+      "similarity": 0.448
     }
   ],
   "cnblogs-18874306": [
@@ -561,9 +858,9 @@
       "similarity": 0.439
     },
     {
-      "slug": "git worktree：一台电脑同时开多条工作线",
-      "title": "Git Worktree：一台电脑同时开多条工作线",
-      "similarity": 0.426
+      "slug": "niri-screenshare",
+      "title": "如何在 niri 下进行屏幕共享",
+      "similarity": 0.429
     }
   ],
   "cnblogs-18924113": [
@@ -588,7 +885,7 @@
       "similarity": 0.44
     },
     {
-      "slug": "git worktree：一台电脑同时开多条工作线",
+      "slug": "git-worktree",
       "title": "Git Worktree：一台电脑同时开多条工作线",
       "similarity": 0.433
     }
@@ -620,227 +917,16 @@
       "similarity": 0.395
     }
   ],
-  "curl 实战速查：下载、请求与调试一把梭": [
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.418
-    },
-    {
-      "slug": "cnblogs-18967362",
-      "title": "Linux 找文件从入门到精通",
-      "similarity": 0.383
-    },
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.363
-    },
-    {
-      "slug": "cnblogs-19020181",
-      "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
-      "similarity": 0.363
-    },
-    {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.359
-    }
-  ],
-  "content-00-模块总览与架构": [
-    {
-      "slug": "social-00-模块总览与架构",
-      "title": "知识分享社区 social 模块总览与架构",
-      "similarity": 0.945
-    },
-    {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.926
-    },
-    {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.919
-    },
-    {
-      "slug": "ai-00-模块总览与架构",
-      "title": "知识分享社区 ai 模块总览与架构",
-      "similarity": 0.914
-    },
-    {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.906
-    }
-  ],
-  "ai-00-模块总览与架构": [
-    {
-      "slug": "content-00-模块总览与架构",
-      "title": "知识分享社区 content 模块总览与架构",
-      "similarity": 0.914
-    },
-    {
-      "slug": "social-00-模块总览与架构",
-      "title": "知识分享社区 social 模块总览与架构",
-      "similarity": 0.905
-    },
-    {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.884
-    },
-    {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.882
-    },
-    {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.872
-    }
-  ],
-  "spring-circular-dependency": [
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.494
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.431
-    },
-    {
-      "slug": "java-interface-vs-abstract-class",
-      "title": "接口和抽象类到底怎么选？",
-      "similarity": 0.401
-    },
-    {
-      "slug": "cnblogs-18874306",
-      "title": "git 重建后连不上远程仓库？冲突这样解决",
-      "similarity": 0.401
-    },
-    {
-      "slug": "java-equals-vs-double-equals",
-      "title": "== 和 equals 到底比的是什么？",
-      "similarity": 0.398
-    }
-  ],
-  "cnblogs-19136430": [
-    {
-      "slug": "cnblogs-18874518",
-      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-      "similarity": 0.382
-    },
-    {
-      "slug": "cnblogs-18874306",
-      "title": "git 重建后连不上远程仓库？冲突这样解决",
-      "similarity": 0.32
-    },
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.304
-    },
-    {
-      "slug": "cnblogs-19020181",
-      "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
-      "similarity": 0.302
-    },
-    {
-      "slug": "cnblogs-19211892",
-      "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
-      "similarity": 0.296
-    }
-  ],
-  "cnblogs-18870773": [
-    {
-      "slug": "cnblogs-18874518",
-      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-      "similarity": 0.465
-    },
-    {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.344
-    },
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.337
-    },
-    {
-      "slug": "content-00-模块总览与架构",
-      "title": "知识分享社区 content 模块总览与架构",
-      "similarity": 0.333
-    },
-    {
-      "slug": "cnblogs-18878863",
-      "title": "让你的 Git 提交信息更专业：Conventional Commits",
-      "similarity": 0.324
-    }
-  ],
-  "cnblogs-18967362": [
-    {
-      "slug": "search-00-模块总览与架构",
-      "title": "知识分享社区 search 模块总览与架构",
-      "similarity": 0.475
-    },
-    {
-      "slug": "cnblogs-18799609",
-      "title": "归并排序与快速排序",
-      "similarity": 0.431
-    },
-    {
-      "slug": "cnblogs-18967266",
-      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
-      "similarity": 0.431
-    },
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.425
-    },
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.416
-    }
-  ],
-  "cnblogs-18924572": [
-    {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.49
-    },
-    {
-      "slug": "cnblogs-18791092",
-      "title": "计算只含加减乘除的中缀表达式",
-      "similarity": 0.458
-    },
-    {
-      "slug": "cnblogs-18803922",
-      "title": "矩阵连乘问题",
-      "similarity": 0.435
-    },
-    {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.42
-    },
-    {
-      "slug": "cnblogs-18924162",
-      "title": "算法竞赛中的Lowbit",
-      "similarity": 0.417
-    }
-  ],
   "cnblogs-18927584": [
     {
       "slug": "cnblogs-18967266",
       "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
       "similarity": 0.484
+    },
+    {
+      "slug": "wget-curl-aria2c",
+      "title": "wget、curl、aria2c：下载工具怎么选",
+      "similarity": 0.476
     },
     {
       "slug": "cnblogs-18878863",
@@ -856,11 +942,6 @@
       "slug": "cnblogs-18924113",
       "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
       "similarity": 0.421
-    },
-    {
-      "slug": "curl 实战速查：下载、请求与调试一把梭",
-      "title": "curl 实战速查：下载、请求与调试一把梭",
-      "similarity": 0.418
     }
   ],
   "cnblogs-18967266": [
@@ -890,7 +971,7 @@
       "similarity": 0.465
     }
   ],
-  "git worktree：一台电脑同时开多条工作线": [
+  "git-worktree": [
     {
       "slug": "cnblogs-18959607",
       "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
@@ -917,6 +998,222 @@
       "similarity": 0.388
     }
   ],
+  "nowcoder-monthly-117": [
+    {
+      "slug": "caip-2024-provincial",
+      "title": "CAIP 2024 省赛（本科组）",
+      "similarity": 0.592
+    },
+    {
+      "slug": "cnblogs-18762083",
+      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
+      "similarity": 0.549
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.54
+    },
+    {
+      "slug": "cnblogs-18773733",
+      "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
+      "similarity": 0.535
+    },
+    {
+      "slug": "cnblogs-18762208",
+      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
+      "similarity": 0.527
+    }
+  ],
+  "codeforces-1037-div3": [
+    {
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.888
+    },
+    {
+      "slug": "cnblogs-18798045",
+      "title": "Codeforces Round 1013 (Div. 3)",
+      "similarity": 0.875
+    },
+    {
+      "slug": "cnblogs-18910584",
+      "title": "Codeforces Round 1028 (Div. 2)",
+      "similarity": 0.772
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.723
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.71
+    }
+  ],
+  "cnblogs-18922296": [
+    {
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.719
+    },
+    {
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.71
+    },
+    {
+      "slug": "cnblogs-18798045",
+      "title": "Codeforces Round 1013 (Div. 3)",
+      "similarity": 0.697
+    },
+    {
+      "slug": "cnblogs-18910584",
+      "title": "Codeforces Round 1028 (Div. 2)",
+      "similarity": 0.663
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.616
+    }
+  ],
+  "cnblogs-18910584": [
+    {
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.855
+    },
+    {
+      "slug": "cnblogs-18798045",
+      "title": "Codeforces Round 1013 (Div. 3)",
+      "similarity": 0.81
+    },
+    {
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.772
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.723
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.663
+    }
+  ],
+  "codeforces-1027-div3": [
+    {
+      "slug": "cnblogs-18798045",
+      "title": "Codeforces Round 1013 (Div. 3)",
+      "similarity": 0.907
+    },
+    {
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.888
+    },
+    {
+      "slug": "cnblogs-18910584",
+      "title": "Codeforces Round 1028 (Div. 2)",
+      "similarity": 0.855
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.734
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.719
+    }
+  ],
+  "cnblogs-18798045": [
+    {
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.907
+    },
+    {
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.875
+    },
+    {
+      "slug": "cnblogs-18910584",
+      "title": "Codeforces Round 1028 (Div. 2)",
+      "similarity": 0.81
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.711
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.697
+    }
+  ],
+  "codeforces-edu179": [
+    {
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.734
+    },
+    {
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.723
+    },
+    {
+      "slug": "cnblogs-18910584",
+      "title": "Codeforces Round 1028 (Div. 2)",
+      "similarity": 0.723
+    },
+    {
+      "slug": "cnblogs-18798045",
+      "title": "Codeforces Round 1013 (Div. 3)",
+      "similarity": 0.711
+    },
+    {
+      "slug": "atcoder-abc417",
+      "title": "AtCoder Beginner Contest 417",
+      "similarity": 0.643
+    }
+  ],
+  "caip-2024-provincial": [
+    {
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.592
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.536
+    },
+    {
+      "slug": "cnblogs-18790660",
+      "title": "Contest3924 - 计科23级算法设计与分析平时作业-03",
+      "similarity": 0.489
+    },
+    {
+      "slug": "cnblogs-18786572",
+      "title": "Contest3923 - 计科23级算法设计与分析上机作业-03",
+      "similarity": 0.462
+    },
+    {
+      "slug": "cnblogs-18762208",
+      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
+      "similarity": 0.46
+    }
+  ],
   "cnblogs-18790660": [
     {
       "slug": "cnblogs-18762208",
@@ -939,9 +1236,9 @@
       "similarity": 0.734
     },
     {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.459
+      "slug": "caip-2024-provincial",
+      "title": "CAIP 2024 省赛（本科组）",
+      "similarity": 0.489
     }
   ],
   "cnblogs-18786572": [
@@ -993,9 +1290,9 @@
       "similarity": 0.759
     },
     {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.513
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.535
     }
   ],
   "cnblogs-18762208": [
@@ -1020,9 +1317,9 @@
       "similarity": 0.767
     },
     {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.496
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.527
     }
   ],
   "cnblogs-18762083": [
@@ -1047,306 +1344,63 @@
       "similarity": 0.734
     },
     {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.517
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.549
     }
   ],
-  "cnblogs-18922296": [
+  "atcoder-abc417": [
     {
-      "slug": "cnblogs-18798045",
-      "title": "Codeforces Round 1013 (Div. 3)",
-      "similarity": 0.697
+      "slug": "atcoder-abc416",
+      "title": "AtCoder Beginner Contest 416",
+      "similarity": 0.914
+    },
+    {
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.643
+    },
+    {
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.63
+    },
+    {
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.581
     },
     {
       "slug": "cnblogs-18910584",
       "title": "Codeforces Round 1028 (Div. 2)",
-      "similarity": 0.663
-    },
-    {
-      "slug": "cnblogs-18762208",
-      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
-      "similarity": 0.468
-    },
-    {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.467
-    },
-    {
-      "slug": "cnblogs-18786572",
-      "title": "Contest3923 - 计科23级算法设计与分析上机作业-03",
-      "similarity": 0.465
+      "similarity": 0.557
     }
   ],
-  "cnblogs-18910584": [
+  "atcoder-abc416": [
     {
-      "slug": "cnblogs-18798045",
-      "title": "Codeforces Round 1013 (Div. 3)",
-      "similarity": 0.81
+      "slug": "atcoder-abc417",
+      "title": "AtCoder Beginner Contest 417",
+      "similarity": 0.914
     },
     {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.663
+      "slug": "codeforces-edu179",
+      "title": "Codeforces Educational Round 179",
+      "similarity": 0.62
     },
-    {
-      "slug": "cnblogs-18773733",
-      "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
-      "similarity": 0.466
-    },
-    {
-      "slug": "cnblogs-18762208",
-      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
-      "similarity": 0.451
-    },
-    {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.438
-    }
-  ],
-  "cnblogs-18798045": [
     {
       "slug": "cnblogs-18910584",
       "title": "Codeforces Round 1028 (Div. 2)",
-      "similarity": 0.81
+      "similarity": 0.544
     },
     {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.697
+      "slug": "codeforces-1037-div3",
+      "title": "Codeforces Round 1037 (Div. 3)",
+      "similarity": 0.538
     },
     {
-      "slug": "cnblogs-18773733",
-      "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
-      "similarity": 0.508
-    },
-    {
-      "slug": "cnblogs-18786572",
-      "title": "Contest3923 - 计科23级算法设计与分析上机作业-03",
-      "similarity": 0.475
-    },
-    {
-      "slug": "cnblogs-18762208",
-      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
-      "similarity": 0.473
-    }
-  ],
-  "cnblogs-18790711": [
-    {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.39
-    },
-    {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.378
-    },
-    {
-      "slug": "cnblogs-18934890",
-      "title": "随机数mt19937",
-      "similarity": 0.375
-    },
-    {
-      "slug": "social-00-模块总览与架构",
-      "title": "知识分享社区 social 模块总览与架构",
-      "similarity": 0.365
-    },
-    {
-      "slug": "user-00-模块总览与架构",
-      "title": "知识分享社区 user 模块总览与架构",
-      "similarity": 0.362
-    }
-  ],
-  "cnblogs-18874518": [
-    {
-      "slug": "cnblogs-18870773",
-      "title": "Qt 项目打包成可执行文件：音乐播放器实战",
-      "similarity": 0.465
-    },
-    {
-      "slug": "arch-swap-hibernate",
-      "title": "Arch 休眠总失败？Swap 分区配置一次到位",
-      "similarity": 0.447
-    },
-    {
-      "slug": "cnblogs-18927584",
-      "title": "GitHub CLI 实战指南：从安装到常用命令",
-      "similarity": 0.435
-    },
-    {
-      "slug": "cnblogs-19211892",
-      "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
-      "similarity": 0.409
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.405
-    }
-  ],
-  "cnblogs-19211892": [
-    {
-      "slug": "arch-swap-hibernate",
-      "title": "Arch 休眠总失败？Swap 分区配置一次到位",
-      "similarity": 0.519
-    },
-    {
-      "slug": "cnblogs-18967266",
-      "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
-      "similarity": 0.474
-    },
-    {
-      "slug": "cnblogs-18874518",
-      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-      "similarity": 0.409
-    },
-    {
-      "slug": "cnblogs-18799609",
-      "title": "归并排序与快速排序",
-      "similarity": 0.383
-    },
-    {
-      "slug": "cnblogs-18924113",
-      "title": "git 远程覆盖本地 or 保留本地？两种场景一次说清",
-      "similarity": 0.357
-    }
-  ],
-  "arch-swap-hibernate": [
-    {
-      "slug": "cnblogs-19211892",
-      "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
-      "similarity": 0.519
-    },
-    {
-      "slug": "cnblogs-18874518",
-      "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-      "similarity": 0.447
-    },
-    {
-      "slug": "cnblogs-18799609",
-      "title": "归并排序与快速排序",
-      "similarity": 0.384
-    },
-    {
-      "slug": "cnblogs-18959607",
-      "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-      "similarity": 0.378
-    },
-    {
-      "slug": "share-00-模块总览与架构",
-      "title": "知识分享社区 share 模块总览与架构",
-      "similarity": 0.369
-    }
-  ],
-  "java-equals-vs-double-equals": [
-    {
-      "slug": "spring-circular-dependency",
-      "title": "Spring 循环依赖怎么解决？",
-      "similarity": 0.398
-    },
-    {
-      "slug": "java-interface-vs-abstract-class",
-      "title": "接口和抽象类到底怎么选？",
-      "similarity": 0.397
-    },
-    {
-      "slug": "ddd-interview-guide",
-      "title": "面试被问到 DDD，怎么讲才不像背课文？",
-      "similarity": 0.385
-    },
-    {
-      "slug": "cnblogs-18897189",
-      "title": "前缀数组和后缀数组",
-      "similarity": 0.385
-    },
-    {
-      "slug": "cnblogs-18762208",
-      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
-      "similarity": 0.381
-    }
-  ],
-  "cnblogs-18756619": [
-    {
-      "slug": "cnblogs-18758374",
-      "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
-      "similarity": 0.5
-    },
-    {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.43
-    },
-    {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.395
-    },
-    {
-      "slug": "cnblogs-18791092",
-      "title": "计算只含加减乘除的中缀表达式",
-      "similarity": 0.376
-    },
-    {
-      "slug": "cnblogs-18768639",
-      "title": "裴蜀定理与扩展欧几里得算法",
-      "similarity": 0.368
-    }
-  ],
-  "cnblogs-18758374": [
-    {
-      "slug": "cnblogs-18756619",
-      "title": "8159: GCD等于XOR（GCD XOR）",
-      "similarity": 0.5
-    },
-    {
-      "slug": "cnblogs-18762083",
-      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
-      "similarity": 0.486
-    },
-    {
-      "slug": "cnblogs-18762208",
-      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
-      "similarity": 0.482
-    },
-    {
-      "slug": "cnblogs-18773733",
-      "title": "Contest3913 - 计科23级算法设计与分析上机作业-02",
-      "similarity": 0.471
-    },
-    {
-      "slug": "cnblogs-18897189",
-      "title": "前缀数组和后缀数组",
-      "similarity": 0.453
-    }
-  ],
-  "cnblogs-18679016": [
-    {
-      "slug": "cnblogs-18758374",
-      "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
-      "similarity": 0.438
-    },
-    {
-      "slug": "cnblogs-18762208",
-      "title": "Contest3898 - 计科23级算法设计与分析平时作业-01",
-      "similarity": 0.417
-    },
-    {
-      "slug": "cnblogs-18762083",
-      "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
-      "similarity": 0.415
-    },
-    {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.407
-    },
-    {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.388
+      "slug": "codeforces-1027-div3",
+      "title": "Codeforces Round 1027 (Div. 3)",
+      "similarity": 0.527
     }
   ]
 }

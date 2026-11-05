@@ -1,15 +1,71 @@
 {
+  "cnblogs-19020181": {
+    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
+    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
+  },
+  "wget-curl-aria2c": {
+    "title": "wget、curl、aria2c：下载工具怎么选",
+    "summary": "三个命令行下载工具的分工、常用参数和踩坑点，附可直接复制的示例。"
+  },
+  "curl-guide": {
+    "title": "curl 实战速查：下载、请求与调试一把梭",
+    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
+  },
+  "cnblogs-18870773": {
+    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
+    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
+  },
+  "cnblogs-18967362": {
+    "title": "Linux 找文件从入门到精通",
+    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
+  },
   "ddd-interview-guide": {
     "title": "面试被问到 DDD，怎么讲才不像背课文？",
     "summary": "用一条因果链讲清 DDD：为什么需要它、限界上下文、聚合、战术组件，附钱包转账完整用例与面试速查清单。"
   },
+  "java-interface-vs-abstract-class": {
+    "title": "接口和抽象类到底怎么选？",
+    "summary": "及格回答 vs 高分回答：is-a 与 can-do、单继承限制、模板方法与能力组合、default 方法菱形冲突，附三个连环追问与速查表。"
+  },
+  "spring-circular-dependency": {
+    "title": "Spring 循环依赖怎么解决？",
+    "summary": "三级缓存是怎么流转的、为什么是三级不是两级、构造器注入为何无解、Boot 2.6 为何默认禁止，附 getSingleton 伪代码与面试速查表。"
+  },
+  "java-equals-vs-double-equals": {
+    "title": "== 和 equals 到底比的是什么？",
+    "summary": "== 比引用、equals 比内容：String 常量池、Integer 缓存池、BigDecimal、hashCode 配套、null 安全，附决策树与面试速查清单。"
+  },
+  "niri-screenshare": {
+    "title": "如何在 niri 下进行屏幕共享",
+    "summary": "总结一下我在 niri 下共享屏幕的解决方案"
+  },
+  "cnblogs-18874518": {
+    "title": "Arch 装不了官网软件包？两种方法轻松搞定",
+    "summary": "在 Arch 上安装 JetBrains 等从官网下载的预编译软件包的两种方法。"
+  },
+  "cnblogs-19211892": {
+    "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
+    "summary": "Arch 系统无法进入时，用 live 盘配合 btrfs 快照在无法使用 timeshift 的情况下回退系统的步骤。"
+  },
+  "arch-swap-hibernate": {
+    "title": "Arch 休眠总失败？Swap 分区配置一次到位",
+    "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
+  },
+  "cnblogs-18756619": {
+    "title": "8159: GCD等于XOR（GCD XOR）",
+    "summary": "数论：gcd(a,b)=a⊕b 的性质推导与求解。"
+  },
+  "cnblogs-18758374": {
+    "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
+    "summary": "数论：求一组和为 n 且 LCM 最小的数的题解。"
+  },
+  "cnblogs-18679016": {
+    "title": "8008: 纸牌游戏（ \"Accordian\" Patience）",
+    "summary": "用栈数组模拟纸牌游戏（Accordian Patience）的题解。"
+  },
   "cnblogs-18934890": {
     "title": "随机数mt19937",
     "summary": "C++ 中 mt19937 随机数生成器的原理与使用详解。"
-  },
-  "cnblogs-18878863": {
-    "title": "让你的 Git 提交信息更专业：Conventional Commits",
-    "summary": "Conventional Commits 提交规范：type 类型、作用域与提交示例。"
   },
   "cnblogs-18791092": {
     "title": "计算只含加减乘除的中缀表达式",
@@ -35,21 +91,9 @@
     "title": "整数划分问题",
     "summary": "整数划分（Partition）的定义、递归实现与扩展。"
   },
-  "java-interface-vs-abstract-class": {
-    "title": "接口和抽象类到底怎么选？",
-    "summary": "及格回答 vs 高分回答：is-a 与 can-do、单继承限制、模板方法与能力组合、default 方法菱形冲突，附三个连环追问与速查表。"
-  },
-  "cnblogs-19020181": {
-    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
-    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
-  },
   "cnblogs-18799609": {
     "title": "归并排序与快速排序",
     "summary": "归并排序与快速排序的实现与要点对比。"
-  },
-  "cnblogs-18959607": {
-    "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
-    "summary": "对比 Git Submodule 与 Subtree 两种在仓库内嵌子仓库的方案与用法。"
   },
   "cnblogs-18897189": {
     "title": "前缀数组和后缀数组",
@@ -63,21 +107,21 @@
     "title": "位运算相关宏定义",
     "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
   },
-  "user-00-模块总览与架构": {
-    "title": "知识分享社区 user 模块总览与架构",
-    "summary": "知识分享社区项目的 user 模块总览与架构"
+  "cnblogs-18924572": {
+    "title": "LCA（最近公共祖先问）算法",
+    "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
   },
-  "social-00-模块总览与架构": {
-    "title": "知识分享社区 social 模块总览与架构",
-    "summary": "知识分享社区项目的 social 模块总览与架构"
+  "cnblogs-18790711": {
+    "title": "C++字符串分割方法",
+    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
   },
-  "share-00-模块总览与架构": {
-    "title": "知识分享社区 share 模块总览与架构",
-    "summary": "知识分享社区项目的 share 模块总览与架构"
+  "cnblogs-18878863": {
+    "title": "让你的 Git 提交信息更专业：Conventional Commits",
+    "summary": "Conventional Commits 提交规范：type 类型、作用域与提交示例。"
   },
-  "search-00-模块总览与架构": {
-    "title": "知识分享社区 search 模块总览与架构",
-    "summary": "知识分享社区项目的 search 模块总览与架构"
+  "cnblogs-18959607": {
+    "title": "子仓库怎么塞进父仓库：Submodule 与 Subtree 对比",
+    "summary": "对比 Git Submodule 与 Subtree 两种在仓库内嵌子仓库的方案与用法。"
   },
   "cnblogs-18874306": {
     "title": "git 重建后连不上远程仓库？冲突这样解决",
@@ -91,38 +135,6 @@
     "title": "git pull 到底用 merge 还是 rebase？",
     "summary": "git pull 默认走 merge，但 --rebase 能让历史更干净。两种方式什么时候用、冲突怎么处理，一篇讲清。"
   },
-  "curl 实战速查：下载、请求与调试一把梭": {
-    "title": "curl 实战速查：下载、请求与调试一把梭",
-    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
-  },
-  "content-00-模块总览与架构": {
-    "title": "知识分享社区 content 模块总览与架构",
-    "summary": "知识分享社区项目的 content 模块总览与架构"
-  },
-  "ai-00-模块总览与架构": {
-    "title": "知识分享社区 ai 模块总览与架构",
-    "summary": "知识分享社区项目的 ai 模块总览与架构"
-  },
-  "spring-circular-dependency": {
-    "title": "Spring 循环依赖怎么解决？",
-    "summary": "三级缓存是怎么流转的、为什么是三级不是两级、构造器注入为何无解、Boot 2.6 为何默认禁止，附 getSingleton 伪代码与面试速查表。"
-  },
-  "cnblogs-19136430": {
-    "title": "Scoop 装的 Anaconda 无法在商店版 PowerShell 打开？",
-    "summary": "解决通过 Scoop 安装的 Anaconda 无法在 Microsoft Store 版 PowerShell 中激活 conda 的问题。"
-  },
-  "cnblogs-18870773": {
-    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
-    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
-  },
-  "cnblogs-18967362": {
-    "title": "Linux 找文件从入门到精通",
-    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
-  },
-  "cnblogs-18924572": {
-    "title": "LCA（最近公共祖先问）算法",
-    "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
-  },
   "cnblogs-18927584": {
     "title": "GitHub CLI 实战指南：从安装到常用命令",
     "summary": "GitHub CLI（gh）的安装配置与常用命令使用指南。"
@@ -131,9 +143,41 @@
     "title": "Git 回退全场景速查：工作区、暂存区、本地、远程",
     "summary": "git 回退操作的常见场景与命令整理。"
   },
-  "git worktree：一台电脑同时开多条工作线": {
+  "git-worktree": {
     "title": "Git Worktree：一台电脑同时开多条工作线",
     "summary": "Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发"
+  },
+  "nowcoder-monthly-117": {
+    "title": "牛客月赛 117",
+    "summary": "牛客月赛 117 的五题题解，覆盖字符串模拟、数学与计数。"
+  },
+  "codeforces-1037-div3": {
+    "title": "Codeforces Round 1037 (Div. 3)",
+    "summary": "Codeforces Round 1037 (Div. 3) 的 A-F 题解与思路。"
+  },
+  "cnblogs-18922296": {
+    "title": "Codeforces Round 1029 (Div. 3)",
+    "summary": "Codeforces Round 1029 (Div.3) 的 A-G 题解，覆盖贪心、构造、并查集与 LCA，含 C++ 实现。"
+  },
+  "cnblogs-18910584": {
+    "title": "Codeforces Round 1028 (Div. 2)",
+    "summary": "Codeforces Round 1028 (Div.2) 的题解与思路。"
+  },
+  "codeforces-1027-div3": {
+    "title": "Codeforces Round 1027 (Div. 3)",
+    "summary": "Codeforces Round 1027 (Div. 3) 的题解与思路。"
+  },
+  "cnblogs-18798045": {
+    "title": "Codeforces Round 1013 (Div. 3)",
+    "summary": "Codeforces Round 1013 (Div.3) 的题解与思路。"
+  },
+  "codeforces-edu179": {
+    "title": "Codeforces Educational Round 179",
+    "summary": "Codeforces Educational Round 179 的题解与思路。"
+  },
+  "caip-2024-provincial": {
+    "title": "CAIP 2024 省赛（本科组）",
+    "summary": "CAIP 2024 省赛（本科组）5833-5837 五题题解，覆盖模拟、字符串、BFS 与背包。"
   },
   "cnblogs-18790660": {
     "title": "Contest3924 - 计科23级算法设计与分析平时作业-03",
@@ -155,48 +199,12 @@
     "title": "Contest3897 - 计科23级算法设计与分析上机作业-01",
     "summary": "计科算法作业：整除判断等模拟题。"
   },
-  "cnblogs-18922296": {
-    "title": "Codeforces Round 1029 (Div. 3)",
-    "summary": "Codeforces Round 1029 (Div.3) 的 A-G 题解，覆盖贪心、构造、并查集与 LCA，含 C++ 实现。"
+  "atcoder-abc417": {
+    "title": "AtCoder Beginner Contest 417",
+    "summary": "AtCoder Beginner Contest 417 的 A-F 题解与思路。"
   },
-  "cnblogs-18910584": {
-    "title": "Codeforces Round 1028 (Div. 2)",
-    "summary": "Codeforces Round 1028 (Div.2) 的题解与思路。"
-  },
-  "cnblogs-18798045": {
-    "title": "Codeforces Round 1013 (Div. 3)",
-    "summary": "Codeforces Round 1013 (Div.3) 的题解与思路。"
-  },
-  "cnblogs-18790711": {
-    "title": "C++字符串分割方法",
-    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
-  },
-  "cnblogs-18874518": {
-    "title": "Arch 装不了官网软件包？两种方法轻松搞定",
-    "summary": "在 Arch 上安装 JetBrains 等从官网下载的预编译软件包的两种方法。"
-  },
-  "cnblogs-19211892": {
-    "title": "Arch 系统救急：live 盘 + btrfs 快照无痛回退",
-    "summary": "Arch 系统无法进入时，用 live 盘配合 btrfs 快照在无法使用 timeshift 的情况下回退系统的步骤。"
-  },
-  "arch-swap-hibernate": {
-    "title": "Arch 休眠总失败？Swap 分区配置一次到位",
-    "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
-  },
-  "java-equals-vs-double-equals": {
-    "title": "== 和 equals 到底比的是什么？",
-    "summary": "== 比引用、equals 比内容：String 常量池、Integer 缓存池、BigDecimal、hashCode 配套、null 安全，附决策树与面试速查清单。"
-  },
-  "cnblogs-18756619": {
-    "title": "8159: GCD等于XOR（GCD XOR）",
-    "summary": "数论：gcd(a,b)=a⊕b 的性质推导与求解。"
-  },
-  "cnblogs-18758374": {
-    "title": "8158: 最小公倍数的最小和（Minimum Sum LCM）",
-    "summary": "数论：求一组和为 n 且 LCM 最小的数的题解。"
-  },
-  "cnblogs-18679016": {
-    "title": "8008: 纸牌游戏（ \"Accordian\" Patience）",
-    "summary": "用栈数组模拟纸牌游戏（Accordian Patience）的题解。"
+  "atcoder-abc416": {
+    "title": "AtCoder Beginner Contest 416",
+    "summary": "AtCoder Beginner Contest 416 的 A-E 题解与思路。"
   }
 }
