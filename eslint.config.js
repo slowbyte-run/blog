@@ -51,6 +51,7 @@ export default tseslint.config(
       'logs/**',
       'node_modules/**',
       'public/**',
+      'solutions/**',
     ],
   },
   {
