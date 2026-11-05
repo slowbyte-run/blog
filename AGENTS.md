@@ -48,10 +48,12 @@ pnpm run format:check
 
 - 文章：`source/posts/**/*.md`（glob loader 递归匹配子目录）。frontmatter：`title`（必填）、`date`（必填）、`description`、`link`、`cover`、`tags`、`categories`、`subtitle`、`catalog`、`tocNumbering`、`sticky`、`draft`。
 - `draft: true` 只在 production 生效（`repository.ts`）；dev 下草稿可见。
-- 按主题分子目录：`XCPC/{Contest/<平台>,Algorithm,Problems}`、`Backend`、`ArchLinux`、`Tools`（含 `Git`）、`knowledge-share-hub`。模板 `文章模板.md` 在根目录。
+- 按主题分子目录：`XCPC/{Contest/<平台>,Algorithm/<板块>,Problems}`、`Backend`、`ArchLinux`、`Tools`（含 `Git`）、`knowledge-share-hub`。模板 `文章模板.md` 在根目录。
+- `Algorithm/` 下固定 10 个板块：`Basic`、`Bitwise`、`DataStructure`、`DP`、`Graph`、`Math`、`Prefix`、`Random`、`String`、`XOR`；分类同步为 `XCPC → Algorithm → <板块>`，新帖按板块就位。
 - 分类走多级：`categories` 的多行数组就是**一条**路径（`XCPC → Contest → Codeforces`）；要多条路径得用嵌套数组 `[[..],[..]]`。目录层级与分类层级保持一致，改目录就要同步改分类。
 - 图片放 `source/img/`（建议按用途建子目录），markdown 用 `/img/...` 引用。
 - 竞赛源码归档在仓库根的 `solutions/xcpc/<平台>/<比赛>/<题号>.cpp`，**不在 `source/` 下**，因此不部署；每个竞赛帖开头有一行指向它。已在 `.prettierignore` / ESLint ignores 中排除。
+- 算法源码归档在 `solutions/xcpc/algorithm/<板块小写>/<知识点>/`，目录名用 ASCII（`dp/knapsack-01`、`graph/dsu`、`ds/segment-tree` 等）。帖子开头有一行引用块指过去；不归档 `t*.cpp` / `temp.cpp` / `solve.cpp` 这类临时文件。
 
 ## 代码约定
 
