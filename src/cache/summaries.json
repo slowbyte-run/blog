@@ -1,24 +1,4 @@
 {
-  "cnblogs-19020181": {
-    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
-    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
-  },
-  "wget-curl-aria2c": {
-    "title": "wget、curl、aria2c：下载工具怎么选",
-    "summary": "三个命令行下载工具的分工、常用参数和踩坑点，附可直接复制的示例。"
-  },
-  "curl-guide": {
-    "title": "curl 实战速查：下载、请求与调试一把梭",
-    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
-  },
-  "cnblogs-18870773": {
-    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
-    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
-  },
-  "cnblogs-18967362": {
-    "title": "Linux 找文件从入门到精通",
-    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
-  },
   "ddd-interview-guide": {
     "title": "面试被问到 DDD，怎么讲才不像背课文？",
     "summary": "用一条因果链讲清 DDD：为什么需要它、限界上下文、聚合、战术组件，附钱包转账完整用例与面试速查清单。"
@@ -51,6 +31,26 @@
     "title": "Arch 休眠总失败？Swap 分区配置一次到位",
     "summary": "双系统下为 Arch 单独划分 Swap 分区，并配置 GRUB / systemd-boot 与 initramfs 以支持休眠。"
   },
+  "cnblogs-19020181": {
+    "title": "把手机当服务器：电脑 SSH 连接 Termux 实战",
+    "summary": "在 Termux 中搭建 SSH 服务端，让电脑通过 SSH 连接手机终端。"
+  },
+  "wget-curl-aria2c": {
+    "title": "wget、curl、aria2c：下载工具怎么选",
+    "summary": "三个命令行下载工具的分工、常用参数和踩坑点，附可直接复制的示例。"
+  },
+  "curl-guide": {
+    "title": "curl 实战速查：下载、请求与调试一把梭",
+    "summary": "curl —— 一个功能强大的命令行网络传输工具，支持 HTTP/HTTPS/FTP 等多种协议"
+  },
+  "cnblogs-18870773": {
+    "title": "Qt 项目打包成可执行文件：音乐播放器实战",
+    "summary": "以音乐播放器为例，在 Arch 上把 Qt Creator 项目打包成可执行文件。"
+  },
+  "cnblogs-18967362": {
+    "title": "Linux 找文件从入门到精通",
+    "summary": "整理 Linux 下 find 等常用查找文件与目录的命令及用法。"
+  },
   "cnblogs-18756619": {
     "title": "8159: GCD等于XOR（GCD XOR）",
     "summary": "数论：gcd(a,b)=a⊕b 的性质推导与求解。"
@@ -62,58 +62,6 @@
   "cnblogs-18679016": {
     "title": "8008: 纸牌游戏（ \"Accordian\" Patience）",
     "summary": "用栈数组模拟纸牌游戏（Accordian Patience）的题解。"
-  },
-  "cnblogs-18934890": {
-    "title": "随机数mt19937",
-    "summary": "C++ 中 mt19937 随机数生成器的原理与使用详解。"
-  },
-  "cnblogs-18791092": {
-    "title": "计算只含加减乘除的中缀表达式",
-    "summary": "用栈实现只含加减乘除的中缀表达式求值（转后缀 + 求值）。"
-  },
-  "cnblogs-18768639": {
-    "title": "裴蜀定理与扩展欧几里得算法",
-    "summary": "裴蜀定理与扩展欧几里得算法的原理与应用。"
-  },
-  "cnblogs-18924162": {
-    "title": "算法竞赛中的Lowbit",
-    "summary": "Lowbit 位运算的原理、计算方法与常见应用。"
-  },
-  "cnblogs-18803922": {
-    "title": "矩阵连乘问题",
-    "summary": "矩阵连乘最优计算顺序的动态规划解法（C++）。"
-  },
-  "cnblogs-18773647": {
-    "title": "欧拉线性筛",
-    "summary": "欧拉线性筛求素数的算法模板。"
-  },
-  "cnblogs-18804703": {
-    "title": "整数划分问题",
-    "summary": "整数划分（Partition）的定义、递归实现与扩展。"
-  },
-  "cnblogs-18799609": {
-    "title": "归并排序与快速排序",
-    "summary": "归并排序与快速排序的实现与要点对比。"
-  },
-  "cnblogs-18897189": {
-    "title": "前缀数组和后缀数组",
-    "summary": "前缀数组与后缀数组的原理、实现及例题讲解。"
-  },
-  "cnblogs-18800457": {
-    "title": "分治算法",
-    "summary": "分治算法思想，结合 NOIP 幂次方例题与实现。"
-  },
-  "cnblogs-18934841": {
-    "title": "位运算相关宏定义",
-    "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
-  },
-  "cnblogs-18924572": {
-    "title": "LCA（最近公共祖先问）算法",
-    "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
-  },
-  "cnblogs-18790711": {
-    "title": "C++字符串分割方法",
-    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
   },
   "cnblogs-18878863": {
     "title": "让你的 Git 提交信息更专业：Conventional Commits",
@@ -206,5 +154,209 @@
   "atcoder-abc416": {
     "title": "AtCoder Beginner Contest 416",
     "summary": "AtCoder Beginner Contest 416 的 A-E 题解与思路。"
+  },
+  "algo-xor-properties": {
+    "title": "异或运算的重要性质",
+    "summary": "异或的交换律、自反性、消去律、位级独立性，以及前缀/后缀异或的理论基础。"
+  },
+  "algo-xor-basis": {
+    "title": "异或空间与线性基",
+    "summary": "线性基的原理、插入与查询，以及第 k 大异或和等应用。"
+  },
+  "algo-string-kmp": {
+    "title": "字符串匹配：从 BF 到 KMP",
+    "summary": "从暴力匹配到 KMP 的推导，next 数组的含义与求法，含洛谷模板题。"
+  },
+  "cnblogs-18790711": {
+    "title": "C++字符串分割方法",
+    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
+  },
+  "algo-random-usage": {
+    "title": "随机数的常见写法",
+    "summary": "C++ 中几种随机数生成器的声明方式：简易写法、32 位与 64 位种子。"
+  },
+  "cnblogs-18934890": {
+    "title": "随机数mt19937",
+    "summary": "C++ 中 mt19937 随机数生成器的原理与使用详解。"
+  },
+  "algo-prefix-tree-difference": {
+    "title": "树上差分",
+    "summary": "树上点差分与边差分的两种变体，配合 LCA 完成路径更新。"
+  },
+  "cnblogs-18897189": {
+    "title": "前缀数组和后缀数组",
+    "summary": "前缀数组与后缀数组的原理、实现及例题讲解。"
+  },
+  "algo-prefix-sum": {
+    "title": "前缀和",
+    "summary": "异或前缀和的定义、性质与常见应用，含子数组异或和为 K 的例题。"
+  },
+  "algo-prefix-difference": {
+    "title": "一维差分",
+    "summary": "线性差分的定义、区间修改写法与还原方式。"
+  },
+  "cnblogs-18768639": {
+    "title": "裴蜀定理与扩展欧几里得算法",
+    "summary": "裴蜀定理与扩展欧几里得算法的原理与应用。"
+  },
+  "cnblogs-18773647": {
+    "title": "欧拉线性筛",
+    "summary": "欧拉线性筛求素数的算法模板。"
+  },
+  "algo-graph-hld-template": {
+    "title": "树链剖分模板",
+    "summary": "树链剖分的类封装模板：两遍 DFS、路径查询与子树查询。"
+  },
+  "algo-graph-dsu-patterns": {
+    "title": "并查集题型总结",
+    "summary": "按题型归纳并查集的应用：属性并查集、扩展域、连通块计数等。"
+  },
+  "algo-graph-dsu-template": {
+    "title": "并查集模板",
+    "summary": "普通并查集、带权并查集与按秩合并的实现模板。"
+  },
+  "algo-graph-dsu-variants": {
+    "title": "并查集常见变式",
+    "summary": "维护额外信息的并查集、删边转加边、可撤销并查集等常见变式。"
+  },
+  "algo-graph-dsu-nowcoder": {
+    "title": "并查集习题题解（牛客）",
+    "summary": "牛客算法进阶指南的并查集题目题解，含程序自动分析等。"
+  },
+  "algo-graph-dsu-luogu": {
+    "title": "并查集习题题解（洛谷题单）",
+    "summary": "洛谷并查集题单题解：修复公路、星球大战、食物链、银河英雄传说等。"
+  },
+  "algo-graph-basics": {
+    "title": "图论中的基本概念",
+    "summary": "连通图、生成树、度数、二分图等图论基础概念的定义与判定。"
+  },
+  "algo-graph-diameter-problems": {
+    "title": "图的直径习题题解",
+    "summary": "图的直径相关习题题解。"
+  },
+  "algo-graph-diameter": {
+    "title": "图的直径",
+    "summary": "树的直径与一般图的直径求法：两次 BFS/DFS、树形 DP 与最短路做法。"
+  },
+  "cnblogs-18924572": {
+    "title": "LCA（最近公共祖先问）算法",
+    "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
+  },
+  "algo-graph-lca-problems": {
+    "title": "LCA 例题题解",
+    "summary": "LCA 相关例题题解，包含洛谷模板题与 SP14932。"
+  },
+  "algo-ds-segment-tree": {
+    "title": "线段树详解",
+    "summary": "线段树的原理、建树、区间修改与查询、懒标记，以及常见变式。"
+  },
+  "algo-ds-segment-tree-template": {
+    "title": "线段树模板",
+    "summary": "线段树的几套实现模板：区间加、区间乘、区间最值。"
+  },
+  "algo-dp-exact-fill": {
+    "title": "背包问题：恰好装满",
+    "summary": "恰好装满背包的三种场景——判可行、计方案数、求最大价值——的状态定义、初始化与转移。"
+  },
+  "algo-dp-knapsack-roadmap": {
+    "title": "背包问题学习路线",
+    "summary": "从 01 背包到树形背包的分阶段学习路线，列出每个阶段该掌握的问题类型。"
+  },
+  "cnblogs-18803922": {
+    "title": "矩阵连乘问题",
+    "summary": "矩阵连乘最优计算顺序的动态规划解法（C++）。"
+  },
+  "algo-dp-probability": {
+    "title": "概率 DP",
+    "summary": "五个概率与期望 DP 例题：带陷阱的棋盘、带障碍的跳跃、保底抽卡、博弈胜率、随机游走。"
+  },
+  "cnblogs-18804703": {
+    "title": "整数划分问题",
+    "summary": "整数划分（Partition）的定义、递归实现与扩展。"
+  },
+  "algo-dp-digit-2": {
+    "title": "数位 DP（下）",
+    "summary": "数位 DP 的状态设计与记忆化条件，以不含 4 和 62 的数为完整例子。"
+  },
+  "algo-dp-digit-1": {
+    "title": "数位 DP（上）",
+    "summary": "数位 DP 入门：前缀和转换、DFS + 记忆化的实现框架，以及不含 49 的数的计数。"
+  },
+  "algo-dp-digit-problems": {
+    "title": "数位 DP 习题题解（洛谷题单）",
+    "summary": "数位 DP 的洛谷题单题解：烦人的数学作业、windy 数、数字计数、Round Numbers。"
+  },
+  "algo-dp-complete-knapsack-exact-fill": {
+    "title": "完全背包：恰好装满（BUCTOJ 3522）",
+    "summary": "恰好装满型完全背包的例题题解，用 -inf 标记不可达状态。"
+  },
+  "algo-dp-complete-knapsack-problems": {
+    "title": "完全背包习题题解（洛谷题单）",
+    "summary": "完全背包的洛谷题单题解：疯狂的采药、投资的最大效益、 Buying Hay S 等。"
+  },
+  "algo-dp-complete-knapsack": {
+    "title": "完全背包",
+    "summary": "完全背包的状态定义与正序遍历的原因，与 01 背包的差异。"
+  },
+  "algo-dp-subsequence": {
+    "title": "子序列 DP",
+    "summary": "最长公共子序列、最长上升子序列、编辑距离、最大子段和等子序列类 DP 的整理。"
+  },
+  "algo-dp-bounded-knapsack-problems": {
+    "title": "多重背包习题题解（洛谷题单）",
+    "summary": "多重背包的洛谷题单题解：樱花、宝物筛选、旅行商的背包、摆花、砝码称重。"
+  },
+  "algo-dp-bounded-knapsack": {
+    "title": "多重背包",
+    "summary": "用二进制拆分把多重背包转成 01 背包，含复杂度分析与实现要点。"
+  },
+  "algo-dp-group-knapsack-at-most": {
+    "title": "分组背包变式：每组最多选 $d_i$ 件",
+    "summary": "把分组背包推广到每组最多选 d_i 件：状态抽象、转移推导与完整模板。"
+  },
+  "algo-dp-group-knapsack-exactly": {
+    "title": "分组背包变式：每组恰好选 $d_i$ 件",
+    "summary": "在「最多选」的基础上改初始化和边界，实现每组恰好选 d_i 件的背包。"
+  },
+  "algo-dp-group-knapsack-problems": {
+    "title": "分组背包习题题解（洛谷题单）",
+    "summary": "分组背包的洛谷题单题解：通天之分组背包、BJOI2019 排兵布阵。"
+  },
+  "algo-dp-group-knapsack": {
+    "title": "分组背包",
+    "summary": "分组背包的问题描述、状态定义与三层循环的遍历顺序。"
+  },
+  "algo-dp-01-knapsack-problems": {
+    "title": "01 背包习题题解（洛谷题单）",
+    "summary": "洛谷背包题单的 01 背包部分：采药、装箱问题、小A点菜、开心的金明、不开心的金明五题题解。"
+  },
+  "algo-dp-01-knapsack": {
+    "title": "01 背包",
+    "summary": "01 背包的状态定义、滚动数组写法与逆序遍历的原因。"
+  },
+  "cnblogs-18924162": {
+    "title": "算法竞赛中的Lowbit",
+    "summary": "Lowbit 位运算的原理、计算方法与常见应用。"
+  },
+  "cnblogs-18934841": {
+    "title": "位运算相关宏定义",
+    "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
+  },
+  "algo-bitwise-tricks": {
+    "title": "位运算实用技巧",
+    "summary": "位运算在竞赛里的常见用法：大小写转换、交换变量、判断符号、取最低位 1、统计 1 的个数等。"
+  },
+  "cnblogs-18791092": {
+    "title": "计算只含加减乘除的中缀表达式",
+    "summary": "用栈实现只含加减乘除的中缀表达式求值（转后缀 + 求值）。"
+  },
+  "cnblogs-18799609": {
+    "title": "归并排序与快速排序",
+    "summary": "归并排序与快速排序的实现与要点对比。"
+  },
+  "cnblogs-18800457": {
+    "title": "分治算法",
+    "summary": "分治算法思想，结合 NOIP 幂次方例题与实现。"
   }
 }
