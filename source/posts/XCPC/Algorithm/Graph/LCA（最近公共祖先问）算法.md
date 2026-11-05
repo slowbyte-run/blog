@@ -5,9 +5,11 @@ link: 'cnblogs-18924572'
 description: 'LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。'
 tags:
   - 'algorithm'
+  - 'graph'
 categories:
   - 'XCPC'
   - 'Algorithm'
+  - 'Graph'
 ---
 
 这篇是自己整理的 LCA 笔记。最早在树上求两个点的最近公共祖先，我只会一个节点一个节点往上爬，查询一多就超时，后来学会倍增（二分提升）才顺了。下面记一下思路和个人的类模板。

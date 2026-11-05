@@ -5,9 +5,11 @@ link: 'cnblogs-18924162'
 description: 'Lowbit 位运算的原理、计算方法与常见应用。'
 tags:
   - 'algorithm'
+  - 'bitwise'
 categories:
   - 'XCPC'
   - 'Algorithm'
+  - 'Bitwise'
 ---
 
 Lowbit 是程序设计里很常见的一个位运算概念，做二叉索引树（Fenwick Tree）这类数据结构时基本绕不开。我当年第一次见 `x & -x` 一脸懵，后来才慢慢琢磨透。下面按我自己的理解，从基础原理、计算方法、常见应用三个方面记一份笔记。

@@ -6,9 +6,11 @@ description: '使用 getline 与 stringstream 对 C++ 字符串进行分割的�
 tags:
   - 'algorithm'
   - 'cpp'
+  - 'string'
 categories:
   - 'XCPC'
   - 'Algorithm'
+  - 'String'
 ---
 
 当时写题碰到要按分隔符拆字符串，我习惯用 `getline` 配 `stringstream` 这套，顺手记一下用法。其他分割方法（比如用 `find` 手动切）我就不写了，网上资料一大堆。
