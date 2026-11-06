@@ -16,7 +16,8 @@ export const SOURCE_CONFIG: Record<
     icon: <MingcuteAiFillSvg className="text-primary size-4" />,
   },
   auto: {
-    label: 'AI摘要',
+    // FIXED: source='auto' 是正文截取的兜底，并非 AI 生成，标签不应写成 AI 摘要。
+    label: '正文摘要',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

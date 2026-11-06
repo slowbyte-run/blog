@@ -8,7 +8,7 @@ tags:
   - 'proxy'
 categories:
   - 'Docker'
-draft: true
+draft: false
 ---
 
 # Docker 网络代理配置：让容器和构建过程使用宿主机代理

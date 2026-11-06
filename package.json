@@ -12,6 +12,7 @@
     "generate:lqips": "npx tsx scripts/generateLqips.ts",
     "generate:similarities": "npx tsx scripts/generateSimilarities.ts",
     "generate:summaries": "npx tsx scripts/generateSummaries.ts",
+    "probe:summaries": "npx tsx scripts/generateSummaries.ts --probe 3",
     "migrate:cnblogs": "npx tsx scripts/migrateCnblogs.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

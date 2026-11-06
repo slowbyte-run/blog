@@ -12,7 +12,9 @@ export const OPENAI_API_BASE_URL = rawBaseUrl.endsWith('/')
   ? rawBaseUrl
   : `${rawBaseUrl}/`;
 export const OPENAI_API_KEY = process.env.OPENAI_API_KEY?.trim() ?? '';
+// FIXED: DeepSeek 已将 deepseek-v4-flash 列为遗留名（仍可用，但路由到 V4.1-Flash），
+// 官方文档现推荐 deepseek-flash。新部署请使用规范名，覆盖用 OPENAI_MODEL。
 export const DEFAULT_MODEL =
-  process.env.OPENAI_MODEL?.trim() || 'deepseek-v4-flash';
+  process.env.OPENAI_MODEL?.trim() || 'deepseek-flash';
 
 export const EXCLUDE_PATTERNS: string[] = [];

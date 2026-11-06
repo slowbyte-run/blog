@@ -75,6 +75,29 @@ GitHub Actions（`.github/workflows/deploy.yml`）在 push 或手动触发时自
 
 仓库 Secrets 需配置：`DEPLOY_TOKEN`、`OPENAI_API_BASE_URL`、`OPENAI_API_KEY`、`OPENAI_MODEL`。
 
+### AI 摘要凭据与验证
+
+三处配置位置，按用途选：
+
+| 场景           | 配在哪                                                       | 生效方式                                                              |
+| -------------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| CI / 线上部署  | 仓库 **Settings → Secrets and variables → Actions**          | `deploy.yml` 通过 `env:` 注入，`workflow_dispatch` 手动触发时同样生效 |
+| 本地一次性调用 | 命令行内联：`OPENAI_API_KEY=sk-xxx pnpm run probe:summaries` | 仅当前进程，不留痕                                                    |
+| 本地长期开发   | 仓库根 `.env`（**已被 `.gitignore` 忽略**），或写进 shell rc | 脚本不自动加载 `.env`，需自行 `export` 或用 `pnpm exec dotenv-cli`    |
+
+`OPENAI_API_BASE_URL` 可留空走默认 DeepSeek；`OPENAI_MODEL` 留空则用 `deepseek-flash`。
+
+验证真实凭据是否可用（**只读，不写缓存，不部署**）：
+
+```bash
+pnpm run probe:summaries            # 默认抽样 3 篇，等价的 --probe 3
+pnpm run probe:summaries -- 5       # 自定义篇数
+```
+
+成功时逐篇打印模型返回的摘要并以退出码 0 结束；凭据无效、接口不通或摘要不过质量门时退出码 1。CI 侧同理：在 Actions 页面 **Run workflow** 勾选 `probe_summaries`，只跑验证、跳过部署。
+
+> 注意：仓库内所有文章都写了 `description`，而生成脚本与运行时都以 `description` 优先，所以常规 `generate:summaries` 永远是 `manual N, generated 0`。`--probe` 是唯一能在这种状态下验证 AI 链路的入口。
+
 ## 🙏 鸣谢
 
 - [astro-snow](https://github.com/XueHua-s/astro-snow) —— 本博客使用的主题

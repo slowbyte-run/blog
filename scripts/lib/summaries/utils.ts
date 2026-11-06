@@ -16,10 +16,12 @@ import type { PostData, SummariesCache, SummaryOutput } from './types';
 export function parseArgs(defaultModel: string): {
   model: string;
   force: boolean;
+  probe: number;
 } {
   const args = process.argv.slice(2);
   let model = defaultModel;
   let force = false;
+  let probe = 0;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--model' && args[i + 1]) {
@@ -27,10 +29,20 @@ export function parseArgs(defaultModel: string): {
       i++;
     } else if (args[i] === '--force') {
       force = true;
+    } else if (args[i] === '--probe') {
+      // FIXED: 所有文章都带 description 时 AI 分支永远不可达，
+      // --probe 用于跳过该短路，直接对真实接口抽样生成以验证凭据。
+      const next = Number(args[i + 1]);
+      if (Number.isInteger(next) && next > 0) {
+        probe = next;
+        i++;
+      } else {
+        probe = 3;
+      }
     }
   }
 
-  return { model, force };
+  return { model, force, probe };
 }
 
 export function shouldExclude(slug: string): boolean {

@@ -14,9 +14,43 @@ on:
       - 'package.json'
       - 'pnpm-lock.yaml'
   workflow_dispatch:
+    inputs:
+      probe_summaries:
+        description: 'Only verify the AI summary API (3 posts, writes no cache)'
+        type: boolean
+        default: false
 
 jobs:
+  probe:
+    # 手动触发并勾选 probe_summaries 时，只验证 LLM 凭据，不做部署。
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.probe_summaries }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install dependencies (pnpm lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Probe AI summary API
+        run: pnpm run probe:summaries
+        env:
+          OPENAI_API_BASE_URL: ${{ secrets.OPENAI_API_BASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+
   deploy:
+    # probe 模式下跳过部署，避免只做验证却触发一次发布。
+    if: ${{ github.event_name != 'workflow_dispatch' || !inputs.probe_summaries }}
     runs-on: ubuntu-latest
     permissions:
       contents: write

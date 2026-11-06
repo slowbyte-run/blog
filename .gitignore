@@ -35,6 +35,7 @@ dist/
 *.local
 .vercel
 .codex/
+.reasonix/
 test-results/
 
 gen-favicons.mjs
