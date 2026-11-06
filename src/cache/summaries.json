@@ -95,6 +95,10 @@
     "title": "Git Worktree：一台电脑同时开多条工作线",
     "summary": "Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发"
   },
+  "docker-build-proxy": {
+    "title": "Docker 网络代理配置：让容器和构建过程使用宿主机代理",
+    "summary": "在 Linux 环境中配置 Docker 构建阶段和容器运行阶段的网络代理，理解宿主机代理不会自动传递到 Docker 的原因。"
+  },
   "cook-rag": {
     "title": "从结构化 Chunking 到 GraphRAG 的食谱知识检索系统设计",
     "summary": "以 Cook-RAG 项目为例，讲清楚食谱数据要怎么分块：结构感知的三级 Chunking、Metadata 设计，以及升级到 GraphRAG 后 Chunk 与知识图谱的分工，最后用 Agentic RAG 按问题动态选择检索策略。"
