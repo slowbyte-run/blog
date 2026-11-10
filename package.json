@@ -14,6 +14,7 @@
     "generate:summaries": "npx tsx scripts/generateSummaries.ts",
     "probe:summaries": "npx tsx scripts/generateSummaries.ts --probe 3",
     "migrate:cnblogs": "npx tsx scripts/migrateCnblogs.ts",
+    "sync:cnblogs": "npx tsx scripts/syncCnblogs.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",

@@ -39,6 +39,7 @@ pnpm run format:check
 - **`src/cache/*.json` 是构建期生成物**（lqips/similarities/summaries），由 `scripts/` 生成、被 CI 回写提交。别手改；刷新用 `pnpm run generate:lqips` / `generate:similarities`（本地模型，无 key） / `generate:summaries`（需 `OPENAI_API_KEY`）。`{}` 是合法状态。
 - **AI 摘要**：OpenAI 兼容协议，默认 DeepSeek `https://api.deepseek.com/v1/` + `deepseek-flash`，可用 `OPENAI_API_BASE_URL`/`OPENAI_API_KEY`/`OPENAI_MODEL` 覆盖。无 key 或接口不通时只告警跳过，不会让构建失败。
 - **所有文章都写了 `description`，AI 分支在常规流程里不可达**：脚本 `manual` 分支和运行时 `view-model.ts` 都优先 `description`，所以 `generate:summaries` 恒为 `generated 0`。验证真实凭据用 `pnpm run probe:summaries`（`--probe N`，只读、不写缓存）；CI 里手动触发 `deploy.yml` 并勾选 `probe_summaries`。
+- **博客园同步**走 MetaWeblog（`scripts/syncCnblogs.ts`，`pnpm run sync:cnblogs`）：凭据读 `.env` 的 `CNBLOGS_USERNAME`/`CNBLOGS_TOKEN`；默认 dry-run，`-- --apply` 才写远端。映射表 `scripts/cnblogs-map.json` 是幂等的关键——删了它会给已有随笔再建一份。正文按 Markdown 推送，靠 `[Markdown]` 分类渲染；博客园限流 20 篇/分钟，且 API 不接受 `dateCreated`（新建随笔日期只能是当天）。
 - **搜索用 pagefind，索引只在 build 时生成**。纯 `pnpm dev` 下搜索不可用、搜索框可能不渲染——这是预期行为，不是 bug。`tests/e2e/helpers/runtime-errors.ts` 已过滤这类噪音。
 - **站点信息分散在三个配置**，改标题/简介/头像要同步：`src/config/blogLayoutConfig.ts`（`title`/`subtitle`/`avatar`/`site`/`blogSocialConfig`）、`indexConfig.ts`、`homePageConfig.ts`（`avatarUrl`、`homePageLinks`）。
 - **社交链接存在两处**：`blogSocialConfig`（头部 `Social.tsx`）与 `homePageLinks`（引导页，`HomePage.tsx` 的 `getSocialButtons`）。增删平台要同时改 `SocialConfig` 类型、两处配置和 `getSocialButtons`。

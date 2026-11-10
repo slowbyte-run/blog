@@ -98,6 +98,34 @@ pnpm run probe:summaries -- 5       # 自定义篇数
 
 > 注意：仓库内所有文章都写了 `description`，而生成脚本与运行时都以 `description` 优先，所以常规 `generate:summaries` 永远是 `manual N, generated 0`。`--probe` 是唯一能在这种状态下验证 AI 链路的入口。
 
+### 博客园同步
+
+`scripts/syncCnblogs.ts` 把 `source/posts` 的文章推到[博客园](https://www.cnblogs.com/slowbyte)，走 MetaWeblog API。脚本会自己读仓库根的 `.env`（已被忽略）：
+
+```bash
+CNBLOGS_USERNAME=slowbyte
+CNBLOGS_TOKEN=<博客园 后台 → 设置 → 其他设置 → MetaWeblog 访问令牌>
+```
+
+```bash
+pnpm run sync:cnblogs                  # 只打印计划，不写远端
+pnpm run sync:cnblogs -- --apply       # 真正执行
+pnpm run sync:cnblogs -- --only LCA --apply
+pnpm run sync:cnblogs -- --limit 1 --apply
+```
+
+规则：
+
+- `frontmatter link: cnblogs-<id>` 或 `scripts/cnblogs-map.json` 里登记过的文章 → 覆盖正文；其余新建随笔，并把返回的 id 写回映射表。
+- 远端已有同名文章会被认领（`ADOPT`），中断后重跑不会重复创建。
+- 覆盖前把远端原文备份到 `.cache/cnblogs-backup/`。
+- 正文按 Markdown 原样推送，`[Markdown]` 分类是渲染开关；`/img/`、`/blog/` 开头的站内链接会补成绝对地址。
+- 博客园限制每分钟 20 篇、每天约 30 篇：脚本按 3.2s 间隔串行写入，命中分钟级限流会等 65s 自动重试；用尽当日额度时剩余的会失败，隔天重跑同一条命令即可（已完成的会被识别为 `SAME`）。
+- `-- --status` 逐篇探测线上可见性（`public` / `restricted` 需登录即审核或私有 / `missing` 404 / `pending` 未创建），不改任何东西，适合收尾核对。
+- `-- --draft` 把新文章先存成草稿；`-- --only <关键词> --force --apply` 可把草稿重新写一次转成已发布；`-- --delete <postid> --apply` 删除误建的随笔并同步清掉映射条目。
+- MetaWeblog 不接受 `dateCreated`：新建的随笔发布日期是同步当天，已有随笔的日期保持不变。
+- `draft: true` 与 `文章模板.md` 默认跳过。
+
 ## 🙏 鸣谢
 
 - [astro-snow](https://github.com/XueHua-s/astro-snow) —— 本博客使用的主题
