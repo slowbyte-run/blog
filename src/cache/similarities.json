@@ -728,6 +728,33 @@
       "similarity": 0.543
     }
   ],
+  "caip-2024-provincial": [
+    {
+      "slug": "nowcoder-monthly-117",
+      "title": "牛客月赛 117",
+      "similarity": 0.592
+    },
+    {
+      "slug": "cnblogs-18922296",
+      "title": "Codeforces Round 1029 (Div. 3)",
+      "similarity": 0.536
+    },
+    {
+      "slug": "algo-dp-group-knapsack-problems",
+      "title": "分组背包习题题解（洛谷题单）",
+      "similarity": 0.535
+    },
+    {
+      "slug": "algo-graph-lca-problems",
+      "title": "LCA 例题题解",
+      "similarity": 0.528
+    },
+    {
+      "slug": "cnblogs-18790660",
+      "title": "Contest3924 - 计科23级算法设计与分析平时作业-03",
+      "similarity": 0.489
+    }
+  ],
   "codeforces-1037-div3": [
     {
       "slug": "codeforces-1027-div3",
@@ -888,33 +915,6 @@
       "slug": "atcoder-abc417",
       "title": "AtCoder Beginner Contest 417",
       "similarity": 0.643
-    }
-  ],
-  "caip-2024-provincial": [
-    {
-      "slug": "nowcoder-monthly-117",
-      "title": "牛客月赛 117",
-      "similarity": 0.592
-    },
-    {
-      "slug": "cnblogs-18922296",
-      "title": "Codeforces Round 1029 (Div. 3)",
-      "similarity": 0.536
-    },
-    {
-      "slug": "algo-dp-group-knapsack-problems",
-      "title": "分组背包习题题解（洛谷题单）",
-      "similarity": 0.535
-    },
-    {
-      "slug": "algo-graph-lca-problems",
-      "title": "LCA 例题题解",
-      "similarity": 0.528
-    },
-    {
-      "slug": "cnblogs-18790660",
-      "title": "Contest3924 - 计科23级算法设计与分析平时作业-03",
-      "similarity": 0.489
     }
   ],
   "cnblogs-18790660": [
@@ -1106,60 +1106,6 @@
       "similarity": 0.527
     }
   ],
-  "algo-xor-properties": [
-    {
-      "slug": "algo-xor-basis",
-      "title": "异或空间与线性基",
-      "similarity": 0.574
-    },
-    {
-      "slug": "algo-graph-basics",
-      "title": "图论中的基本概念",
-      "similarity": 0.484
-    },
-    {
-      "slug": "cnblogs-18934841",
-      "title": "位运算相关宏定义",
-      "similarity": 0.481
-    },
-    {
-      "slug": "algo-bitwise-tricks",
-      "title": "位运算实用技巧",
-      "similarity": 0.475
-    },
-    {
-      "slug": "algo-prefix-sum",
-      "title": "前缀和",
-      "similarity": 0.467
-    }
-  ],
-  "algo-xor-basis": [
-    {
-      "slug": "algo-prefix-sum",
-      "title": "前缀和",
-      "similarity": 0.581
-    },
-    {
-      "slug": "algo-xor-properties",
-      "title": "异或运算的重要性质",
-      "similarity": 0.574
-    },
-    {
-      "slug": "cnblogs-18768639",
-      "title": "裴蜀定理与扩展欧几里得算法",
-      "similarity": 0.513
-    },
-    {
-      "slug": "algo-graph-basics",
-      "title": "图论中的基本概念",
-      "similarity": 0.504
-    },
-    {
-      "slug": "algo-ds-segment-tree",
-      "title": "线段树详解",
-      "similarity": 0.503
-    }
-  ],
   "algo-string-kmp": [
     {
       "slug": "cnblogs-18790660",
@@ -1212,6 +1158,60 @@
       "slug": "algo-prefix-tree-difference",
       "title": "树上差分",
       "similarity": 0.361
+    }
+  ],
+  "algo-xor-properties": [
+    {
+      "slug": "algo-xor-basis",
+      "title": "异或空间与线性基",
+      "similarity": 0.574
+    },
+    {
+      "slug": "algo-graph-basics",
+      "title": "图论中的基本概念",
+      "similarity": 0.484
+    },
+    {
+      "slug": "cnblogs-18934841",
+      "title": "位运算相关宏定义",
+      "similarity": 0.481
+    },
+    {
+      "slug": "algo-bitwise-tricks",
+      "title": "位运算实用技巧",
+      "similarity": 0.475
+    },
+    {
+      "slug": "algo-prefix-sum",
+      "title": "前缀和",
+      "similarity": 0.467
+    }
+  ],
+  "algo-xor-basis": [
+    {
+      "slug": "algo-prefix-sum",
+      "title": "前缀和",
+      "similarity": 0.581
+    },
+    {
+      "slug": "algo-xor-properties",
+      "title": "异或运算的重要性质",
+      "similarity": 0.574
+    },
+    {
+      "slug": "cnblogs-18768639",
+      "title": "裴蜀定理与扩展欧几里得算法",
+      "similarity": 0.513
+    },
+    {
+      "slug": "algo-graph-basics",
+      "title": "图论中的基本概念",
+      "similarity": 0.504
+    },
+    {
+      "slug": "algo-ds-segment-tree",
+      "title": "线段树详解",
+      "similarity": 0.503
     }
   ],
   "algo-random-usage": [
@@ -1285,14 +1285,14 @@
       "similarity": 0.543
     },
     {
+      "slug": "cnblogs-18924572",
+      "title": "LCA（最近公共祖先）算法",
+      "similarity": 0.49
+    },
+    {
       "slug": "algo-graph-diameter",
       "title": "图的直径",
       "similarity": 0.489
-    },
-    {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
-      "similarity": 0.488
     }
   ],
   "cnblogs-18897189": [
@@ -1675,29 +1675,29 @@
   ],
   "cnblogs-18924572": [
     {
-      "slug": "cnblogs-18800457",
-      "title": "分治算法",
+      "slug": "algo-prefix-tree-difference",
+      "title": "树上差分",
       "similarity": 0.49
     },
     {
-      "slug": "algo-graph-lca-problems",
-      "title": "LCA 例题题解",
-      "similarity": 0.479
-    },
-    {
-      "slug": "algo-prefix-tree-difference",
-      "title": "树上差分",
-      "similarity": 0.472
-    },
-    {
-      "slug": "cnblogs-18791092",
-      "title": "计算只含加减乘除的中缀表达式",
-      "similarity": 0.458
+      "slug": "cnblogs-18800457",
+      "title": "分治算法",
+      "similarity": 0.485
     },
     {
       "slug": "algo-ds-segment-tree-template",
       "title": "线段树模板",
-      "similarity": 0.437
+      "similarity": 0.444
+    },
+    {
+      "slug": "cnblogs-18791092",
+      "title": "计算只含加减乘除的中缀表达式",
+      "similarity": 0.442
+    },
+    {
+      "slug": "algo-dp-group-knapsack-at-most",
+      "title": "分组背包变式：每组最多选 $d_i$ 件",
+      "similarity": 0.436
     }
   ],
   "algo-graph-lca-problems": [
@@ -1852,14 +1852,14 @@
       "similarity": 0.447
     },
     {
-      "slug": "cnblogs-18924572",
-      "title": "LCA（最近公共祖先问）算法",
-      "similarity": 0.435
-    },
-    {
       "slug": "algo-graph-diameter-problems",
       "title": "图的直径习题题解",
       "similarity": 0.431
+    },
+    {
+      "slug": "cnblogs-18934841",
+      "title": "位运算相关宏定义",
+      "similarity": 0.428
     }
   ],
   "algo-dp-probability": [
@@ -2424,9 +2424,9 @@
       "similarity": 0.459
     },
     {
-      "slug": "cnblogs-18924572",
-      "title": "LCA（最近公共祖先问）算法",
-      "similarity": 0.458
+      "slug": "algo-graph-dsu-nowcoder",
+      "title": "并查集习题题解（牛客）",
+      "similarity": 0.456
     }
   ],
   "cnblogs-18799609": [

@@ -63,6 +63,10 @@
     "title": "8008: 纸牌游戏（ \"Accordian\" Patience）",
     "summary": "用栈数组模拟纸牌游戏（Accordian Patience）的题解。"
   },
+  "docker-build-proxy": {
+    "title": "Docker 网络代理配置：让容器和构建过程使用宿主机代理",
+    "summary": "在 Linux 环境中配置 Docker 构建阶段和容器运行阶段的网络代理，理解宿主机代理不会自动传递到 Docker 的原因。"
+  },
   "cnblogs-18878863": {
     "title": "让你的 Git 提交信息更专业：Conventional Commits",
     "summary": "Conventional Commits 提交规范：type 类型、作用域与提交示例。"
@@ -94,10 +98,6 @@
   "git-worktree": {
     "title": "Git Worktree：一台电脑同时开多条工作线",
     "summary": "Git Worktree — 让你从同一个仓库同时检出多个工作目录，实现多分支并行开发"
-  },
-  "docker-build-proxy": {
-    "title": "Docker 网络代理配置：让容器和构建过程使用宿主机代理",
-    "summary": "在 Linux 环境中配置 Docker 构建阶段和容器运行阶段的网络代理，理解宿主机代理不会自动传递到 Docker 的原因。"
   },
   "cook-rag": {
     "title": "从结构化 Chunking 到 GraphRAG 的食谱知识检索系统设计",
@@ -171,14 +171,6 @@
     "title": "异或空间与线性基",
     "summary": "线性基的原理、插入与查询，以及第 k 大异或和等应用。"
   },
-  "algo-string-kmp": {
-    "title": "字符串匹配：从 BF 到 KMP",
-    "summary": "从暴力匹配到 KMP 的推导，next 数组的含义与求法，含洛谷模板题。"
-  },
-  "cnblogs-18790711": {
-    "title": "C++字符串分割方法",
-    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
-  },
   "algo-random-usage": {
     "title": "随机数的常见写法",
     "summary": "C++ 中几种随机数生成器的声明方式：简易写法、32 位与 64 位种子。"
@@ -186,6 +178,14 @@
   "cnblogs-18934890": {
     "title": "随机数mt19937",
     "summary": "C++ 中 mt19937 随机数生成器的原理与使用详解。"
+  },
+  "algo-string-kmp": {
+    "title": "字符串匹配：从 BF 到 KMP",
+    "summary": "从暴力匹配到 KMP 的推导，next 数组的含义与求法，含洛谷模板题。"
+  },
+  "cnblogs-18790711": {
+    "title": "C++字符串分割方法",
+    "summary": "使用 getline 与 stringstream 对 C++ 字符串进行分割的方法。"
   },
   "algo-prefix-tree-difference": {
     "title": "树上差分",
@@ -248,7 +248,7 @@
     "summary": "树的直径与一般图的直径求法：两次 BFS/DFS、树形 DP 与最短路做法。"
   },
   "cnblogs-18924572": {
-    "title": "LCA（最近公共祖先问）算法",
+    "title": "LCA（最近公共祖先）算法",
     "summary": "LCA 最近公共祖先的倍增（二分提升）实现流程与 C++ 模板。"
   },
   "algo-graph-lca-problems": {
@@ -262,6 +262,18 @@
   "algo-ds-segment-tree-template": {
     "title": "线段树模板",
     "summary": "线段树的几套实现模板：区间加、区间乘、区间最值。"
+  },
+  "cnblogs-18924162": {
+    "title": "算法竞赛中的Lowbit",
+    "summary": "Lowbit 位运算的原理、计算方法与常见应用。"
+  },
+  "cnblogs-18934841": {
+    "title": "位运算相关宏定义",
+    "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
+  },
+  "algo-bitwise-tricks": {
+    "title": "位运算实用技巧",
+    "summary": "位运算在竞赛里的常见用法：大小写转换、交换变量、判断符号、取最低位 1、统计 1 的个数等。"
   },
   "algo-dp-exact-fill": {
     "title": "背包问题：恰好装满",
@@ -342,18 +354,6 @@
   "algo-dp-01-knapsack": {
     "title": "01 背包",
     "summary": "01 背包的状态定义、滚动数组写法与逆序遍历的原因。"
-  },
-  "cnblogs-18924162": {
-    "title": "算法竞赛中的Lowbit",
-    "summary": "Lowbit 位运算的原理、计算方法与常见应用。"
-  },
-  "cnblogs-18934841": {
-    "title": "位运算相关宏定义",
-    "summary": "算法竞赛常用位运算宏与内建函数的用途和含义。"
-  },
-  "algo-bitwise-tricks": {
-    "title": "位运算实用技巧",
-    "summary": "位运算在竞赛里的常见用法：大小写转换、交换变量、判断符号、取最低位 1、统计 1 的个数等。"
   },
   "cnblogs-18791092": {
     "title": "计算只含加减乘除的中缀表达式",
